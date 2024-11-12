@@ -1,0 +1,78 @@
+* NGSPICE file created from ddab.ext - technology: sky130A
+
+.subckt inv1p1 in out bp bn vreg vss vsub
+X0 vreg in out bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4
+X1 out in vreg bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=4
+X2 out in xt bn sky130_fd_pr__nfet_01v8 ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=4
+X3 out in xb bn sky130_fd_pr__nfet_01v8 ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=4
+X4 out in vreg bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=4
+X5 xt in vss bn sky130_fd_pr__nfet_01v8 ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4
+X6 vreg in out bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4
+X7 xb in vss bn sky130_fd_pr__nfet_01v8 ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4
+.ends
+
+.subckt ddab_slice0 im op om xp bn xm ip SUB vdd vss bp
+Xa0 ip xm bp bn vdd vss SUB inv1p1
+Xa1 xp xm bp bn vdd vss SUB inv1p1
+Xa2 xm xm bp bn vdd vss SUB inv1p1
+Xa3 ip xm bp bn vdd vss SUB inv1p1
+Xa4 im xp bp bn vdd vss SUB inv1p1
+Xa6 xm xp bp bn vdd vss SUB inv1p1
+Xa5 xp xp bp bn vdd vss SUB inv1p1
+Xa7 im xp bp bn vdd vss SUB inv1p1
+.ends
+
+.subckt ddab_slice1 xm op om xp bn SUB im ip vdd vss bp
+Xa0 ip om bp bn vdd vss SUB inv1p1
+Xa1 xp om bp bn vdd vss SUB inv1p1
+Xa2 xm op bp bn vdd vss SUB inv1p1
+Xa3 im op bp bn vdd vss SUB inv1p1
+.ends
+
+.subckt ddab_slice2 ip im xm xp op om bp bn vdd vss vsub
+Xa0 op x bp bn vdd vss vsub inv1p1
+Xa1 x x bp bn vdd vss vsub inv1p1
+Xa2 x xp bp bn vdd vss vsub inv1p1
+Xa3 x xp bp bn vdd vss vsub inv1p1
+Xa4 x xm bp bn vdd vss vsub inv1p1
+Xa5 x xm bp bn vdd vss vsub inv1p1
+Xa6 x x bp bn vdd vss vsub inv1p1
+Xa7 om x bp bn vdd vss vsub inv1p1
+.ends
+
+.subckt ddab_slice ipa ipb op xp vss xm ima bp vdd om SUB imb bn
+Xddab_slice0_0 ima op om xp bn xm ipa SUB vdd vss bp ddab_slice0
+Xddab_slice0_1 imb op om xp bn xm ipb SUB vdd vss bp ddab_slice0
+Xddab_slice1_1 xm op om xp bn SUB ima ipa vdd vss bp ddab_slice1
+Xddab_slice1_0 xm op om xp bn SUB ima ipa vdd vss bp ddab_slice1
+Xddab_slice1_2 xm op om xp bn SUB ima ipa vdd vss bp ddab_slice1
+Xddab_slice1_3 xm op om xp bn SUB ima ipa vdd vss bp ddab_slice1
+Xddab_slice1_4 xm op om xp bn SUB imb ipb vdd vss bp ddab_slice1
+Xddab_slice1_5 xm op om xp bn SUB imb ipb vdd vss bp ddab_slice1
+Xddab_slice1_6 xm op om xp bn SUB imb ipb vdd vss bp ddab_slice1
+Xddab_slice1_7 xm op om xp bn SUB imb ipb vdd vss bp ddab_slice1
+*Xddab_slice1_8 ip im xm xp op om bp bn vdd vss SUB ddab_slice2
+*Xddab_slice1_9 ip im xm xp op om bp bn vdd vss SUB ddab_slice2
+.ends
+
+.subckt invdummy bp bn vdd vss vsub
+X0 vdd xpb xpb bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=0.5
+X1 xpt xpt vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=0.5
+X2 vdd xpt xpt bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=0.5
+X3 xn xn vss bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=0.5
+X4 xpb xpb vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=0.5
+X5 vss xn xn bn sky130_fd_pr__nfet_01v8_lvt ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=0.5
+X6 xn xn vss bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=0.5
+X7 vss xn xn bn sky130_fd_pr__nfet_01v8_lvt ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=0.5
+.ends
+
+.subckt ddab ipa ima ipb imb op om bp bn vdd vss vsub
+Xddab_slice_0 ipb ipa op xp vss xm imb bp vdd om vsub ima bn ddab_slice
+Xinvdummy_0 bp bn vdd vss vsub invdummy
+Xinvdummy_3 bp bn vdd vss vsub invdummy
+Xinvdummy_5 bp bn vdd vss vsub invdummy
+Xinvdummy_7 bp bn vdd vss vsub invdummy
+X0 xp om sky130_fd_pr__cap_mim_m3_1 l=33.5 w=60
+X1 xm op sky130_fd_pr__cap_mim_m3_1 l=33.5 w=60
+.ends
+

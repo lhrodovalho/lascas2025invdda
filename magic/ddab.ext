@@ -1,0 +1,2067 @@
+timestamp 1726835717
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use invedge invedge_3 1 0 12600 0 1 6600
+use invdummy invdummy_3 1 0 12550 0 1 7700
+use invedge invedge_0 1 0 12600 0 1 10450
+use invdummy invdummy_0 1 0 12550 0 1 11550
+use invdummy invdummy_5 -1 0 -9000 0 1 11550
+use invdummy invdummy_7 -1 0 -9000 0 1 7700
+use invedge invedge_5 -1 0 -9050 0 1 10450
+use invedge invedge_7 -1 0 -9050 0 1 6600
+use ddab_slice ddab_slice_0 -1 0 5450 0 -1 15400
+parameters sky130_fd_pr__cap_mim_m3_1 w=w l=l
+port "imb" 4 -9850 15350 -9800 15400 m4
+port "ipb" 3 -10050 15350 -10000 15400 m4
+port "op" 5 13950 15350 14000 15400 m4
+port "op" 5 13750 15350 13800 15400 m4
+port "ipa" 1 -10450 15350 -10400 15400 m4
+port "ima" 2 -10250 15350 -10200 15400 m4
+port "om" 6 13550 15350 13600 15400 m4
+port "om" 6 13350 15350 13400 15400 m4
+port "vss" 10 -10550 15350 -10500 15400 m4
+port "vdd" 9 -10850 15350 -10600 15400 m4
+port "vsub" 11 -10950 15350 -10900 15400 m4
+port "bn" 8 -9350 15350 -9300 15400 m4
+port "bp" 7 -9500 15350 -9450 15400 m4
+node "imb" 8 703.774 -9850 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 1700 385000 15500 0 0 0 0
+node "ipb" 8 733.056 -10050 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50000 2100 385000 15500 0 0 0 0
+node "xm" 3 3756.89 12600 10300 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 142500 6000 26955000 38000 0 0 0 0
+node "op" 0 41067.1 13750 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 28020000 50400 1925000 46700 0 0 0 0
+node "ipa" 9 791.621 -10450 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70000 2900 385000 15500 0 0 0 0
+node "ima" 8 762.339 -10250 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60000 2500 385000 15500 0 0 0 0
+node "xp" 3 3819.49 12600 8900 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 122500 5200 26955000 38000 0 0 0 0
+node "om" 0 41047.6 13350 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 27960000 48000 1925000 46700 0 0 0 0
+node "vss" 19 7565.55 -10550 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 900000 38000 1925000 77500 0 0 0 0
+node "vdd" 2 8907.97 -10850 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680000 70000 1925000 15900 0 0 0 0
+node "m3_13200_8700#" 0 22869.6 13200 8700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2710000 95600 1525000 61600 0 0 0 0
+node "vsub" 33 45057.2 -10950 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 300 5000 300 2415000 48500 2415000 48500 385000 15500 0 0 0 0
+node "bn" 4681 2504.18 -9350 15350 m4 41347500 48400 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 400 5000 400 5000 400 5000 400 385000 15500 0 0 0 0
+node "w_n9400_12550#" 4400 0 -9400 12550 pw 41347500 48400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "dw_n9350_9600#" 2200 30 -9350 9600 dnw 0 0 2500 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "bp" 3354 1561.49 -9500 15350 m4 0 0 2500 200 2500 200 0 0 2500 200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 400 5000 400 5000 400 5000 400 385000 15500 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "ima" "vss" 16339.5
+cap "xp" "m3_13200_8700#" 9439.07
+cap "vsub" "xm" 0.339045
+cap "bn" "op" 217.439
+cap "bn" "vss" 79.0728
+cap "bn" "om" 217.439
+cap "xp" "xm" 239.352
+cap "bp" "ipa" 132.043
+cap "bn" "m3_13200_8700#" 261.188
+cap "vsub" "bp" 204.685
+cap "vsub" "ipa" 133.882
+cap "vdd" "vss" 18074.4
+cap "ipb" "vss" 15926.1
+cap "bp" "imb" 135.124
+cap "imb" "ipa" 71.471
+cap "bn" "xm" 58.5187
+cap "w_n9400_12550#" "op" 217.439
+cap "vsub" "imb" 133.705
+cap "ima" "bp" 132.963
+cap "ima" "ipa" 167.423
+cap "xp" "vsub" 1.28668
+cap "ima" "vsub" 133.793
+cap "w_n9400_12550#" "vss" 71.6342
+cap "w_n9400_12550#" "om" 217.439
+cap "w_n9400_12550#" "m3_13200_8700#" 261.188
+cap "ima" "imb" 71.6313
+cap "bn" "bp" 4803
+cap "bn" "ipa" 133.289
+cap "vsub" "bn" 214.334
+cap "w_n9400_12550#" "xm" 58.5187
+cap "vdd" "bp" 89.2253
+cap "vdd" "ipa" 2044.67
+cap "bn" "imb" 325.464
+cap "ipb" "bp" 133.606
+cap "ipb" "ipa" 71.6313
+cap "vdd" "vsub" 9625.85
+cap "xp" "bn" 58.5187
+cap "ima" "bn" 133.289
+cap "vsub" "ipb" 133.705
+cap "vdd" "imb" 2041.62
+cap "op" "om" 3809.9
+cap "ipb" "imb" 167.423
+cap "w_n9400_12550#" "ipa" 192.175
+cap "w_n9400_12550#" "bp" 43.922
+cap "ima" "vdd" 2042.5
+cap "op" "m3_13200_8700#" 36267.8
+cap "ima" "ipb" 72.5507
+cap "om" "m3_13200_8700#" 34969.3
+cap "xm" "op" 251086
+cap "vdd" "bn" 10.414
+cap "w_n9400_12550#" "xp" 58.5187
+cap "ima" "w_n9400_12550#" 192.175
+cap "bn" "ipb" 325.464
+cap "xm" "om" 415.5
+cap "xm" "m3_13200_8700#" 9489.14
+cap "vdd" "ipb" 2042.01
+cap "w_n9400_12550#" "bn" 694.208
+cap "vsub" "op" 0.712147
+cap "vss" "ipa" 16752.7
+cap "bp" "vss" 2888.15
+cap "vsub" "om" 2.79089
+cap "vsub" "vss" 700.314
+cap "xp" "op" 541.54
+cap "vsub" "m3_13200_8700#" 127.834
+cap "imb" "vss" 15512.5
+cap "dw_n9350_9600#" "bn" 30
+cap "xp" "om" 249831
+device csubckt sky130_fd_pr__cap_mim_m3_1 14200 7850 14201 7851 w=7600 l=3350 "None" "xm" 21500 0 "op" 0 27335000,22500
+device csubckt sky130_fd_pr__cap_mim_m3_1 14200 11900 14201 11901 w=7600 l=3350 "None" "xp" 21500 0 "om" 0 27335000,22500
+cap "invdummy_7/vdd" "bp" -7.20452
+cap "invdummy_7/vsub" "invdummy_7/vss" 21.3342
+cap "invdummy_7/vdd" "ipb" -5.68434e-13
+cap "invdummy_7/vsub" "invdummy_7/bp" 2.0533
+cap "invdummy_7/vsub" "bp" 0.346862
+cap "invdummy_7/bp" "invdummy_7/vss" 5.425
+cap "invdummy_7/vsub" "ipb" 1.707
+cap "invdummy_7/vdd" "bn" -2.23157
+cap "invdummy_7/vsub" "ipa" 0.705746
+cap "invdummy_7/vdd" "imb" -5.68434e-13
+cap "invdummy_7/vsub" "bn" 0.266795
+cap "invdummy_7/vdd" "ima" -2.13163e-13
+cap "invdummy_7/vsub" "invdummy_7/vdd" 38.0211
+cap "invdummy_7/vsub" "imb" 2.58135
+cap "invdummy_7/vss" "invdummy_7/vdd" 78.4893
+cap "invdummy_7/vsub" "ima" 1.07642
+cap "invdummy_7/vsub" "invdummy_7/bp" -42.0282
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" -1.41114
+cap "invdummy_7/vdd" "bn" 628.086
+cap "invdummy_7/vsub" "bn" 19.8302
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "bn" 26.6596
+cap "invdummy_7/vdd" "imb" 0.985923
+cap "invdummy_7/bp" "bn" 45.9483
+cap "invdummy_7/vss" "invdummy_7/xpb" 0.31949
+cap "invdummy_7/xpb" "bp" 0.402296
+cap "invdummy_7/xpb" "invdummy_7/vdd" 1.02811
+cap "invdummy_7/vss" "invdummy_7/vdd" 2.06208
+cap "invdummy_7/vsub" "invdummy_7/xpb" 0.217565
+cap "invdummy_7/xpb" "ddab_slice_0/ddab_slice1_2/a3/in" 4.8
+cap "invdummy_7/bp" "invdummy_7/xpb" 5.76
+cap "invdummy_7/vdd" "bp" 565.491
+cap "invdummy_7/vsub" "bp" 19.9559
+cap "invdummy_7/vdd" "ipb" 0.611526
+cap "invdummy_7/bp" "bp" 36.392
+cap "invdummy_7/xpb" "bn" 19.3435
+cap "invdummy_7/vsub" "invdummy_7/vdd" -12.9862
+cap "invdummy_7/bp" "invdummy_7/vdd" -90.4756
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "bn" 0.354397
+cap "invdummy_7/xpb" "imb" 0.15364
+cap "invdummy_7/vdd" "bn" 0.902633
+cap "invdummy_7/bp" "invdummy_7/vdd" 3.08557
+cap "invdummy_7/vdd" "invdummy_7/xpb" 15.4694
+cap "ddab_slice_0/xp" "invdummy_3/vdd" 1.69004
+cap "invdummy_3/vsub" "invdummy_3/vdd" -12.9862
+cap "invdummy_3/vsub" "invdummy_3/bp" -42.0282
+cap "invdummy_3/xpb" "invdummy_3/vdd" 0.822897
+cap "invdummy_3/bp" "invdummy_3/xpb" 5.49911
+cap "ddab_slice_0/om" "invdummy_3/xpb" 0.177309
+cap "invdummy_3/vss" "invdummy_3/xpb" 0.226036
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xpb" 4.8
+cap "invdummy_3/bp" "invdummy_3/vdd" -119.897
+cap "ddab_slice_0/om" "invdummy_3/vdd" 3.51439
+cap "invdummy_3/vss" "invdummy_3/vdd" 2.84655
+cap "ddab_slice_0/xp" "invdummy_3/xpb" 0.141851
+cap "invdummy_3/vsub" "invdummy_3/xpb" 0.217565
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" -1.66455
+cap "invdummy_3/vdd" "invdummy_3/bp" 29.4211
+cap "invdummy_3/vdd" "op" 2.0689
+cap "invdummy_3/vsub" "invdummy_3/bp" 2.0533
+cap "invdummy_3/vsub" "op" 1.74919
+cap "invdummy_3/xpb" "invdummy_3/bp" 0.260891
+cap "invdummy_3/vdd" "ddab_slice_0/xp" 6.94329
+cap "invdummy_3/vsub" "ddab_slice_0/xp" 3.46833
+cap "invdummy_3/vss" "invdummy_3/bp" 32.8325
+cap "invdummy_3/vdd" "xm" 1.54549
+cap "invdummy_3/vsub" "xm" 1.40707
+cap "invdummy_3/vss" "ddab_slice_0/ddab_slice1_1/a0/in" 3.73778
+cap "invdummy_3/vdd" "invdummy_3/vsub" 1.1929
+cap "invdummy_3/vdd" "ddab_slice_0/om" 17.2648
+cap "ddab_slice_0/om" "invdummy_3/vsub" 6.96857
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/bp" 0.253401
+cap "invdummy_3/vss" "invdummy_3/vdd" 151.95
+cap "invdummy_3/vdd" "op" 1.19532
+cap "invdummy_3/vss" "invdummy_3/vsub" 50.2431
+cap "invdummy_3/vss" "invdummy_3/xpb" 7.80885
+cap "invdummy_3/vsub" "op" 1.14684
+cap "invdummy_7/bn" "invdummy_7/vdd" -0.371928
+cap "invdummy_7/vsub" "ddab_slice_0/ima" 3.87202
+cap "invdummy_7/vss" "invdummy_7/bn" -7.53535
+cap "invdummy_7/vsub" "ipa" 1.05862
+cap "invedge_7/m3_200_2000#" "ima" 0.12106
+cap "invdummy_7/vss" "invedge_7/m3_200_2000#" 18.4097
+cap "ddab_slice_0/ipa" "invedge_7/m3_200_2000#" 0.28127
+cap "invedge_7/m2_200_2000#" "ima" 0.223757
+cap "invdummy_7/vss" "invedge_7/m2_200_2000#" 2.43812
+cap "invedge_7/m2_200_2000#" "ddab_slice_0/ipa" 0.435409
+cap "invdummy_7/vsub" "invdummy_7/vdd" 6.13803
+cap "invdummy_7/vsub" "ima" 1.61464
+cap "invdummy_7/vss" "invdummy_7/vsub" 32.7765
+cap "invdummy_7/vsub" "ddab_slice_0/ipa" 2.5605
+cap "invdummy_7/bp" "invdummy_7/vdd" -1.20075
+cap "ddab_slice_0/ima" "invedge_7/m3_200_2000#" 1.20075
+cap "invedge_7/m2_200_2000#" "ddab_slice_0/ima" 0.960035
+cap "invdummy_7/vss" "invdummy_7/bp" 8.74508
+cap "invedge_7/m3_200_2000#" "ipa" 0.0669036
+cap "invedge_7/m2_200_2000#" "ipa" 0.132316
+cap "invdummy_7/vss" "invdummy_7/vdd" 13.0815
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/om" 0.0669036
+cap "invdummy_7/bp" "invedge_7/m2_200_2000#" 23.9462
+cap "invdummy_7/xn" "ddab_slice_0/ddab_slice1_2/a3/in" 4.82367
+cap "invdummy_7/vss" "ddab_slice_0/om" 2.54972
+cap "invdummy_7/bn" "invedge_7/m3_200_2000#" 85.5832
+cap "invdummy_7/bp" "ddab_slice_0/om" 2.51724
+cap "invdummy_7/vsub" "ddab_slice_0/om" 0.460829
+cap "invdummy_7/bp" "invdummy_7/vss" 106.697
+cap "invdummy_7/vsub" "invdummy_7/m1_200_700#" 0.292118
+cap "invdummy_7/bp" "invdummy_7/m1_200_700#" 8.98974
+cap "invdummy_7/vss" "invdummy_7/vsub" 2.33695
+cap "invdummy_7/bp" "invdummy_7/vsub" 14.9421
+cap "invdummy_7/vss" "ddab_slice_0/om" 2.54972
+cap "invdummy_7/xn" "ddab_slice_0/om" 1.23633
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m3_200_2000#" 0.0880594
+cap "invdummy_7/bp" "ddab_slice_0/om" 2.51724
+cap "invdummy_7/bn" "ddab_slice_0/xp" 7.41026
+cap "invdummy_7/vss" "invdummy_7/xn" 0.0483975
+cap "invdummy_7/vsub" "ddab_slice_0/om" 0.460829
+cap "invdummy_7/bn" "invdummy_7/vdd" 97.897
+cap "invdummy_7/bp" "invdummy_7/xn" 0.596669
+cap "invdummy_7/xn" "invdummy_7/vsub" 0.0348613
+cap "invdummy_7/xn" "ddab_slice_0/om" 12.0363
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/xp" 0.0669036
+cap "invdummy_7/bn" "invdummy_7/xpb" 12.3645
+cap "invdummy_7/bn" "ddab_slice_0/ddab_slice1_2/a3/in" 63.2157
+cap "invdummy_7/bp" "invedge_7/m3_200_2000#" 114.086
+cap "invdummy_7/bn" "invedge_7/m2_200_2000#" 5.31817
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/xpb" 97.4746
+cap "invdummy_7/vss" "ddab_slice_0/xp" 2.54972
+cap "invdummy_7/bn" "ddab_slice_0/om" 12.9651
+cap "invdummy_7/vsub" "ddab_slice_0/xp" 0.460829
+cap "invdummy_7/bp" "ddab_slice_0/xp" 2.51724
+cap "invdummy_7/vss" "invdummy_7/vdd" -29.6872
+cap "invdummy_7/vdd" "invdummy_7/m1_200_700#" 24.0946
+cap "invdummy_7/vss" "invdummy_7/bn" 277.035
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m2_200_2000#" 0.169523
+cap "invdummy_7/bp" "invdummy_7/vdd" 27.7708
+cap "invdummy_7/bp" "invdummy_7/bn" -430.792
+cap "invdummy_7/xn" "ddab_slice_0/xp" 12.0363
+cap "invdummy_7/vss" "ddab_slice_0/ipa" 0.856136
+cap "invdummy_7/bn" "ddab_slice_0/om" 7.41026
+cap "invdummy_7/vss" "invdummy_7/xpb" 1.50567
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/om" 0.0669036
+cap "invdummy_7/xn" "invdummy_7/bn" 23.477
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/in" 1.38029
+cap "invdummy_7/bp" "invdummy_7/xpb" 24.4141
+cap "invdummy_7/vsub" "invdummy_7/xpb" 1.6334
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" -13.914
+cap "invdummy_7/xn" "ddab_slice_0/ddab_slice1_2/a3/in" 9.06937
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/in" 4.19673
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m3_200_2000#" 0.145637
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/xpb" 10.5268
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" 4.14281
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/bn" 43.3564
+cap "invdummy_3/vss" "invdummy_3/m1_200_700#" 0.258777
+cap "invdummy_3/bn" "invdummy_3/xn" 3.12232
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/m1_200_700#" 0.31949
+cap "invdummy_3/vdd" "invdummy_3/m1_200_700#" 22.666
+cap "invdummy_3/vss" "ddab_slice_0/xp" 47.1934
+cap "invdummy_3/bp" "invdummy_3/xpb" 19.1998
+cap "invdummy_3/vsub" "invdummy_3/vss" 2.33695
+cap "invdummy_3/vss" "invdummy_3/xpb" 0.931528
+cap "invdummy_3/bn" "ddab_slice_0/xp" -37.2505
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/xpb" 2.00398
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xpb" 96.752
+cap "invdummy_3/bp" "invdummy_3/vss" -7.44326
+cap "invdummy_3/bp" "invedge_3/m3_200_2000#" 17.4067
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" -14.7586
+cap "invdummy_3/bp" "invdummy_3/vdd" -66.2949
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/vss" 422.309
+cap "invdummy_3/xn" "ddab_slice_0/xp" 50.361
+cap "invdummy_3/vsub" "invdummy_3/xn" 0.0348613
+cap "invdummy_3/bp" "invdummy_3/bn" -498.508
+cap "invdummy_3/vss" "invdummy_3/vdd" -29.6872
+cap "invdummy_3/bn" "invdummy_3/vss" 74.13
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invedge_3/m3_200_2000#" 0.0880594
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/bn" -127.387
+cap "invdummy_3/m1_200_700#" "ddab_slice_0/xp" 0.15364
+cap "invdummy_3/vsub" "invdummy_3/m1_200_700#" 0.292118
+cap "invdummy_3/bp" "invedge_3/m2_200_2000#" 18.6281
+cap "invdummy_3/xpb" "ddab_slice_0/xp" 0.574139
+cap "invdummy_3/vsub" "invdummy_3/xpb" 1.6334
+cap "invdummy_3/bp" "invdummy_3/xn" 0.596669
+cap "invdummy_3/vss" "invdummy_3/xn" -38.8561
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invedge_3/m2_200_2000#" 0.169523
+cap "invdummy_3/bp" "invdummy_3/m1_200_700#" 8.98974
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/xn" 71.6789
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xn" 4.8
+cap "invedge_3/m2_200_2000#" "invdummy_3/vss" 1.62526
+cap "invdummy_3/vss" "invdummy_3/bn" -45.5215
+cap "invdummy_3/xn" "invdummy_3/vss" 4.68531
+cap "invedge_3/m3_200_2000#" "op" 0.12106
+cap "invdummy_3/vsub" "ddab_slice_0/om" 41.8248
+cap "invdummy_3/bp" "ddab_slice_0/om" 57.2562
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/bp" 0.844669
+cap "invedge_3/m2_200_2000#" "xm" 0.169523
+cap "invdummy_3/vsub" "op" 1.14684
+cap "ddab_slice_0/xp" "invedge_3/m3_200_2000#" 0.513876
+cap "invdummy_3/vdd" "ddab_slice_0/om" 2.87747
+cap "invdummy_3/vss" "invedge_3/m3_200_2000#" 21.3477
+cap "invdummy_3/vdd" "op" 0.19922
+cap "invdummy_3/vsub" "op" 1.74919
+cap "invdummy_3/vdd" "invdummy_3/vsub" -3.55271e-15
+cap "invdummy_3/bp" "invdummy_3/vdd" 2.97897
+cap "invedge_3/m3_200_2000#" "xm" 0.0880594
+cap "invdummy_3/vss" "ddab_slice_0/om" 469.135
+cap "invdummy_3/vdd" "op" 0.344817
+cap "invedge_3/m2_200_2000#" "ddab_slice_0/om" 1.39544
+cap "invdummy_3/vsub" "ddab_slice_0/xp" 20.1482
+cap "invdummy_3/bn" "ddab_slice_0/om" -14.9261
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/vss" 3.71773
+cap "invdummy_3/bp" "invdummy_3/xpb" 3.51053
+cap "invdummy_3/bp" "ddab_slice_0/xp" 28.5503
+cap "invdummy_3/vss" "invdummy_3/vsub" 12.0699
+cap "invedge_3/m2_200_2000#" "op" 0.132316
+cap "invdummy_3/bp" "invdummy_3/vss" 19.3243
+cap "invdummy_3/vdd" "ddab_slice_0/xp" 1.15722
+cap "invdummy_3/bp" "invdummy_3/bn" 4.25282
+cap "invdummy_3/vsub" "xm" 1.40707
+cap "ddab_slice_0/om" "invedge_3/m3_200_2000#" 1.48202
+cap "invdummy_3/vdd" "invdummy_3/vss" 24.2575
+cap "invedge_3/m2_200_2000#" "op" 0.223757
+cap "invdummy_3/xpb" "invdummy_3/vss" 2.8239
+cap "invedge_3/m3_200_2000#" "op" 0.0669036
+cap "invdummy_3/vss" "ddab_slice_0/xp" 8.967
+cap "invdummy_3/vdd" "xm" 0.257582
+cap "invedge_3/m2_200_2000#" "ddab_slice_0/xp" 0.64334
+cap "invdummy_3/bn" "ddab_slice_0/xp" 6.8801
+cap "ddab_slice_0/ima" "invdummy_7/vss" 225.761
+cap "invdummy_7/vss" "invdummy_7/bp" 2.43032
+cap "invdummy_7/vss" "ipa" 0.132316
+cap "invedge_7/a_200_1100#" "ima" 1.21098
+cap "ddab_slice_0/ipa" "invedge_7/a_200_1100#" 1.92038
+cap "invdummy_7/vss" "invedge_7/a_200_1100#" 42.6488
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/vss" 2.23434
+cap "invdummy_7/vss" "invdummy_7/bn" -37.3048
+cap "invdummy_7/vss" "ima" 0.223757
+cap "ddab_slice_0/ipa" "invdummy_7/vss" 41.5465
+cap "ddab_slice_0/ima" "invedge_7/a_200_1100#" 12.0064
+cap "invedge_7/a_200_1100#" "ipa" 0.793964
+cap "ddab_slice_0/ipa" "ddab_slice_0/ima" -9.48718
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/bn" -124.324
+cap "invedge_7/a_200_1100#" "invdummy_7/xn" 0.348613
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" -27.8081
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/xb" 1.27124
+cap "invdummy_7/bp" "invdummy_7/bn" -875.532
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/ipa" -37.9487
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/in" 1110.1
+cap "invdummy_7/xn" "ddab_slice_0/ddab_slice1_2/a3/in" 121.598
+cap "invdummy_7/bn" "ddab_slice_0/ipa" -12.8145
+cap "invdummy_7/vss" "invdummy_7/bn" 988.039
+cap "invdummy_7/bp" "ddab_slice_0/ipa" -12.9652
+cap "invdummy_7/xn" "invdummy_7/bn" 126.829
+cap "invdummy_7/bp" "invdummy_7/vss" 565.985
+cap "invdummy_7/bp" "ima" -0.0975505
+cap "invdummy_7/bp" "invdummy_7/xn" 5.96669
+cap "invedge_7/a_200_1100#" "invdummy_7/bp" 18.693
+cap "invdummy_7/vss" "ddab_slice_0/ipa" 201.814
+cap "invdummy_7/vss" "invdummy_7/xn" -30.5552
+cap "invedge_7/a_200_1100#" "invdummy_7/vss" 3.79754
+cap "invdummy_7/bn" "ddab_slice_0/ddab_slice1_2/a3/in" 46.8933
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/vss" 10.165
+cap "invdummy_7/xn" "ddab_slice_0/ddab_slice1_2/a3/in" 20.4586
+cap "invdummy_3/xn" "ddab_slice_0/op" 0.240718
+cap "invdummy_3/bp" "invdummy_3/vss" 52.4558
+cap "invdummy_3/xn" "invdummy_3/vss" 0.633329
+cap "invedge_3/a_200_1100#" "invdummy_3/vss" 4.08966
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "ddab_slice_0/xp" 1.11022e-16
+cap "invdummy_3/xn" "ddab_slice_0/ddab_slice1_1/a1/out" 1.03254
+cap "invdummy_3/xn" "ddab_slice_0/xm" 0.225057
+cap "invdummy_3/vss" "ddab_slice_0/ima" 60.3344
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xn" 94.3517
+cap "invdummy_3/bp" "invdummy_3/bn" -840
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/vss" 2.55592
+cap "invdummy_3/xn" "invdummy_3/bn" 50.3086
+cap "invdummy_3/xn" "ddab_slice_0/xp" 0.61974
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/vss" 29.1003
+cap "invdummy_3/vss" "invdummy_3/bn" 259.946
+cap "invdummy_3/bp" "invdummy_3/xn" 11.699
+cap "ddab_slice_0/ddab_slice1_1/a0/xb" "invdummy_3/vss" 1.27124
+cap "invdummy_3/xn" "ddab_slice_0/op" 0.297551
+cap "invdummy_3/vss" "ddab_slice_0/xp" 1.22912
+cap "ddab_slice_0/ima" "invdummy_3/bn" 9.10161e-16
+cap "invedge_3/a_200_1100#" "invdummy_3/xn" 1.3842
+cap "invdummy_3/xn" "invdummy_3/vss" 12.1945
+cap "ddab_slice_0/xm" "invedge_3/a_200_1100#" 0.865891
+cap "invdummy_3/bp" "invdummy_3/vss" 22.9565
+cap "ddab_slice_0/ima" "invdummy_3/vss" 3.27326
+cap "invedge_3/a_200_1100#" "ddab_slice_0/xp" 2.13436
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/vss" 8.9423
+cap "invdummy_3/bn" "invdummy_3/vss" -100.96
+cap "ddab_slice_0/op" "invedge_3/a_200_1100#" 1.78217
+cap "invedge_3/a_200_1100#" "invdummy_3/vss" 52.5401
+cap "invedge_3/a_200_1100#" "ddab_slice_0/om" 4.28835
+cap "invdummy_7/bp" "invdummy_7/vss" 6.64016
+cap "invedge_7/w_150_2100#" "ima" 1.48008
+cap "invdummy_7/vss" "ima" 0.223757
+cap "invedge_7/w_150_2100#" "ddab_slice_0/ipa" 10.1227
+cap "invdummy_7/vss" "ddab_slice_0/ipa" 145.495
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/vss" 2.23434
+cap "invedge_7/w_150_2100#" "ipa" 0.970401
+cap "invdummy_7/bn" "invdummy_7/vss" -22.2341
+cap "invdummy_7/vss" "ipa" 0.132316
+cap "invedge_7/w_150_2100#" "ddab_slice_0/ima" 3.22668
+cap "invdummy_7/vss" "invedge_7/w_150_2100#" 39.6491
+cap "invedge_7/w_150_2100#" "ddab_slice_0/ddab_slice1_2/a3/out" 0.921658
+cap "invdummy_7/bp" "invdummy_7/vss" 289.611
+cap "invdummy_7/bn" "ddab_slice_0/xm" 7.41026
+cap "invedge_7/w_150_2100#" "ddab_slice_0/xm" 0.460829
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "invdummy_7/vss" 5.09944
+cap "invdummy_7/vss" "invdummy_7/bn" 675.254
+cap "invdummy_7/vss" "ddab_slice_0/xm" 2.54972
+cap "invedge_7/w_150_2100#" "invdummy_7/vss" 4.08966
+cap "invdummy_7/bp" "invdummy_7/xn" 0.596669
+cap "invdummy_7/bp" "ddab_slice_0/ipa" -4.56775
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "invdummy_7/xn" 13.2726
+cap "ddab_slice_0/ddab_slice1_2/a3/xt" "invdummy_7/vss" 1.27124
+cap "invdummy_7/xn" "invdummy_7/bn" 34.714
+cap "invdummy_7/xn" "ddab_slice_0/xm" 12.0363
+cap "invdummy_7/bn" "ddab_slice_0/ipa" -132.899
+cap "invedge_7/w_150_2100#" "invdummy_7/xn" 0.0348613
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "ddab_slice_0/ddab_slice1_2/a3/in" 0.133807
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/bn" 78.8031
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/xm" 0.0669036
+cap "invdummy_7/xn" "invdummy_7/vss" -10.298
+cap "invdummy_7/vss" "ddab_slice_0/ipa" 664.423
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/in" 35.7922
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/out" 5.03448
+cap "invdummy_7/xn" "ddab_slice_0/ipa" 13.5048
+cap "invdummy_7/bp" "invdummy_7/bn" -833.23
+cap "invdummy_7/bp" "ddab_slice_0/xm" 2.51724
+cap "invdummy_7/xn" "ddab_slice_0/ddab_slice1_2/a3/in" 4.82367
+cap "invdummy_7/bp" "invedge_7/w_150_2100#" 13.5837
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "invdummy_7/bn" 20.3753
+cap "invdummy_7/vss" "ddab_slice_0/ddab_slice1_2/a3/in" 8.96985
+cap "invdummy_7/bn" "ddab_slice_0/ddab_slice1_2/a3/in" 50.8522
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/xn" 14.3021
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/ipa" 1.04748
+cap "ddab_slice_0/op" "invdummy_3/vss" 269.815
+cap "invedge_3/w_150_2100#" "invdummy_3/xn" 0.0348613
+cap "invdummy_3/bn" "ddab_slice_0/xm" -37.2505
+cap "ddab_slice_0/ddab_slice1_1/a0/xt" "invdummy_3/vss" 1.27124
+cap "invdummy_3/bn" "invdummy_3/xn" 3.12232
+cap "invdummy_3/bp" "invdummy_3/vss" 52.4558
+cap "ddab_slice_0/op" "invdummy_3/xn" 50.361
+cap "ddab_slice_0/op" "invdummy_3/vss" 151.094
+cap "ddab_slice_0/op" "invdummy_3/xn" 21.3179
+cap "invdummy_3/bp" "invdummy_3/xn" 0.596669
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "invdummy_3/vss" 2.23643
+cap "invdummy_3/bn" "ddab_slice_0/op" -101.93
+cap "ddab_slice_0/xm" "invdummy_3/vss" 46.7904
+cap "invdummy_3/bn" "ddab_slice_0/op" -25.4571
+cap "invdummy_3/bn" "invdummy_3/bp" -840
+cap "invdummy_3/xn" "invdummy_3/vss" -39.2504
+cap "ddab_slice_0/xm" "invdummy_3/xn" 50.361
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/vss" 98.8749
+cap "xp" "invdummy_3/vss" 1.07548
+cap "invedge_3/w_150_2100#" "invdummy_3/vss" 4.08966
+cap "invdummy_3/bn" "invdummy_3/vss" 253.131
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xn" 4.8
+cap "invdummy_3/vss" "invdummy_3/bp" -6.67933
+cap "invdummy_3/bp" "ddab_slice_0/xm" 27.6837
+cap "ddab_slice_0/op" "invdummy_3/bp" 55.3673
+cap "ddab_slice_0/om" "invedge_3/w_150_2100#" 3.7523
+cap "invdummy_3/vss" "ddab_slice_0/ddab_slice1_1/a0/in" 10.7405
+cap "invdummy_3/vss" "invedge_3/w_150_2100#" 26.9445
+cap "invdummy_3/vss" "ddab_slice_0/op" 469.135
+cap "ddab_slice_0/xm" "invedge_3/w_150_2100#" 19.8931
+cap "ddab_slice_0/op" "invedge_3/w_150_2100#" 40.292
+cap "invdummy_3/vss" "invdummy_3/xn" 9.37062
+cap "invdummy_3/vss" "ddab_slice_0/xm" 8.967
+cap "invdummy_3/vss" "invdummy_3/bn" -92.8208
+cap "xp" "invedge_3/w_150_2100#" 1.86756
+cap "invdummy_3/bn" "ddab_slice_0/op" -14.9261
+cap "invdummy_3/bn" "ddab_slice_0/xm" 6.8801
+cap "invdummy_7/bn" "invdummy_7/vss" -7.16342
+cap "invdummy_7/vss" "invedge_7/m2_200_4000#" 2.43812
+cap "invdummy_5/vsub" "ipa" 0.793964
+cap "invdummy_7/vdd" "invdummy_7/vss" 52.3262
+cap "invedge_7/m3_200_4000#" "imb" 1.20075
+cap "invdummy_7/vdd" "bp" -4.80302
+cap "invdummy_7/vss" "bn" -0.371928
+cap "invedge_7/m3_200_4000#" "ipa" 0.0669036
+cap "invedge_7/m2_200_4000#" "ima" 0.223757
+cap "invdummy_5/vsub" "invdummy_7/vss" 25.7594
+cap "invdummy_7/vdd" "ima" 1.13687e-13
+cap "invedge_7/m2_200_4000#" "ddab_slice_0/ipa" 0.435409
+cap "invdummy_7/vss" "invedge_7/m3_200_4000#" 18.4097
+cap "invdummy_7/vdd" "ddab_slice_0/ipa" -2.84217e-14
+cap "invdummy_5/vsub" "ima" 1.21098
+cap "invdummy_5/vsub" "invdummy_7/vdd" 24.5521
+cap "invdummy_7/vdd" "bn" -1.48771
+cap "invdummy_5/vsub" "ddab_slice_0/ipa" 1.92038
+cap "invedge_7/m3_200_4000#" "ima" 0.12106
+cap "invedge_7/m2_200_4000#" "imb" 0.960035
+cap "invdummy_7/vdd" "imb" -2.84217e-14
+cap "invdummy_7/vss" "bp" -1.20075
+cap "invedge_7/m3_200_4000#" "ddab_slice_0/ipa" 0.28127
+cap "invedge_7/m2_200_4000#" "ipa" 0.132316
+cap "invdummy_7/bp" "invdummy_7/vss" 7.23333
+cap "invdummy_5/vsub" "imb" 2.90401
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m3_200_4000#" 0.0880594
+cap "invdummy_7/vss" "bn" 88.484
+cap "invdummy_7/xpt" "ddab_slice_0/ddab_slice1_2/a3/in" 96.752
+cap "invdummy_7/vdd" "bn" 423.477
+cap "invdummy_5/vsub" "bp" 10.867
+cap "invedge_7/m3_200_4000#" "bn" 85.5832
+cap "invdummy_5/vsub" "invdummy_7/m1_200_3100#" 0.292118
+cap "invdummy_7/xpt" "bn" 27.9623
+cap "invdummy_7/bp" "invdummy_7/bn" -65.0009
+cap "invdummy_7/vdd" "imb" 0.591554
+cap "invdummy_7/bn" "invdummy_7/vss" -1.63198
+cap "invedge_7/m2_200_4000#" "bp" 5.31817
+cap "invdummy_7/bp" "invdummy_7/vss" -31.0608
+cap "invdummy_7/xpt" "imb" 0.876294
+cap "invdummy_7/bp" "invdummy_7/vdd" -65.3787
+cap "invdummy_7/vdd" "ddab_slice_0/ipa" 0.366915
+cap "invdummy_7/bp" "invedge_7/m3_200_4000#" 17.4067
+cap "invdummy_7/bp" "invdummy_7/xpt" 28.1746
+cap "invdummy_7/vdd" "invdummy_7/vss" -28.4499
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "bn" 1.41759
+cap "invdummy_7/xpt" "invdummy_7/vss" 1.82516
+cap "invdummy_7/bn" "bp" -0.967093
+cap "invdummy_7/bp" "bp" 46.7686
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "bn" 47.3724
+cap "invdummy_7/bp" "invdummy_7/m1_200_3100#" 8.98974
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m2_200_4000#" 0.169523
+cap "invdummy_7/vss" "bp" 81.9106
+cap "invdummy_7/vdd" "bp" 382.078
+cap "invdummy_7/vdd" "invdummy_7/m1_200_3100#" 24.0946
+cap "invdummy_7/xpt" "bp" 2.10601
+cap "invedge_7/m3_200_4000#" "bp" 96.6789
+cap "invedge_7/m2_200_4000#" "bn" 5.31817
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" -13.914
+cap "invdummy_5/vsub" "invdummy_7/vss" 0.292118
+cap "invdummy_7/bn" "bn" -13.97
+cap "invdummy_5/vsub" "invdummy_7/vdd" 1.75271
+cap "invdummy_7/bp" "bn" 79.1821
+cap "invdummy_7/bp" "invedge_7/m2_200_4000#" 18.6281
+cap "invdummy_5/vsub" "invdummy_7/xpt" 1.8161
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invdummy_7/vss" 1.04748
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" 4.14281
+cap "invdummy_5/vsub" "ddab_slice_0/ddab_slice1_2/a3/in" -0.23483
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "invedge_7/m3_200_4000#" 0.145637
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "bn" 15.5218
+cap "invdummy_7/xpt" "ddab_slice_0/ddab_slice1_2/a3/in" 10.5268
+cap "invdummy_5/vsub" "ddab_slice_0/ddab_slice1_2/a3/out" 0.937516
+cap "ddab_slice_0/ddab_slice1_2/op" "vsub" 0.937516
+cap "ddab_slice_0/ddab_slice1_2/xm" "ddab_slice_0/ddab_slice1_2/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_2/xm" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_2/a1/in" 0.110648
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_2/a1/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_2/a1/out" "vsub" 1.52346
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "ddab_slice_0/ddab_slice1_2/a0/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_2/a0/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_2/a1/out" "vsub" 0.351568
+cap "ddab_slice_0/ddab_slice1_3/a3/in" "ddab_slice_0/ddab_slice1_3/a3/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_3/a3/out" "vsub" 0.703137
+cap "ddab_slice_0/ddab_slice1_3/a3/in" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_3/op" 1.17189
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_3/xm" -0.345478
+cap "ddab_slice_0/ddab_slice1_3/xm" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_3/a1/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_3/a1/out" "vsub" 1.28908
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a1/in" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a0/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice1_3/a0/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_3/a1/out" "vsub" 0.585947
+cap "ddab_slice_0/ddab_slice0_0/a7/in" "ddab_slice_0/ddab_slice0_0/a7/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice0_0/a7/out" "vsub" 0.468758
+cap "ddab_slice_0/ddab_slice0_0/a7/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a6/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_0/a6/in" -0.345478
+cap "ddab_slice_0/ddab_slice0_0/a7/out" "vsub" 1.40627
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/out" 1.05471
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "ddab_slice_0/ddab_slice0_0/a5/in" -0.345478
+cap "ddab_slice_0/ddab_slice0_0/a4/in" "ddab_slice_0/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice0_0/a4/in" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/out" 0.820326
+cap "ddab_slice_0/xm" "vsub" 0.234379
+cap "ddab_slice_0/vsub" "ddab_slice_0/ipa" -0.345478
+cap "ddab_slice_0/ipa" "vsub" 0.110648
+cap "ddab_slice_0/xm" "vsub" 1.52346
+cap "ddab_slice_0/ddab_slice0_0/a3/out" "vsub" 0.117189
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_0/a3/out" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a3/out" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a1/in" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a2/in" 0.937516
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_0/a1/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a0/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a1/out" "vsub" 0.937516
+cap "ddab_slice_0/ddab_slice0_0/a1/vsub" "ddab_slice_0/ddab_slice0_0/a0/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_0/a3/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a0/vsub" "ddab_slice_0/ddab_slice1_0/a3/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_0/op" 1.52346
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_0/xm" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_0/xm" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_0/op" 0.351568
+cap "ddab_slice_0/ddab_slice1_0/a1/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_0/a1/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_0/a1/out" 0.703137
+cap "ddab_slice_0/ddab_slice1_0/ip" "ddab_slice_0/ddab_slice1_0/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_0/ip" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_0/a1/out" 1.17189
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_1/a3/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_1/a3/in" 0.110648
+cap "ddab_slice_0/ddab_slice1_1/op" "vsub" 1.28908
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_1/xm" -0.345478
+cap "ddab_slice_0/ddab_slice1_1/op" "vsub" 0.585947
+cap "vsub" "ddab_slice_0/ddab_slice1_1/xm" 0.110648
+cap "ddab_slice_0/ddab_slice1_1/a1/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_1/a1/in" "ddab_slice_0/ddab_slice1_1/vsub" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_1/a1/out" 0.468758
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "vsub" 1.40627
+cap "ddab_slice_0/ddab_slice1_1/ip" "vsub" 0.110648
+cap "invedge_3/w_150_2100#" "ddab_slice_0/ddab_slice1_1/ip" -0.345478
+cap "invdummy_3/bp" "invdummy_3/xpt" 24.6641
+cap "invdummy_3/bp" "invedge_3/m3_200_4000#" 17.4067
+cap "invdummy_3/vss" "invdummy_3/xpt" 1.12871
+cap "invdummy_3/bp" "invdummy_3/m1_200_3100#" 8.98974
+cap "invdummy_3/vss" "invdummy_3/m1_200_3100#" 0.258777
+cap "xp" "invdummy_3/xpt" 0.696444
+cap "invdummy_3/m1_200_3100#" "xp" 0.15364
+cap "invdummy_3/bp" "invdummy_3/bn" -69.2538
+cap "invdummy_3/vss" "invdummy_3/bn" -1.63198
+cap "invdummy_3/bp" "invdummy_3/vss" -33.6712
+cap "ddab_slice_0/op" "invdummy_3/xpt" 1.28132
+cap "invedge_3/m2_200_4000#" "ddab_slice_0/ddab_slice1_1/a0/in" 0.169523
+cap "invdummy_3/m1_200_3100#" "invdummy_3/vdd" 22.666
+cap "invedge_3/w_150_2100#" "invdummy_3/xpt" 1.8161
+cap "invedge_3/w_150_2100#" "invdummy_3/m1_200_3100#" 0.292118
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xpt" 96.752
+cap "invedge_3/m3_200_4000#" "ddab_slice_0/ddab_slice1_1/a0/in" 0.0880594
+cap "invdummy_3/bp" "invdummy_3/vdd" -89.2105
+cap "invdummy_3/vss" "invdummy_3/vdd" -28.1345
+cap "invedge_3/w_150_2100#" "invdummy_3/vss" 0.292118
+cap "xp" "invdummy_3/vdd" 0.92184
+cap "om" "invdummy_3/xpt" 0.876294
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" -14.7586
+cap "invdummy_3/m1_200_3100#" "om" 0.31949
+cap "invedge_3/w_150_2100#" "invdummy_3/vdd" 1.75271
+cap "invdummy_3/bp" "invedge_3/m2_200_4000#" 18.6281
+cap "om" "invdummy_3/vdd" 1.91694
+cap "invdummy_3/vss" "invedge_3/m3_200_4000#" 21.3477
+cap "invedge_3/m2_200_4000#" "om" 1.39544
+cap "ddab_slice_0/op" "invedge_3/w_150_2100#" 2.89603
+cap "invdummy_3/vdd" "ddab_slice_0/xm" 1.03033
+cap "xp" "invedge_3/m3_200_4000#" 0.513876
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" 0.844669
+cap "om" "invedge_3/w_150_2100#" 6.96857
+cap "invdummy_3/vss" "invdummy_3/bp" 54.5283
+cap "invdummy_3/vdd" "invedge_3/w_150_2100#" 1.10134e-13
+cap "ddab_slice_0/op" "invedge_3/m3_200_4000#" 0.187963
+cap "invedge_3/m2_200_4000#" "ddab_slice_0/xm" 0.169523
+cap "invdummy_3/vdd" "invdummy_3/vss" 101.297
+cap "om" "invedge_3/m3_200_4000#" 1.48202
+cap "ddab_slice_0/xm" "invedge_3/w_150_2100#" 1.40707
+cap "ddab_slice_0/op" "invdummy_3/bp" 1.88886
+cap "invdummy_3/vdd" "xp" 4.62886
+cap "invdummy_3/xpt" "invdummy_3/vss" 9.07097
+cap "invdummy_3/vss" "invedge_3/m2_200_4000#" 1.62526
+cap "invdummy_3/vss" "invdummy_3/bn" -12.586
+cap "invdummy_3/vdd" "ddab_slice_0/op" 2.17615
+cap "invdummy_3/vdd" "invdummy_3/bp" 23.8318
+cap "ddab_slice_0/xm" "invedge_3/m3_200_4000#" 0.0880594
+cap "invedge_3/m2_200_4000#" "xp" 0.64334
+cap "invdummy_3/vdd" "om" 11.5099
+cap "invdummy_3/vss" "invedge_3/w_150_2100#" 24.5208
+cap "invdummy_3/xpt" "invdummy_3/bp" 3.51053
+cap "invdummy_3/vss" "ddab_slice_0/ddab_slice1_1/a0/in" 4.46528
+cap "invedge_3/m2_200_4000#" "ddab_slice_0/op" 0.356074
+cap "xp" "invedge_3/w_150_2100#" 3.46833
+cap "ddab_slice_0/xm" "invdummy_3/bp" 0.866645
+cap "invdummy_3/bp" "invdummy_3/bn" 4.25282
+cap "invdummy_7/vdd" "invdummy_5/vss" 39.2446
+cap "invdummy_5/vsub" "imb" 1.93601
+cap "invdummy_5/vdd" "bp" -3.60226
+cap "invdummy_5/vsub" "invdummy_5/vss" 14.0341
+cap "invdummy_5/vsub" "ima" 0.807318
+cap "invdummy_5/vdd" "ipb" 7.10543e-14
+cap "invdummy_7/bp" "invdummy_5/vsub" 2.0533
+cap "invdummy_5/bp" "invdummy_5/vss" 1.80833
+cap "invdummy_7/vdd" "bp" -3.60226
+cap "invdummy_5/vsub" "invdummy_5/vdd" 156.434
+cap "invdummy_5/vsub" "bp" 0.693724
+cap "invdummy_5/vdd" "bn" -1.11578
+cap "invdummy_7/vdd" "ipb" 7.10543e-14
+cap "invdummy_5/vsub" "invdummy_7/vdd" 156.434
+cap "invdummy_5/vsub" "ipb" 1.28025
+cap "invdummy_7/bp" "invdummy_5/vss" 1.80833
+cap "invdummy_5/vdd" "imb" 7.10543e-14
+cap "invdummy_7/vdd" "bn" -1.11578
+cap "invdummy_5/vdd" "invdummy_5/vss" 39.2446
+cap "invdummy_5/vsub" "ipa" 0.52931
+cap "invdummy_5/vdd" "ima" 7.10543e-15
+cap "invdummy_5/vsub" "bn" 0.53359
+cap "invdummy_7/vdd" "imb" 7.10543e-14
+cap "invdummy_5/bp" "invdummy_5/vsub" 2.0533
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "bn" 5.33192
+cap "invdummy_5/vdd" "imb" 0.394369
+cap "invdummy_5/vsub" "bp" -27.992
+cap "invdummy_5/vsub" "invdummy_5/bp" -42.0282
+cap "invdummy_5/xpb" "invdummy_5/vss" 3.30465e-18
+cap "ddab_slice_0/ddab_slice1_2/a3/in" "bn" 5.33192
+cap "ddab_slice_0/ddab_slice1_2/a3/out" "bn" 0.354397
+cap "invdummy_7/xpt" "ddab_slice_0/ddab_slice1_2/a3/in" 4.8
+cap "invdummy_7/bp" "ddab_slice_0/ddab_slice1_2/a3/in" -1.41114
+cap "invdummy_5/bp" "invdummy_5/xpb" 0.295719
+cap "invdummy_7/xpt" "invdummy_5/vss" 3.30465e-18
+cap "invdummy_7/vdd" "invdummy_5/vss" 0.824834
+cap "invdummy_7/bp" "bp" 13.0076
+cap "invdummy_5/bp" "bn" 24.4265
+cap "ddab_slice_0/ddab_slice1_6/a3/out" "bn" 0.354397
+cap "invdummy_7/vdd" "bp" 268.631
+cap "invdummy_5/bp" "invdummy_7/xpt" 3.05915
+cap "invdummy_5/vdd" "invdummy_5/vss" 0.824834
+cap "invdummy_5/vsub" "invdummy_5/xpb" 2.11431
+cap "invdummy_5/vdd" "bp" 268.631
+cap "invdummy_7/vdd" "ipb" 0.24461
+cap "invdummy_5/vsub" "invdummy_7/bp" -42.0282
+cap "invdummy_5/vsub" "bn" -36.1423
+cap "invdummy_5/bp" "invdummy_5/vdd" -88.4128
+cap "invdummy_5/vsub" "invdummy_7/xpt" 2.11431
+cap "invdummy_5/vsub" "invdummy_7/vdd" 893.269
+cap "invdummy_5/vdd" "ipb" 0.24461
+cap "invdummy_5/xpb" "bn" 3.74567
+cap "invdummy_7/bp" "invdummy_5/xpb" 3.05915
+cap "invdummy_5/bp" "ddab_slice_0/ddab_slice1_6/a3/in" -1.41114
+cap "invdummy_5/xpb" "invdummy_7/xpt" 7.59473
+cap "invdummy_5/vsub" "invdummy_5/vdd" 893.269
+cap "invdummy_5/xpb" "invdummy_7/vdd" 0.960207
+cap "invdummy_7/bp" "bn" 24.4265
+cap "invdummy_7/vdd" "bn" 296.132
+cap "invdummy_7/xpt" "bn" 3.74567
+cap "invdummy_7/bp" "invdummy_7/xpt" 0.295719
+cap "invdummy_7/bp" "invdummy_7/vdd" -88.4128
+cap "invdummy_7/xpt" "invdummy_7/vdd" 1.02811
+cap "invdummy_5/xpb" "invdummy_5/vdd" 1.02811
+cap "invdummy_5/bp" "bp" 13.0076
+cap "invdummy_7/vdd" "imb" 0.394369
+cap "invdummy_5/vdd" "bn" 296.132
+cap "invdummy_5/vdd" "invdummy_7/vdd" -95.3671
+cap "invdummy_5/vdd" "invdummy_7/xpt" 0.960207
+cap "invdummy_5/xpb" "ddab_slice_0/ddab_slice1_6/a3/in" 4.8
+cap "invdummy_5/vsub" "ddab_slice_0/ddab_slice1_6/a3/out" 0.932059
+cap "invdummy_5/vsub" "ddab_slice_0/ddab_slice1_2/a3/out" 0.932059
+cap "invdummy_5/vsub" "invdummy_5/vdd" 839.487
+cap "invdummy_5/vdd" "invdummy_7/vdd" -368.007
+cap "invdummy_5/vsub" "invdummy_7/vdd" 839.487
+cap "ddab_slice_0/ddab_slice1_2/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_2/a2/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_6/vdd" "vsub" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_6/vdd" "ddab_slice_0/ddab_slice1_2/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_6/op" "vsub" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_2/op" 0.932059
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_6/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_2/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 443.598
+cap "ddab_slice_0/ddab_slice1_6/vdd" "vsub" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_6/a1/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_2/a1/in" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_2/vdd" "ddab_slice_0/ddab_slice1_6/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_6/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_2/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_2/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_6/vdd" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_2/a1/out" 0.932059
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_6/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_2/a1/in" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_6/vdd" "ddab_slice_0/ddab_slice1_2/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_2/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_2/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_2/a0/in" -7.75074e-16
+cap "vsub" "ddab_slice_0/ddab_slice1_6/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/ddab_slice1_6/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_6/vdd" 443.598
+cap "ddab_slice_0/ddab_slice1_2/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_7/a3/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_7/a3/vreg" "ddab_slice_0/ddab_slice1_3/a3/vreg" -368.007
+cap "ddab_slice_0/ddab_slice1_7/a3/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_2/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_6/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "ddab_slice_0/ddab_slice1_3/a3/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_2/a0/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_7/a3/vreg" "ddab_slice_0/ddab_slice1_3/a3/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_6/a0/in" "vsub" -4.65045e-16
+cap "ddab_slice_0/ddab_slice1_3/a3/in" "vsub" -2.17021e-15
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "ddab_slice_0/ddab_slice1_7/a3/vreg" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a3/vreg" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a3/out" 0.932059
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "ddab_slice_0/ddab_slice1_7/a3/vreg" -173.568
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "vsub" 437.5
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_7/a3/in" "vsub" 2.17021e-15
+cap "ddab_slice_0/ddab_slice1_3/a3/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_3/a3/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "ddab_slice_0/ddab_slice1_3/a3/vreg" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a3/vreg" 437.5
+cap "ddab_slice_0/ddab_slice1_7/a3/in" "vsub" -2.80276e-15
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a2/in" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_3/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_7/vdd" 443.598
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_3/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_7/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_7/vdd" "ddab_slice_0/ddab_slice1_3/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_3/op" 0.932059
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_7/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_7/op" 0.932059
+cap "ddab_slice_0/ddab_slice1_3/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_7/a1/in" "vsub" 2.17021e-15
+cap "ddab_slice_0/ddab_slice1_7/a2/in" "vsub" 7.64389e-16
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 443.598
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_3/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a1/in" -2.17021e-15
+cap "ddab_slice_0/ddab_slice1_7/vdd" "vsub" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_7/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_7/a1/in" "vsub" -3.56715e-15
+cap "ddab_slice_0/ddab_slice1_7/vdd" "ddab_slice_0/ddab_slice1_3/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_7/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_3/vdd" "ddab_slice_0/ddab_slice1_3/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_7/vdd" "ddab_slice_0/ddab_slice1_3/vsub" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_7/vdd" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a0/in" -4.65045e-16
+cap "ddab_slice_0/ddab_slice1_3/vdd" "ddab_slice_0/ddab_slice1_7/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_3/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_7/vdd" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a1/in" 2.48024e-15
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a1/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a1/out" 0.932059
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "ddab_slice_0/ddab_slice0_0/a7/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_1/a7/vreg" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" 437.5
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a7/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" -173.568
+cap "ddab_slice_0/ddab_slice1_7/a1/out" "vsub" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a7/vreg" 437.5
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a1/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_3/a0/in" 1.70516e-15
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_1/a7/vreg" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/out" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "vsub" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/in" 2.48024e-15
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "ddab_slice_0/ddab_slice0_0/a7/vreg" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "vsub" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a7/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" 443.598
+cap "ddab_slice_0/ddab_slice0_1/a7/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a7/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a6/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "ddab_slice_0/ddab_slice0_0/a7/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_0/a7/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a7/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_0/a7/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a7/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_1/a7/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/in" -7.75074e-16
+cap "ddab_slice_0/ddab_slice0_0/a6/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a6/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a6/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_1/a6/vreg" "ddab_slice_0/ddab_slice0_0/a6/vreg" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "ddab_slice_0/ddab_slice0_1/a6/vreg" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/in" 2.48024e-15
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a5/in" -4.65045e-16
+cap "ddab_slice_0/ddab_slice0_0/a5/out" "vsub" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" 443.598
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a6/vreg" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "ddab_slice_0/ddab_slice0_1/a6/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a6/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a6/vreg" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a5/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a6/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a6/vreg" "ddab_slice_0/ddab_slice0_0/a6/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_1/vdd" "vsub" 575.556
+cap "ddab_slice_0/vsub" "ddab_slice_0/vdd" -173.568
+cap "ddab_slice_0/vdd" "ddab_slice_0/ddab_slice0_1/vdd" -368.007
+cap "vsub" "ddab_slice_0/vdd" 437.5
+cap "ddab_slice_0/ddab_slice0_1/a4/in" "vsub" 2.17021e-15
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a5/out" 0.932059
+cap "ddab_slice_0/ddab_slice0_1/a5/out" "vsub" 0.932059
+cap "ddab_slice_0/vsub" "ddab_slice_0/ddab_slice0_1/vdd" -173.568
+cap "vsub" "ddab_slice_0/vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a4/in" -2.17021e-15
+cap "ddab_slice_0/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a4/in" "vsub" -2.80276e-15
+cap "vsub" "ddab_slice_0/ddab_slice0_1/vdd" 437.5
+cap "ddab_slice_0/vsub" "ddab_slice_0/vdd" -173.568
+cap "ddab_slice_0/vsub" "ddab_slice_0/ddab_slice0_1/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a3/out" 0.932059
+cap "ddab_slice_0/ddab_slice0_1/a3/out" "vsub" 0.932059
+cap "vsub" "ddab_slice_0/vdd" 443.598
+cap "ddab_slice_0/ddab_slice0_1/vdd" "vsub" 443.598
+cap "ddab_slice_0/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a3/in" 2.48024e-15
+cap "vsub" "ddab_slice_0/vdd" 575.556
+cap "ddab_slice_0/ddab_slice0_1/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_1/vdd" "ddab_slice_0/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice0_1/vdd" 575.556
+cap "ddab_slice_0/ddab_slice0_1/vdd" "ddab_slice_0/vdd" -368.007
+cap "ddab_slice_0/vsub" "ddab_slice_0/ddab_slice0_1/vdd" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a2/in" "vsub" 2.17021e-15
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a3/in" 7.64389e-16
+cap "vsub" "ddab_slice_0/ddab_slice0_1/vdd" 443.598
+cap "vsub" "ddab_slice_0/vdd" 575.556
+cap "ddab_slice_0/vsub" "ddab_slice_0/vdd" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a2/in" -2.17021e-15
+cap "ddab_slice_0/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/vdd" 443.598
+cap "ddab_slice_0/ddab_slice0_1/a2/in" "vsub" -3.56715e-15
+cap "ddab_slice_0/ddab_slice0_0/a2/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_1/a2/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a2/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "ddab_slice_0/ddab_slice0_0/a2/vsub" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a1/in" "vsub" -4.65045e-16
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "vsub" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a2/out" 0.932059
+cap "ddab_slice_0/ddab_slice0_1/a2/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "ddab_slice_0/ddab_slice0_1/a2/vreg" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice0_0/a2/in" 2.48024e-15
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "ddab_slice_0/ddab_slice0_1/a2/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice0_1/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a1/in" "vsub" 1.70516e-15
+cap "ddab_slice_0/ddab_slice0_1/a2/vreg" "vsub" 437.5
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "vsub" 437.5
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a2/vreg" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a2/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_1/a2/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_0/a2/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a1/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a1/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice0_0/a1/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_1/a1/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_1/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a1/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice0_0/a1/vsub" "ddab_slice_0/ddab_slice0_1/a1/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a1/vreg" "ddab_slice_0/ddab_slice0_1/a1/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_0/a0/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice0_0/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a1/vsub" "ddab_slice_0/ddab_slice0_0/a1/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a0/vreg" "ddab_slice_0/ddab_slice0_0/a0/vreg" -368.007
+cap "ddab_slice_0/ddab_slice0_0/a0/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a0/vsub" "ddab_slice_0/ddab_slice0_0/a0/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_1/a0/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_0/a3/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_0/a3/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_0/a0/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_4/a3/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice0_1/a0/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice0_0/a0/vsub" "ddab_slice_0/ddab_slice0_1/a0/vreg" -173.568
+cap "ddab_slice_0/ddab_slice0_0/a0/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_4/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_0/a3/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_0/vdd" "ddab_slice_0/ddab_slice1_4/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_4/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_0/a2/in" "vsub" -7.75074e-16
+cap "vsub" "ddab_slice_0/ddab_slice1_4/vdd" 443.598
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_0/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_0/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_4/op" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_4/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vdd" "ddab_slice_0/ddab_slice1_4/vdd" -368.007
+cap "vsub" "ddab_slice_0/ddab_slice1_0/op" 0.932059
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_0/a2/in" 2.48024e-15
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a2/in" -4.65045e-16
+cap "ddab_slice_0/ddab_slice1_0/vsub" "ddab_slice_0/ddab_slice1_0/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a1/out" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_0/a1/out" 0.932059
+cap "ddab_slice_0/ddab_slice1_4/vdd" "ddab_slice_0/ddab_slice1_0/vsub" -173.568
+cap "vsub" "ddab_slice_0/ddab_slice1_0/vdd" 575.556
+cap "vsub" "ddab_slice_0/ddab_slice1_0/vdd" 437.5
+cap "ddab_slice_0/ddab_slice1_0/a1/in" "vsub" -2.17021e-15
+cap "ddab_slice_0/ddab_slice1_4/a1/in" "vsub" -2.80276e-15
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_4/vdd" "ddab_slice_0/ddab_slice1_0/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_4/a1/in" "vsub" 2.17021e-15
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 437.5
+cap "ddab_slice_0/ddab_slice1_4/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_4/vdd" "ddab_slice_0/ddab_slice1_0/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_0/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_0/a0/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_0/vdd" "ddab_slice_0/ddab_slice1_4/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_4/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_0/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_0/vdd" "ddab_slice_0/ddab_slice1_0/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_0/vsub" "vsub" 262.92
+cap "vsub" "ddab_slice_0/ddab_slice1_5/a3/in" 2.17021e-15
+cap "ddab_slice_0/ddab_slice1_4/a0/in" "vsub" 7.64389e-16
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a0/vreg" 443.598
+cap "ddab_slice_0/ddab_slice1_0/a0/vreg" "ddab_slice_0/ddab_slice1_4/a0/vreg" -368.007
+cap "ddab_slice_0/ddab_slice1_0/a0/vreg" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_1/a3/in" "vsub" -2.17021e-15
+cap "ddab_slice_0/ddab_slice1_5/a3/in" "vsub" -3.56715e-15
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a0/vreg" 575.556
+cap "ddab_slice_0/ddab_slice1_0/a0/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_0/a0/vsub" "ddab_slice_0/ddab_slice1_0/a0/vreg" -173.568
+cap "ddab_slice_0/ddab_slice1_0/a0/vsub" "ddab_slice_0/ddab_slice1_4/a0/vreg" -173.568
+cap "ddab_slice_0/ddab_slice1_0/a0/vreg" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_5/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_1/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_1/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_5/a2/in" "vsub" -4.65045e-16
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_1/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_1/op" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_5/vdd" "ddab_slice_0/ddab_slice1_1/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_1/a3/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_5/op" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_1/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 437.5
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_1/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_1/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_1/vdd" "vsub" 437.5
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_1/a2/in" "vsub" 1.70516e-15
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_5/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_5/op" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_1/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_5/vdd" "ddab_slice_0/ddab_slice1_1/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_1/op" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_1/vdd" -173.568
+cap "ddab_slice_0/ddab_slice1_5/vdd" "ddab_slice_0/ddab_slice1_1/vdd" -368.007
+cap "ddab_slice_0/ddab_slice1_1/a1/in" "vsub" 2.48024e-15
+cap "ddab_slice_0/ddab_slice1_1/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_5/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_5/vdd" "ddab_slice_0/ddab_slice1_1/vsub" -173.568
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "vsub" 0.932059
+cap "ddab_slice_0/ddab_slice1_1/vsub" "vsub" 262.92
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "vsub" 0.932059
+cap "vsub" "ddab_slice_0/ddab_slice1_1/vdd" 575.556
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "vsub" 2.48024e-15
+cap "invdummy_0/vdd" "vsub" 443.598
+cap "ddab_slice_0/ddab_slice1_1/a1/out" "vsub" 0.932059
+cap "invdummy_3/vdd" "invedge_3/w_150_2100#" -173.568
+cap "invdummy_3/vdd" "vsub" 575.556
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "vsub" 0.932059
+cap "invdummy_0/vdd" "invedge_3/w_150_2100#" -173.568
+cap "invdummy_0/vdd" "vsub" 575.556
+cap "invdummy_0/vdd" "invdummy_3/vdd" -368.007
+cap "invedge_3/w_150_2100#" "vsub" 262.92
+cap "invdummy_3/vdd" "vsub" 443.598
+cap "invedge_3/w_150_2100#" "invdummy_0/vdd" -158.926
+cap "invdummy_0/vdd" "invdummy_3/xpt" 0.960207
+cap "invdummy_0/xpb" "invdummy_3/vdd" 0.960207
+cap "invdummy_0/bp" "invdummy_0/xpb" 0.0348283
+cap "vsub" "invdummy_0/vdd" 449.696
+cap "invedge_3/w_150_2100#" "invdummy_3/vdd" -158.926
+cap "invedge_3/w_150_2100#" "invdummy_0/bp" -42.0282
+cap "invdummy_0/bp" "invdummy_3/xpt" 3.05915
+cap "invdummy_3/xpt" "invdummy_3/vdd" 0.822897
+cap "invdummy_3/vss" "invdummy_0/xpb" 0.0288512
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" -1.66455
+cap "vsub" "invdummy_3/vdd" 449.696
+cap "om" "invdummy_0/vdd" 1.82102
+cap "invdummy_3/vss" "invdummy_3/xpt" 0.0288512
+cap "ddab_slice_0/ddab_slice1_1/a0/in" "invdummy_3/xpt" 4.8
+cap "om" "invdummy_3/vdd" 1.59745
+cap "vsub" "ddab_slice_0/ddab_slice1_1/a0/in" 2.48024e-15
+cap "xp" "invdummy_0/xpb" 0.0195463
+cap "invdummy_0/xpb" "ddab_slice_0/ddab_slice1_5/a0/in" 4.8
+cap "invdummy_0/bp" "invdummy_0/vdd" -96.981
+cap "invdummy_0/vdd" "invdummy_3/vdd" -226.798
+cap "invdummy_3/bp" "invdummy_0/xpb" 3.05915
+cap "xp" "invdummy_3/xpt" 0.0195463
+cap "invedge_3/w_150_2100#" "invdummy_3/bp" -42.0282
+cap "invdummy_3/bp" "invdummy_3/xpt" 0.0348283
+cap "invdummy_3/vss" "invdummy_0/vdd" 1.29389
+cap "invedge_3/w_150_2100#" "invdummy_0/xpb" 1.18225
+cap "invdummy_0/xpb" "invdummy_3/xpt" 7.59473
+cap "vsub" "invdummy_0/vdd" 575.556
+cap "invdummy_3/vss" "invdummy_3/vdd" 1.29389
+cap "vsub" "invdummy_0/xpb" 0.932059
+cap "invedge_3/w_150_2100#" "invdummy_3/xpt" 1.18225
+cap "invedge_3/w_150_2100#" "vsub" 262.92
+cap "vsub" "invdummy_3/vdd" 575.556
+cap "xp" "invdummy_0/vdd" 0.801616
+cap "vsub" "invdummy_3/xpt" 0.932059
+cap "om" "invdummy_0/xpb" 0.0236688
+cap "invdummy_0/bp" "ddab_slice_0/ddab_slice1_5/a0/in" -1.66455
+cap "xp" "invdummy_3/vdd" 0.7682
+cap "om" "invdummy_3/xpt" 0.0236688
+cap "invdummy_0/xpb" "invdummy_0/vdd" 0.822897
+cap "invdummy_3/bp" "invdummy_3/vdd" -96.981
+cap "invedge_3/w_150_2100#" "vsub" 6.0952
+cap "invdummy_3/vdd" "xp" 3.47165
+cap "invdummy_0/vdd" "om" 28.707
+cap "invdummy_3/bp" "ddab_slice_0/ddab_slice1_1/a0/in" 0.253401
+cap "invdummy_3/bp" "invdummy_3/vdd" 8.56827
+cap "invdummy_3/vss" "invdummy_0/bp" 12.9165
+cap "invdummy_3/vdd" "invedge_3/w_150_2100#" -47.87
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/bp" 0.253401
+cap "invdummy_3/vss" "invdummy_3/xpt" 1.56177
+cap "invdummy_3/vdd" "ddab_slice_0/op" 4.48688
+cap "invedge_3/w_150_2100#" "xp" 5.47673
+cap "invdummy_3/bp" "invedge_3/w_150_2100#" 2.0533
+cap "invdummy_3/vdd" "xm" 3.17385
+cap "invdummy_3/vdd" "vsub" 218.75
+cap "invdummy_3/vss" "invdummy_0/vdd" 73.9451
+cap "invedge_3/w_150_2100#" "ddab_slice_0/op" 2.93917
+cap "invdummy_0/vdd" "vsub" 287.778
+cap "invdummy_3/vdd" "om" 8.6324
+cap "invedge_3/w_150_2100#" "xm" 1.38164
+cap "invedge_3/w_150_2100#" "invdummy_0/bp" 2.0533
+cap "invdummy_3/bp" "invdummy_3/xpt" 0.260891
+cap "invdummy_3/vss" "invdummy_0/xpb" 1.56177
+cap "invedge_3/w_150_2100#" "vsub" 142.046
+cap "invdummy_0/vdd" "xp" 16.1167
+cap "invedge_3/w_150_2100#" "om" 10.2165
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_3/vss" 0.747556
+cap "invedge_3/w_150_2100#" "invdummy_0/vdd" -47.87
+cap "invdummy_3/vss" "ddab_slice_0/ddab_slice1_1/a0/in" 0.747556
+cap "invdummy_0/vdd" "ddab_slice_0/op" 0.544037
+cap "invdummy_3/vss" "invdummy_3/vdd" 74.9104
+cap "invdummy_3/bp" "invdummy_3/vss" 12.9165
+cap "invdummy_0/vdd" "invdummy_0/bp" 8.56827
+cap "invdummy_3/vdd" "vsub" 287.778
+cap "invdummy_0/vdd" "xm" 0.257582
+cap "invdummy_0/vdd" "vsub" 218.75
+cap "invdummy_3/vss" "invedge_3/w_150_2100#" 16.8738
+cap "invdummy_0/xpb" "invdummy_0/bp" 0.260891
+cap "invdummy_3/vdd" "op" 3.13559
+cap "invdummy_3/vdd" "xm" 2.68116
+cap "invdummy_5/vsub" "invdummy_5/vdd" 24.5521
+cap "invedge_5/m3_200_2000#" "ima" 0.12106
+cap "invedge_5/m3_200_2000#" "imb" 1.20075
+cap "invdummy_5/vsub" "imb" 2.90401
+cap "ima" "invdummy_5/vsub" 1.21098
+cap "invedge_5/m3_200_2000#" "ddab_slice_0/ipb" 0.0669036
+cap "invedge_5/m2_200_2000#" "imb" 0.960035
+cap "ima" "invedge_5/m2_200_2000#" 0.223757
+cap "invdummy_5/vdd" "bn" -1.48771
+cap "invdummy_5/vsub" "ddab_slice_0/ipb" 0.793964
+cap "invedge_5/m2_200_2000#" "ddab_slice_0/ipb" 0.132316
+cap "ima" "invdummy_5/vdd" 9.9476e-14
+cap "invdummy_5/vdd" "imb" -2.84217e-14
+cap "invdummy_5/vss" "invdummy_5/bp" 7.23333
+cap "invdummy_5/vss" "bp" -1.20075
+cap "invedge_5/m3_200_2000#" "ipb" 0.28127
+cap "invdummy_5/vss" "invdummy_5/bn" -7.16342
+cap "ipb" "invdummy_5/vsub" 1.92038
+cap "invdummy_5/vss" "invedge_5/m3_200_2000#" 18.4097
+cap "ipb" "invedge_5/m2_200_2000#" 0.435409
+cap "invdummy_5/vss" "invdummy_5/vsub" 25.7594
+cap "invdummy_5/vss" "invedge_5/m2_200_2000#" 2.43812
+cap "invdummy_5/vdd" "bp" -4.80302
+cap "ipb" "invdummy_5/vdd" -2.84217e-14
+cap "invdummy_5/vss" "bn" -0.371928
+cap "invdummy_5/vss" "invdummy_5/vdd" 52.3262
+cap "invedge_5/m3_200_2000#" "invdummy_5/bp" 17.4067
+cap "invdummy_5/vss" "bp" 81.9106
+cap "invdummy_5/vdd" "bn" 423.477
+cap "invdummy_5/vss" "invdummy_5/bp" -31.0608
+cap "invdummy_5/vss" "invdummy_5/xpb" 1.82516
+cap "invedge_5/m2_200_2000#" "bn" 5.31817
+cap "invdummy_5/bn" "bn" -13.97
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m2_200_2000#" 0.169523
+cap "invdummy_5/vdd" "imb" 0.591554
+cap "invdummy_5/m1_200_700#" "invdummy_5/vsub" 0.292118
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "bn" 47.3724
+cap "invdummy_5/vdd" "invdummy_5/vss" -28.4499
+cap "invdummy_5/vsub" "bp" 10.867
+cap "invdummy_5/m1_200_700#" "invdummy_5/bp" 8.98974
+cap "invdummy_5/xpb" "invdummy_5/vsub" 1.8161
+cap "invedge_5/m3_200_2000#" "bn" 85.5832
+cap "ddab_slice_0/ddab_slice1_6/a3/out" "bn" 1.41759
+cap "invdummy_5/bp" "bp" 46.7686
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m3_200_2000#" 0.0880594
+cap "invdummy_5/vss" "invdummy_5/bn" -1.63198
+cap "invdummy_5/xpb" "bp" 2.10601
+cap "invdummy_5/vss" "bn" 88.484
+cap "invdummy_5/xpb" "invdummy_5/bp" 28.1746
+cap "invdummy_5/vdd" "invdummy_5/m1_200_700#" 24.0946
+cap "invdummy_5/vdd" "invdummy_5/vsub" 1.75271
+cap "invdummy_5/vdd" "bp" 382.078
+cap "invdummy_5/vdd" "invdummy_5/bp" -65.3787
+cap "invedge_5/m2_200_2000#" "bp" 5.31817
+cap "invdummy_5/bn" "bp" -0.967093
+cap "invedge_5/m2_200_2000#" "invdummy_5/bp" 18.6281
+cap "invdummy_5/vdd" "ipb" 0.366915
+cap "invdummy_5/bn" "invdummy_5/bp" -65.0009
+cap "invdummy_5/bp" "bn" 79.1821
+cap "invdummy_5/xpb" "bn" 27.9623
+cap "invdummy_5/xpb" "ddab_slice_0/ddab_slice1_6/a3/in" 96.752
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bp" -13.914
+cap "invedge_5/m3_200_2000#" "bp" 96.6789
+cap "invdummy_5/vss" "invdummy_5/vsub" 0.292118
+cap "invdummy_5/xpb" "imb" 0.876294
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m3_200_2000#" 0.145637
+cap "invdummy_5/xpb" "ddab_slice_0/ddab_slice1_6/a3/in" 10.5268
+cap "invdummy_5/vsub" "ddab_slice_0/ddab_slice1_6/a3/in" -0.23483
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/in" 1.04748
+cap "bn" "ddab_slice_0/ddab_slice1_6/a3/in" 15.5218
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bp" 4.14281
+cap "ddab_slice_0/ddab_slice1_6/a3/out" "invdummy_5/vsub" 0.937516
+cap "ddab_slice_0/ddab_slice1_6/op" "vsub" 0.937516
+cap "ddab_slice_0/ddab_slice1_6/xm" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_6/xm" "ddab_slice_0/ddab_slice1_2/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_6/a1/in" "ddab_slice_0/ddab_slice1_2/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_6/a1/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_6/a1/out" "vsub" 1.52346
+cap "ddab_slice_0/ddab_slice1_6/a0/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_6/a1/out" "vsub" 0.351568
+cap "ddab_slice_0/ddab_slice1_6/a0/in" "ddab_slice_0/ddab_slice1_3/a3/vsub" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a3/in" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a3/out" 0.703137
+cap "ddab_slice_0/ddab_slice1_3/a3/vsub" "ddab_slice_0/ddab_slice1_7/a3/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_7/xm" 0.110648
+cap "ddab_slice_0/ddab_slice1_3/vsub" "ddab_slice_0/ddab_slice1_7/xm" -0.345478
+cap "ddab_slice_0/ddab_slice1_7/op" "vsub" 1.17189
+cap "ddab_slice_0/ddab_slice1_7/a1/out" "vsub" 1.28908
+cap "ddab_slice_0/ddab_slice1_7/a1/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_7/a1/in" "ddab_slice_0/ddab_slice1_3/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice1_7/a0/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_7/a1/out" "vsub" 0.585947
+cap "vsub" "ddab_slice_0/ddab_slice1_7/a0/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_1/a7/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a7/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_1/a7/out" "vsub" 0.468758
+cap "ddab_slice_0/ddab_slice0_1/a7/out" "vsub" 1.40627
+cap "ddab_slice_0/ddab_slice0_0/a7/vsub" "ddab_slice_0/ddab_slice0_1/a6/in" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a6/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_1/a5/in" "ddab_slice_0/ddab_slice0_0/a6/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice0_1/a5/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice0_1/a5/out" "vsub" 1.05471
+cap "ddab_slice_0/ddab_slice0_1/a4/in" "ddab_slice_0/vsub" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a5/out" 0.820326
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a4/in" 0.110648
+cap "ddab_slice_0/xm" "vsub" 0.234379
+cap "ddab_slice_0/vsub" "ddab_slice_0/ipb" -0.345478
+cap "ddab_slice_0/ipb" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/xm" 1.52346
+cap "ddab_slice_0/ddab_slice0_1/a3/out" "vsub" 0.117189
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_1/a3/out" -0.345478
+cap "ddab_slice_0/ddab_slice0_1/a3/out" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a1/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a2/vsub" "ddab_slice_0/ddab_slice0_1/a1/in" -0.345478
+cap "ddab_slice_0/ddab_slice0_1/a2/in" "vsub" 0.937516
+cap "ddab_slice_0/ddab_slice0_1/a1/out" "vsub" 0.937516
+cap "vsub" "ddab_slice_0/ddab_slice0_1/a0/in" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a1/vsub" "ddab_slice_0/ddab_slice0_1/a0/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_4/a3/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice0_0/a0/vsub" "ddab_slice_0/ddab_slice1_4/a3/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_4/op" "vsub" 1.52346
+cap "vsub" "ddab_slice_0/ddab_slice1_4/op" 0.351568
+cap "ddab_slice_0/ddab_slice1_4/xm" "ddab_slice_0/ddab_slice1_0/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_4/xm" "vsub" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a1/out" 0.703137
+cap "ddab_slice_0/ddab_slice1_4/a1/in" "ddab_slice_0/ddab_slice1_0/vsub" -0.345478
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a1/in" 0.110648
+cap "vsub" "ddab_slice_0/ddab_slice1_4/a1/out" 1.17189
+cap "ddab_slice_0/ddab_slice1_4/ip" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_4/ip" "ddab_slice_0/ddab_slice1_0/vsub" -0.345478
+cap "ddab_slice_0/ddab_slice1_5/op" "vsub" 1.28908
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_5/a3/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_5/a3/in" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_5/xm" "vsub" 0.110648
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_5/xm" -0.345478
+cap "ddab_slice_0/ddab_slice1_5/op" "vsub" 0.585947
+cap "vsub" "ddab_slice_0/ddab_slice1_5/a1/in" 0.110648
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "vsub" 0.468758
+cap "ddab_slice_0/ddab_slice1_1/vsub" "ddab_slice_0/ddab_slice1_5/a1/in" -0.345478
+cap "ddab_slice_0/ddab_slice1_5/ip" "vsub" 0.110648
+cap "invdummy_3/vsub" "ddab_slice_0/ddab_slice1_5/ip" -0.345478
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "vsub" 1.40627
+cap "invdummy_0/vss" "invdummy_0/bn" -1.63198
+cap "invdummy_0/vdd" "invdummy_3/vsub" 1.75271
+cap "invdummy_0/bp" "invdummy_0/m1_200_700#" 8.98974
+cap "invdummy_0/vdd" "invdummy_0/m1_200_700#" 22.666
+cap "invdummy_0/bp" "invdummy_0/xpb" 24.6641
+cap "invdummy_0/vdd" "om" 1.91694
+cap "invdummy_0/vss" "invdummy_3/vsub" 0.292118
+cap "xp" "invdummy_0/m1_200_700#" 0.15364
+cap "invdummy_0/vss" "invdummy_0/m1_200_700#" 0.258777
+cap "invdummy_0/xpb" "xp" 0.696444
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/xpb" 96.752
+cap "invdummy_0/vss" "invdummy_0/xpb" 1.12871
+cap "invdummy_0/bp" "invedge_0/m2_200_2000#" 18.6281
+cap "invdummy_3/vsub" "invdummy_0/m1_200_700#" 0.292118
+cap "invdummy_0/bp" "invdummy_0/vdd" -89.2105
+cap "invdummy_0/bp" "invedge_0/m3_200_2000#" 17.4067
+cap "invdummy_0/xpb" "invdummy_3/vsub" 1.8161
+cap "om" "invdummy_0/m1_200_700#" 0.31949
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invedge_0/m2_200_2000#" 0.169523
+cap "invdummy_0/bp" "ddab_slice_0/ddab_slice1_5/a0/in" -14.7586
+cap "invdummy_0/bn" "invdummy_0/bp" -69.2538
+cap "invdummy_0/vdd" "xp" 0.92184
+cap "invdummy_0/xpb" "om" 0.876294
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invedge_0/m3_200_2000#" 0.0880594
+cap "invdummy_0/vss" "invdummy_0/bp" -33.6712
+cap "invdummy_0/xpb" "ddab_slice_0/op" 1.28132
+cap "invdummy_0/vss" "invdummy_0/vdd" -28.1345
+cap "invdummy_3/vsub" "om" 6.96857
+cap "invdummy_3/vsub" "invdummy_0/vss" 24.5208
+cap "invdummy_0/vss" "invdummy_0/xpb" 9.07097
+cap "invedge_0/m2_200_2000#" "ddab_slice_0/op" 0.356074
+cap "invdummy_0/vdd" "ddab_slice_0/xm" 1.03033
+cap "invdummy_0/vss" "invdummy_0/bn" -12.586
+cap "invedge_0/m2_200_2000#" "om" 1.39544
+cap "ddab_slice_0/xm" "invedge_0/m3_200_2000#" 0.0880594
+cap "invdummy_0/vss" "invedge_0/m2_200_2000#" 1.62526
+cap "invdummy_0/bp" "ddab_slice_0/xm" 0.866645
+cap "invdummy_3/vsub" "ddab_slice_0/xm" 1.40707
+cap "invdummy_0/vdd" "xp" 4.62886
+cap "invdummy_0/bp" "ddab_slice_0/ddab_slice1_5/a0/in" 0.844669
+cap "invedge_0/m3_200_2000#" "xp" 0.513876
+cap "invedge_0/m2_200_2000#" "ddab_slice_0/xm" 0.169523
+cap "invdummy_3/vsub" "xp" 3.46833
+cap "invdummy_0/vdd" "invdummy_0/bp" 23.8318
+cap "invdummy_0/vss" "ddab_slice_0/ddab_slice1_5/a0/in" 4.46528
+cap "invdummy_3/vsub" "invdummy_0/vdd" 4.52971e-14
+cap "invdummy_0/vdd" "ddab_slice_0/op" 2.17615
+cap "invedge_0/m2_200_2000#" "xp" 0.64334
+cap "ddab_slice_0/op" "invedge_0/m3_200_2000#" 0.187963
+cap "invdummy_0/bp" "invdummy_0/xpb" 3.51053
+cap "invdummy_0/bp" "ddab_slice_0/op" 1.88886
+cap "invdummy_0/vdd" "om" 11.5099
+cap "invedge_0/m3_200_2000#" "om" 1.48202
+cap "invdummy_0/vdd" "invdummy_0/vss" 101.297
+cap "invdummy_0/vss" "invedge_0/m3_200_2000#" 21.3477
+cap "invdummy_0/bp" "invdummy_0/bn" 4.25282
+cap "invdummy_3/vsub" "ddab_slice_0/op" 2.89603
+cap "invdummy_0/bp" "invdummy_0/vss" 54.5283
+cap "invedge_5/a_200_1100#" "imb" 3.22668
+cap "invedge_5/a_200_1100#" "invdummy_5/vss" 39.3718
+cap "invdummy_5/bn" "invdummy_5/vss" -22.2341
+cap "invdummy_5/vss" "ddab_slice_0/ipb" 146.508
+cap "invedge_5/a_200_1100#" "ddab_slice_0/imb" 1.34553
+cap "invedge_5/a_200_1100#" "ipb" 2.13375
+cap "invdummy_5/bp" "invdummy_5/vss" 6.64016
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/vss" 2.23434
+cap "invedge_5/a_200_1100#" "ddab_slice_0/ipb" 10.0678
+cap "invdummy_5/vss" "imb" 1.97185
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/xt" 1.27124
+cap "ddab_slice_0/ipb" "invdummy_5/bp" -4.56775
+cap "ddab_slice_0/ipb" "invdummy_5/xn" 13.5048
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xn" 4.8
+cap "invdummy_5/bp" "invdummy_5/xn" 0.596669
+cap "invdummy_5/bp" "ddab_slice_0/ddab_slice1_6/a3/out" 5.03448
+cap "ddab_slice_0/ddab_slice1_6/a3/out" "invdummy_5/xn" 13.2726
+cap "invdummy_5/vss" "invdummy_5/bn" 675.254
+cap "imb" "invdummy_5/xn" 0.0236688
+cap "imb" "ddab_slice_0/ddab_slice1_6/a3/out" 0.133807
+cap "ddab_slice_0/xm" "invdummy_5/vss" 2.54972
+cap "invdummy_5/vss" "invedge_5/a_200_1100#" 4.08966
+cap "ddab_slice_0/ipb" "invdummy_5/bn" -132.899
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bn" 78.8031
+cap "invdummy_5/bp" "invdummy_5/bn" -833.23
+cap "invdummy_5/xn" "invdummy_5/bn" 34.714
+cap "ddab_slice_0/xm" "invdummy_5/bp" 2.51724
+cap "ddab_slice_0/ddab_slice1_6/a3/out" "invdummy_5/bn" 20.3753
+cap "ddab_slice_0/xm" "invdummy_5/xn" 12.0363
+cap "ipb" "invdummy_5/vss" 1.22305
+cap "invdummy_5/bp" "invedge_5/a_200_1100#" 13.5837
+cap "ddab_slice_0/xm" "imb" 0.0669036
+cap "invedge_5/a_200_1100#" "ddab_slice_0/ddab_slice1_6/a3/out" 0.921658
+cap "invedge_5/a_200_1100#" "invdummy_5/xn" 0.0348613
+cap "ddab_slice_0/xm" "invdummy_5/bn" 7.41026
+cap "ddab_slice_0/ipb" "invdummy_5/vss" 663.2
+cap "invdummy_5/bp" "invdummy_5/vss" 289.611
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/vss" 33.8204
+cap "ddab_slice_0/xm" "invedge_5/a_200_1100#" 0.460829
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/out" 5.09944
+cap "invdummy_5/vss" "invdummy_5/xn" -10.298
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/vss" 8.96985
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "ddab_slice_0/ipb" 1.04748
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bn" 50.8522
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xn" 14.3021
+cap "invdummy_0/xn" "ddab_slice_0/op" 50.361
+cap "invdummy_0/xn" "invdummy_0/bp" 0.596669
+cap "invdummy_0/vss" "invdummy_0/bp" 52.4558
+cap "invdummy_0/bn" "ddab_slice_0/op" -25.4571
+cap "invdummy_0/vss" "ddab_slice_0/op" 269.815
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/vss" 2.23643
+cap "invdummy_0/bn" "invdummy_0/bp" -840
+cap "invdummy_0/bn" "ddab_slice_0/op" -101.93
+cap "ddab_slice_0/ddab_slice1_5/a0/xt" "invdummy_0/vss" 1.27124
+cap "invdummy_0/xn" "invedge_0/a_200_1100#" 0.0348613
+cap "invdummy_0/xn" "ddab_slice_0/xm" 50.361
+cap "invdummy_0/vss" "invedge_0/a_200_1100#" 4.08966
+cap "invdummy_0/vss" "ddab_slice_0/xm" 46.7904
+cap "invdummy_0/vss" "invdummy_0/xn" -39.2504
+cap "invdummy_0/bn" "ddab_slice_0/xm" -37.2505
+cap "invdummy_0/bn" "invdummy_0/xn" 3.12232
+cap "invdummy_0/vss" "xp" 1.07548
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/xn" 4.8
+cap "invdummy_0/bn" "invdummy_0/vss" 253.131
+cap "invdummy_0/xn" "ddab_slice_0/op" 21.3179
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 98.8749
+cap "invdummy_0/vss" "ddab_slice_0/op" 151.094
+cap "ddab_slice_0/xm" "invdummy_0/vss" 8.967
+cap "ddab_slice_0/op" "invdummy_0/bn" -14.9261
+cap "invedge_0/a_200_1100#" "xp" 1.86756
+cap "invdummy_0/bp" "ddab_slice_0/op" 55.3673
+cap "invedge_0/a_200_1100#" "ddab_slice_0/xm" 19.8931
+cap "ddab_slice_0/xm" "invdummy_0/bn" 6.8801
+cap "ddab_slice_0/op" "invdummy_0/vss" 469.135
+cap "invedge_0/a_200_1100#" "invdummy_0/vss" 26.9445
+cap "invdummy_0/bp" "ddab_slice_0/xm" 27.6837
+cap "invedge_0/a_200_1100#" "ddab_slice_0/om" 3.7523
+cap "invdummy_0/vss" "invdummy_0/xn" 9.37062
+cap "invedge_0/a_200_1100#" "ddab_slice_0/op" 40.292
+cap "invdummy_0/bn" "invdummy_0/vss" -92.8208
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 10.7405
+cap "invdummy_0/bp" "invdummy_0/vss" -6.67933
+cap "ddab_slice_0/ipb" "invedge_5/a_200_1100#" 0.793964
+cap "ddab_slice_0/ipb" "invdummy_5/vss" 41.2434
+cap "ipb" "invedge_5/a_200_1100#" 1.707
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/vss" 2.23434
+cap "ddab_slice_0/imb" "ddab_slice_0/ipb" -9.48718
+cap "invdummy_5/vss" "invdummy_5/bp" 2.43032
+cap "invedge_5/a_200_1100#" "invdummy_5/vss" 42.2129
+cap "invedge_5/a_200_1100#" "imb" 2.58135
+cap "ddab_slice_0/imb" "invedge_5/a_200_1100#" 12.8815
+cap "invdummy_5/vss" "invdummy_5/bn" -37.3048
+cap "ddab_slice_0/imb" "invdummy_5/vss" 228.391
+cap "invdummy_5/xn" "invdummy_5/vss" -30.5552
+cap "invdummy_5/bp" "imb" -0.239166
+cap "invdummy_5/vss" "imb" 1.38029
+cap "invdummy_5/bp" "ddab_slice_0/ddab_slice1_6/a3/in" -27.6665
+cap "invdummy_5/bp" "invdummy_5/bn" -845.532
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/xb" 1.27124
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/in" 1109.21
+cap "invdummy_5/vss" "invdummy_5/bn" 988.039
+cap "invdummy_5/xn" "imb" 0.236688
+cap "invdummy_5/xn" "ddab_slice_0/ddab_slice1_6/a3/in" 121.361
+cap "invdummy_5/bp" "ddab_slice_0/ipb" -12.8145
+cap "invdummy_5/xn" "invdummy_5/bn" 126.829
+cap "invdummy_5/vss" "ddab_slice_0/ipb" 200.835
+cap "invdummy_5/bp" "invedge_5/a_200_1100#" 18.693
+cap "invdummy_5/bn" "ddab_slice_0/ddab_slice1_6/a3/in" -124.324
+cap "invdummy_5/vss" "invedge_5/a_200_1100#" 3.79754
+cap "invdummy_5/bp" "ipb" -0.150669
+cap "invdummy_5/vss" "ipb" 0.856136
+cap "invdummy_5/xn" "invedge_5/a_200_1100#" 0.348613
+cap "invdummy_5/bn" "ddab_slice_0/ipb" -12.8145
+cap "ddab_slice_0/ipb" "ddab_slice_0/ddab_slice1_6/a3/in" -37.9487
+cap "invdummy_5/bp" "invdummy_5/vss" 565.985
+cap "invdummy_5/bp" "invdummy_5/xn" 5.96669
+cap "invdummy_5/bn" "ddab_slice_0/ddab_slice1_6/a3/in" 46.8933
+cap "invdummy_5/xn" "ddab_slice_0/ddab_slice1_6/a3/in" 20.4586
+cap "invdummy_5/vss" "ddab_slice_0/ddab_slice1_6/a3/in" 10.165
+cap "invdummy_0/bn" "invdummy_0/vss" 259.946
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/vss" 2.55592
+cap "invdummy_0/bp" "invdummy_0/vss" 52.4558
+cap "ddab_slice_0/imb" "invdummy_0/vss" 60.3344
+cap "ddab_slice_0/xm" "invdummy_0/xn" 0.225057
+cap "invdummy_0/bn" "invdummy_0/bp" -840
+cap "invdummy_0/xn" "invdummy_0/vss" 0.633329
+cap "invdummy_0/bn" "ddab_slice_0/imb" 9.10161e-16
+cap "invdummy_0/bn" "invdummy_0/xn" 50.3086
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/xn" 1.03254
+cap "invdummy_0/bp" "invdummy_0/xn" 11.699
+cap "invedge_0/a_200_1100#" "invdummy_0/vss" 4.08966
+cap "ddab_slice_0/xp" "ddab_slice_0/ddab_slice1_5/a0/in" 1.11022e-16
+cap "invedge_0/a_200_1100#" "invdummy_0/xn" 1.3842
+cap "ddab_slice_0/ddab_slice1_5/a0/xb" "invdummy_0/vss" 1.27124
+cap "ddab_slice_0/op" "invdummy_0/xn" 0.240718
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 29.1003
+cap "ddab_slice_0/xp" "invdummy_0/vss" 1.22912
+cap "ddab_slice_0/op" "invdummy_0/xn" 0.297551
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/xn" 94.3517
+cap "ddab_slice_0/xp" "invdummy_0/xn" 0.61974
+cap "ddab_slice_0/xm" "invedge_0/a_200_1100#" 0.865891
+cap "invdummy_0/bn" "invdummy_0/vss" -100.96
+cap "invdummy_0/vss" "ddab_slice_0/imb" 3.27326
+cap "ddab_slice_0/om" "invedge_0/a_200_1100#" 4.28835
+cap "ddab_slice_0/op" "invedge_0/a_200_1100#" 1.78217
+cap "invdummy_0/vss" "invedge_0/a_200_1100#" 52.5401
+cap "ddab_slice_0/xp" "invedge_0/a_200_1100#" 2.13436
+cap "invdummy_0/bp" "invdummy_0/vss" 22.9565
+cap "invdummy_0/xn" "invdummy_0/vss" 12.1945
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 8.9423
+cap "invedge_5/m3_200_4000#" "invdummy_5/vss" 18.4097
+cap "invdummy_5/vsub" "invdummy_5/vdd" 6.13803
+cap "invedge_5/m3_200_4000#" "ipb" 0.28127
+cap "invedge_5/m2_200_4000#" "invdummy_5/vss" 2.43812
+cap "invedge_5/m3_200_4000#" "ddab_slice_0/ipb" 0.0669036
+cap "invedge_5/m2_200_4000#" "ipb" 0.435409
+cap "invdummy_5/vsub" "ddab_slice_0/imb" 1.61464
+cap "invdummy_5/bp" "invdummy_5/vss" 8.74508
+cap "invdummy_5/vdd" "invdummy_5/bn" -0.371928
+cap "invedge_5/m2_200_4000#" "ddab_slice_0/ipb" 0.132316
+cap "invdummy_5/vsub" "invdummy_5/vss" 32.7765
+cap "invdummy_5/vdd" "invdummy_5/vss" 13.0815
+cap "invedge_5/m3_200_4000#" "imb" 1.20075
+cap "invdummy_5/vsub" "ipb" 2.5605
+cap "invedge_5/m2_200_4000#" "imb" 0.960035
+cap "invdummy_5/vsub" "ddab_slice_0/ipb" 1.05862
+cap "invdummy_5/bn" "invdummy_5/vss" -7.53535
+cap "invedge_5/m3_200_4000#" "ddab_slice_0/imb" 0.12106
+cap "invdummy_5/vdd" "invdummy_5/bp" -1.20075
+cap "invdummy_5/vsub" "imb" 3.87202
+cap "invedge_5/m2_200_4000#" "ddab_slice_0/imb" 0.223757
+cap "ddab_slice_0/om" "imb" 0.0669036
+cap "invdummy_5/xn" "imb" 0.0236688
+cap "invdummy_5/vss" "imb" 1.38029
+cap "invdummy_5/bn" "ddab_slice_0/om" 7.41026
+cap "invdummy_5/vsub" "invdummy_5/m1_200_3100#" 0.292118
+cap "invdummy_5/bp" "invdummy_5/m1_200_3100#" 8.98974
+cap "invdummy_5/vsub" "invdummy_5/bp" 14.9421
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xn" 4.8
+cap "invdummy_5/xpt" "imb" 0.722654
+cap "invdummy_5/bn" "invdummy_5/xn" 23.477
+cap "invdummy_5/vsub" "ddab_slice_0/xp" 0.460829
+cap "invdummy_5/bp" "ddab_slice_0/xp" 2.51724
+cap "invdummy_5/bn" "ddab_slice_0/om" 12.9651
+cap "invdummy_5/bn" "invdummy_5/vss" 277.035
+cap "invdummy_5/bn" "invdummy_5/vdd" 97.897
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xpt" 96.752
+cap "invdummy_5/xn" "ddab_slice_0/om" 12.0363
+cap "invdummy_5/bn" "invdummy_5/xpt" 12.3645
+cap "invdummy_5/vss" "ddab_slice_0/om" 2.54972
+cap "invdummy_5/bp" "invedge_5/m3_200_4000#" 114.086
+cap "ddab_slice_0/xp" "imb" 0.0669036
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bp" -13.914
+cap "invdummy_5/xn" "ddab_slice_0/om" 1.23633
+cap "invdummy_5/bp" "invdummy_5/bn" -430.792
+cap "invdummy_5/vss" "ddab_slice_0/om" 2.54972
+cap "invdummy_5/bp" "invedge_5/m2_200_4000#" 23.9462
+cap "invdummy_5/xn" "invdummy_5/vss" 0.0483975
+cap "invdummy_5/vss" "invdummy_5/vdd" -29.6872
+cap "invdummy_5/vsub" "ddab_slice_0/om" 0.460829
+cap "invdummy_5/bp" "ddab_slice_0/om" 2.51724
+cap "invdummy_5/bn" "ddab_slice_0/xp" 7.41026
+cap "invdummy_5/vss" "ipb" 0.856136
+cap "invdummy_5/xpt" "invdummy_5/vss" 1.50567
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m3_200_4000#" 0.0880594
+cap "invdummy_5/vsub" "ddab_slice_0/om" 0.460829
+cap "invdummy_5/bp" "ddab_slice_0/om" 2.51724
+cap "invdummy_5/bn" "invedge_5/m3_200_4000#" 85.5832
+cap "invdummy_5/vsub" "invdummy_5/xn" 0.0348613
+cap "invdummy_5/bp" "invdummy_5/xn" 0.596669
+cap "invdummy_5/vsub" "invdummy_5/vss" 2.33695
+cap "invdummy_5/m1_200_3100#" "invdummy_5/vdd" 24.0946
+cap "invdummy_5/bp" "invdummy_5/vss" 106.697
+cap "invdummy_5/bp" "invdummy_5/vdd" 27.7708
+cap "ddab_slice_0/om" "imb" 0.0669036
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m2_200_4000#" 0.169523
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bn" 63.2157
+cap "invdummy_5/xn" "ddab_slice_0/xp" 12.0363
+cap "invdummy_5/bn" "invedge_5/m2_200_4000#" 5.31817
+cap "invdummy_5/vsub" "invdummy_5/xpt" 1.6334
+cap "invdummy_5/bp" "invdummy_5/xpt" 24.4141
+cap "invdummy_5/vss" "ddab_slice_0/xp" 2.54972
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bn" 43.3564
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invedge_5/m3_200_4000#" 0.145637
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xn" 9.06937
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xpt" 10.5268
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/vss" 4.19673
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bp" 4.14281
+cap "invdummy_0/m1_200_3100#" "ddab_slice_0/ddab_slice1_5/a1/out" 0.31949
+cap "invdummy_0/vss" "invdummy_0/xn" -38.8561
+cap "ddab_slice_0/xp" "invdummy_0/bn" -37.2505
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/xn" 71.6789
+cap "invdummy_0/vss" "invdummy_0/bp" -7.44326
+cap "invdummy_0/vss" "ddab_slice_0/ddab_slice1_5/a1/out" 422.309
+cap "invedge_0/m3_200_4000#" "invdummy_0/bp" 17.4067
+cap "invdummy_0/xn" "ddab_slice_0/ddab_slice1_5/a0/in" 4.8
+cap "invedge_0/w_150_2100#" "invdummy_0/m1_200_3100#" 0.292118
+cap "invdummy_0/vdd" "invdummy_0/m1_200_3100#" 22.666
+cap "invedge_0/w_150_2100#" "invdummy_0/xn" 0.0348613
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/bp" -14.7586
+cap "invedge_0/m2_200_4000#" "invdummy_0/bp" 18.6281
+cap "invdummy_0/vdd" "invdummy_0/bp" -66.2949
+cap "invdummy_0/xn" "invdummy_0/bn" 3.12232
+cap "invdummy_0/xpt" "invdummy_0/bp" 19.1998
+cap "invedge_0/w_150_2100#" "invdummy_0/vss" 2.33695
+cap "invdummy_0/vdd" "invdummy_0/vss" -29.6872
+cap "invdummy_0/vss" "invdummy_0/xpt" 0.931528
+cap "invdummy_0/bp" "invdummy_0/bn" -498.508
+cap "invedge_0/m3_200_4000#" "ddab_slice_0/ddab_slice1_5/a0/in" 0.0880594
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/xpt" 2.00398
+cap "invdummy_0/m1_200_3100#" "ddab_slice_0/xp" 0.15364
+cap "invdummy_0/vss" "invdummy_0/bn" 74.13
+cap "ddab_slice_0/ddab_slice1_5/a1/out" "invdummy_0/bn" -127.387
+cap "ddab_slice_0/xp" "invdummy_0/xn" 50.361
+cap "invedge_0/m2_200_4000#" "ddab_slice_0/ddab_slice1_5/a0/in" 0.169523
+cap "invdummy_0/vss" "ddab_slice_0/xp" 47.1934
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/xpt" 96.752
+cap "invedge_0/w_150_2100#" "invdummy_0/xpt" 1.6334
+cap "invdummy_0/m1_200_3100#" "invdummy_0/bp" 8.98974
+cap "invdummy_0/xn" "invdummy_0/bp" 0.596669
+cap "invdummy_0/vss" "invdummy_0/m1_200_3100#" 0.258777
+cap "ddab_slice_0/xp" "invdummy_0/xpt" 0.574139
+cap "xm" "invedge_0/m2_200_4000#" 0.169523
+cap "xm" "invdummy_0/vdd" 0.257582
+cap "invedge_0/w_150_2100#" "op" 1.14684
+cap "invdummy_0/bn" "ddab_slice_0/om" -14.9261
+cap "invdummy_0/bp" "ddab_slice_0/xp" 28.5503
+cap "invdummy_0/xpt" "invdummy_0/bp" 3.51053
+cap "ddab_slice_0/xp" "invedge_0/m3_200_4000#" 0.513876
+cap "invedge_0/w_150_2100#" "op" 1.74919
+cap "invedge_0/w_150_2100#" "invdummy_0/vdd" -1.77636e-15
+cap "invedge_0/w_150_2100#" "invdummy_0/vss" 12.0699
+cap "op" "invedge_0/m3_200_4000#" 0.0669036
+cap "invdummy_0/bp" "ddab_slice_0/ddab_slice1_5/a0/in" 0.844669
+cap "invdummy_0/bp" "invdummy_0/vdd" 2.97897
+cap "ddab_slice_0/xp" "invedge_0/m2_200_4000#" 0.64334
+cap "ddab_slice_0/xp" "invdummy_0/vdd" 1.15722
+cap "ddab_slice_0/xp" "invdummy_0/vss" 8.967
+cap "invdummy_0/bp" "invdummy_0/vss" 19.3243
+cap "op" "invedge_0/m3_200_4000#" 0.12106
+cap "op" "invedge_0/m2_200_4000#" 0.132316
+cap "invdummy_0/bn" "ddab_slice_0/xp" 6.8801
+cap "invdummy_0/bp" "invdummy_0/bn" 4.25282
+cap "op" "invdummy_0/vdd" 0.19922
+cap "invedge_0/m3_200_4000#" "invdummy_0/vss" 21.3477
+cap "invedge_0/w_150_2100#" "ddab_slice_0/om" 41.8248
+cap "invdummy_0/xpt" "invdummy_0/vss" 2.8239
+cap "op" "invedge_0/m2_200_4000#" 0.223757
+cap "invdummy_0/bp" "ddab_slice_0/om" 57.2562
+cap "op" "invdummy_0/vdd" 0.344817
+cap "invedge_0/w_150_2100#" "xm" 1.40707
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 3.71773
+cap "invedge_0/m2_200_4000#" "invdummy_0/vss" 1.62526
+cap "invdummy_0/vdd" "invdummy_0/vss" 24.2575
+cap "ddab_slice_0/om" "invedge_0/m3_200_4000#" 1.48202
+cap "invdummy_0/bn" "invdummy_0/vss" -45.5215
+cap "xm" "invedge_0/m3_200_4000#" 0.0880594
+cap "ddab_slice_0/om" "invedge_0/m2_200_4000#" 1.39544
+cap "ddab_slice_0/om" "invdummy_0/vdd" 2.87747
+cap "invedge_0/w_150_2100#" "ddab_slice_0/xp" 20.1482
+cap "invdummy_0/xn" "invdummy_0/vss" 4.68531
+cap "ddab_slice_0/om" "invdummy_0/vss" 469.135
+cap "invdummy_5/vdd" "bp" -7.20452
+cap "invdummy_5/vsub" "ipb" 1.707
+cap "invdummy_5/vdd" "invdummy_5/vsub" 38.0211
+cap "invdummy_5/vsub" "ipa" 0.705746
+cap "invdummy_5/vdd" "ipb" -5.68434e-13
+cap "invdummy_5/vsub" "bn" 0.266795
+cap "invdummy_5/vsub" "invdummy_5/bp" 2.0533
+cap "invdummy_5/vdd" "bn" -2.23157
+cap "invdummy_5/vsub" "imb" 2.58135
+cap "invdummy_5/vss" "invdummy_5/vsub" 21.3342
+cap "invdummy_5/vsub" "ima" 1.07642
+cap "invdummy_5/vdd" "imb" -5.96856e-13
+cap "invdummy_5/vdd" "invdummy_5/vss" 78.4893
+cap "invdummy_5/vdd" "ima" -2.13163e-13
+cap "invdummy_5/vsub" "bp" 0.346862
+cap "invdummy_5/vss" "invdummy_5/bp" 5.425
+cap "bn" "invdummy_5/bp" 45.9483
+cap "invdummy_5/vsub" "invdummy_5/bp" -42.0282
+cap "bp" "invdummy_5/vdd" 565.491
+cap "invdummy_5/vss" "invdummy_5/vdd" 2.06208
+cap "bp" "invdummy_5/vsub" 19.9559
+cap "invdummy_5/xpt" "invdummy_5/bp" 5.76
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "bn" 26.6596
+cap "invdummy_5/xpt" "bp" 0.402296
+cap "invdummy_5/xpt" "invdummy_5/vss" 0.31949
+cap "bn" "invdummy_5/vdd" 628.086
+cap "invdummy_5/vsub" "invdummy_5/vdd" -12.9862
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/xpt" 4.8
+cap "bp" "invdummy_5/bp" 36.392
+cap "bn" "invdummy_5/vsub" 19.8302
+cap "imb" "invdummy_5/vdd" 0.985923
+cap "invdummy_5/xpt" "invdummy_5/vdd" 1.02811
+cap "ddab_slice_0/ddab_slice1_6/a3/in" "invdummy_5/bp" -1.41114
+cap "invdummy_5/xpt" "bn" 19.3435
+cap "ipb" "invdummy_5/vdd" 0.611526
+cap "invdummy_5/xpt" "invdummy_5/vsub" 0.217565
+cap "bn" "ddab_slice_0/ddab_slice1_6/a3/out" 0.354397
+cap "invdummy_5/bp" "invdummy_5/vdd" -90.4756
+cap "invdummy_5/xpt" "imb" 0.15364
+cap "invdummy_5/vdd" "invdummy_5/xpt" 15.4694
+cap "invdummy_5/vdd" "invdummy_5/bp" 3.08557
+cap "invdummy_5/vdd" "bn" 0.902633
+cap "invdummy_0/bp" "invedge_0/w_150_2100#" -42.0282
+cap "invdummy_0/bp" "invdummy_0/vdd" -119.897
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/xpt" 4.8
+cap "invdummy_0/vdd" "invedge_0/w_150_2100#" -12.9862
+cap "invdummy_0/bp" "invdummy_0/xpt" 5.49911
+cap "invdummy_0/vdd" "ddab_slice_0/xp" 1.69004
+cap "invdummy_0/xpt" "invedge_0/w_150_2100#" 0.217565
+cap "invdummy_0/xpt" "ddab_slice_0/xp" 0.141851
+cap "invdummy_0/xpt" "invdummy_0/vdd" 0.822897
+cap "invdummy_0/vss" "invdummy_0/vdd" 2.84655
+cap "invdummy_0/vss" "invdummy_0/xpt" 0.226036
+cap "invdummy_0/vdd" "ddab_slice_0/om" 3.51439
+cap "invdummy_0/xpt" "ddab_slice_0/om" 0.177309
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/bp" -1.66455
+cap "invdummy_0/xpt" "invdummy_0/vss" 7.80885
+cap "invdummy_0/vdd" "xm" 1.54549
+cap "ddab_slice_0/ddab_slice1_5/a0/in" "invdummy_0/vss" 3.73778
+cap "invedge_0/w_150_2100#" "xm" 1.51531
+cap "ddab_slice_0/om" "invdummy_0/vdd" 17.2648
+cap "ddab_slice_0/om" "invedge_0/w_150_2100#" 7.50461
+cap "invdummy_0/vdd" "invdummy_0/vss" 151.95
+cap "invdummy_0/vdd" "invedge_0/w_150_2100#" 1.1929
+cap "invedge_0/w_150_2100#" "invdummy_0/vss" 29.6583
+cap "invdummy_0/xpt" "invdummy_0/bp" 0.260891
+cap "invdummy_0/vdd" "op" 1.19532
+cap "invdummy_0/bp" "ddab_slice_0/ddab_slice1_5/a0/in" 0.253401
+cap "invedge_0/w_150_2100#" "op" 1.23506
+cap "invdummy_0/vdd" "op" 2.0689
+cap "invdummy_0/vdd" "invdummy_0/bp" 29.4211
+cap "invdummy_0/bp" "invdummy_0/vss" 32.8325
+cap "invedge_0/w_150_2100#" "invdummy_0/bp" 2.0533
+cap "invedge_0/w_150_2100#" "op" 1.88374
+cap "invdummy_0/vdd" "ddab_slice_0/xp" 6.94329
+cap "invedge_0/w_150_2100#" "ddab_slice_0/xp" 3.73513
+merge "invedge_5/m2_200_3900#" "invedge_5/m3_200_3900#" -13435.5 0 0 0 0 0 0 0 0 -140000 -6000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140000 -6000 -185000 -7600 -40000 -5800 -241000 -16444 -385000 -15500 0 0 0 0
+merge "invedge_5/m3_200_3900#" "invedge_5/m2_200_3100#"
+merge "invedge_5/m2_200_3100#" "invedge_5/m2_200_3200#"
+merge "invedge_5/m2_200_3200#" "invedge_5/m2_200_3300#"
+merge "invedge_5/m2_200_3300#" "invedge_5/m2_200_3400#"
+merge "invedge_5/m2_200_3400#" "invedge_5/m2_200_3500#"
+merge "invedge_5/m2_200_3500#" "invedge_5/m3_200_3100#"
+merge "invedge_5/m3_200_3100#" "invedge_5/m3_200_3300#"
+merge "invedge_5/m3_200_3300#" "invedge_5/m3_200_3500#"
+merge "invedge_5/m3_200_3500#" "invedge_5/m2_200_2500#"
+merge "invedge_5/m2_200_2500#" "invedge_5/m2_200_2600#"
+merge "invedge_5/m2_200_2600#" "invedge_5/m2_200_2700#"
+merge "invedge_5/m2_200_2700#" "invedge_5/m2_200_2800#"
+merge "invedge_5/m2_200_2800#" "invedge_5/m2_200_2900#"
+merge "invedge_5/m2_200_2900#" "invedge_5/m3_200_2500#"
+merge "invedge_5/m3_200_2500#" "invedge_5/m3_200_2700#"
+merge "invedge_5/m3_200_2700#" "invedge_5/m3_200_2900#"
+merge "invedge_5/m3_200_2900#" "ddab_slice_0/ddab_slice1_6/a3/vss"
+merge "ddab_slice_0/ddab_slice1_6/a3/vss" "invedge_5/m3_200_2100#"
+merge "invedge_5/m3_200_2100#" "invedge_5/m2_200_2100#"
+merge "invedge_5/m2_200_2100#" "invdummy_5/vss"
+merge "invdummy_5/vss" "invedge_7/m2_200_3400#"
+merge "invedge_7/m2_200_3400#" "invedge_7/m2_200_3500#"
+merge "invedge_7/m2_200_3500#" "invedge_7/m2_200_3900#"
+merge "invedge_7/m2_200_3900#" "invedge_7/m3_200_3500#"
+merge "invedge_7/m3_200_3500#" "invedge_7/m3_200_3900#"
+merge "invedge_7/m3_200_3900#" "invedge_7/m2_200_2700#"
+merge "invedge_7/m2_200_2700#" "invedge_7/m2_200_2800#"
+merge "invedge_7/m2_200_2800#" "invedge_7/m2_200_2900#"
+merge "invedge_7/m2_200_2900#" "invedge_7/m2_200_3100#"
+merge "invedge_7/m2_200_3100#" "invedge_7/m2_200_3200#"
+merge "invedge_7/m2_200_3200#" "invedge_7/m2_200_3300#"
+merge "invedge_7/m2_200_3300#" "invedge_7/m3_200_2700#"
+merge "invedge_7/m3_200_2700#" "invedge_7/m3_200_2900#"
+merge "invedge_7/m3_200_2900#" "invedge_7/m3_200_3100#"
+merge "invedge_7/m3_200_3100#" "invedge_7/m3_200_3300#"
+merge "invedge_7/m3_200_3300#" "ddab_slice_0/ddab_slice1_2/a3/vss"
+merge "ddab_slice_0/ddab_slice1_2/a3/vss" "invedge_7/m3_200_2100#"
+merge "invedge_7/m3_200_2100#" "invedge_7/m3_200_2500#"
+merge "invedge_7/m3_200_2500#" "vss"
+merge "vss" "invedge_7/m2_200_2100#"
+merge "invedge_7/m2_200_2100#" "invedge_7/m2_200_2500#"
+merge "invedge_7/m2_200_2500#" "invedge_7/m2_200_2600#"
+merge "invedge_7/m2_200_2600#" "invdummy_7/vss"
+merge "ddab_slice_0/ddab_slice1_6/bp" "ddab_slice_0/ddab_slice1_5/bp" -23550.1 0 0 -677500 -27800 -1127500 -22500 0 0 -27500 -3200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30000 -3400 0 0 0 0 0 0 -140000 -5650 0 0 0 0
+merge "ddab_slice_0/ddab_slice1_5/bp" "ddab_slice_0/ddab_slice1_5/a0/bp"
+merge "ddab_slice_0/ddab_slice1_5/a0/bp" "ddab_slice_0/ddab_slice1_5/a1/bp"
+merge "ddab_slice_0/ddab_slice1_5/a1/bp" "ddab_slice_0/ddab_slice1_5/a2/bp"
+merge "ddab_slice_0/ddab_slice1_5/a2/bp" "invdummy_0/bp"
+merge "invdummy_0/bp" "invedge_0/dw_150_1995#"
+merge "invedge_0/dw_150_1995#" "ddab_slice_0/ddab_slice1_6/a3/bp"
+merge "ddab_slice_0/ddab_slice1_6/a3/bp" "invedge_5/dw_150_1995#"
+merge "invedge_5/dw_150_1995#" "invdummy_5/bp"
+merge "invdummy_5/bp" "ddab_slice_0/ddab_slice1_1/a1/bp"
+merge "ddab_slice_0/ddab_slice1_1/a1/bp" "ddab_slice_0/ddab_slice1_1/a2/bp"
+merge "ddab_slice_0/ddab_slice1_1/a2/bp" "ddab_slice_0/bp"
+merge "ddab_slice_0/bp" "ddab_slice_0/ddab_slice1_1/a0/bp"
+merge "ddab_slice_0/ddab_slice1_1/a0/bp" "ddab_slice_0/ddab_slice1_1/bp"
+merge "ddab_slice_0/ddab_slice1_1/bp" "invdummy_3/bp"
+merge "invdummy_3/bp" "invedge_3/dw_150_1995#"
+merge "invedge_3/dw_150_1995#" "ddab_slice_0/ddab_slice1_2/bp"
+merge "ddab_slice_0/ddab_slice1_2/bp" "dw_n9350_9600#"
+merge "dw_n9350_9600#" "bp"
+merge "bp" "ddab_slice_0/ddab_slice1_2/a3/bp"
+merge "ddab_slice_0/ddab_slice1_2/a3/bp" "invedge_7/dw_150_1995#"
+merge "invedge_7/dw_150_1995#" "invdummy_7/bp"
+merge "ddab_slice_0/ddab_slice1_5/a0/vsub" "ddab_slice_0/ddab_slice1_5/vsub" -41870.3 0 0 0 0 0 0 0 0 0 0 -37500 -3750 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42500 -4050 0 0 -2135000 -42800 -2135000 -42800 -35000 -1450 0 0 0 0
+merge "ddab_slice_0/ddab_slice1_5/vsub" "ddab_slice_0/ddab_slice1_6/vsub"
+merge "ddab_slice_0/ddab_slice1_6/vsub" "invdummy_0/vsub"
+merge "invdummy_0/vsub" "invedge_0/a_200_1100#"
+merge "invedge_0/a_200_1100#" "ddab_slice_0/ddab_slice1_6/a3/vsub"
+merge "ddab_slice_0/ddab_slice1_6/a3/vsub" "invdummy_5/vsub"
+merge "invdummy_5/vsub" "invedge_5/a_200_1100#"
+merge "invedge_5/a_200_1100#" "vsub"
+merge "vsub" "ddab_slice_0/ddab_slice1_1/a0/vsub"
+merge "ddab_slice_0/ddab_slice1_1/a0/vsub" "ddab_slice_0/ddab_slice1_1/vsub"
+merge "ddab_slice_0/ddab_slice1_1/vsub" "invdummy_3/vsub"
+merge "invdummy_3/vsub" "invedge_3/a_200_1100#"
+merge "invedge_3/a_200_1100#" "ddab_slice_0/ddab_slice1_2/vsub"
+merge "ddab_slice_0/ddab_slice1_2/vsub" "ddab_slice_0/SUB"
+merge "ddab_slice_0/SUB" "ddab_slice_0/ddab_slice1_2/a3/vsub"
+merge "ddab_slice_0/ddab_slice1_2/a3/vsub" "invdummy_7/vsub"
+merge "invdummy_7/vsub" "invedge_7/a_200_1100#"
+merge "invedge_7/a_200_1100#" "SUB"
+merge "invedge_5/m2_200_4400#" "invedge_5/m2_200_4500#" -13015.5 0 0 0 0 0 0 0 0 0 0 -100000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -100000 -4400 -130000 -5600 -70000 -8600 -410800 -27134 -175000 -1650 0 0 0 0
+merge "invedge_5/m2_200_4500#" "invedge_5/m2_200_4600#"
+merge "invedge_5/m2_200_4600#" "invedge_5/m2_200_4700#"
+merge "invedge_5/m2_200_4700#" "invedge_5/m2_200_4800#"
+merge "invedge_5/m2_200_4800#" "invedge_5/m3_200_4400#"
+merge "invedge_5/m3_200_4400#" "invedge_5/m3_200_4500#"
+merge "invedge_5/m3_200_4500#" "invedge_5/m3_200_4600#"
+merge "invedge_5/m3_200_4600#" "invedge_5/m3_200_4700#"
+merge "invedge_5/m3_200_4700#" "invedge_5/m3_200_4800#"
+merge "invedge_5/m3_200_4800#" "invedge_5/m2_200_4200#"
+merge "invedge_5/m2_200_4200#" "invedge_5/m2_200_4300#"
+merge "invedge_5/m2_200_4300#" "invedge_5/m3_200_4200#"
+merge "invedge_5/m3_200_4200#" "invedge_5/m3_200_4300#"
+merge "invedge_5/m3_200_4300#" "invedge_5/m2_200_1600#"
+merge "invedge_5/m2_200_1600#" "invedge_5/m2_200_1700#"
+merge "invedge_5/m2_200_1700#" "invedge_5/m2_200_1800#"
+merge "invedge_5/m2_200_1800#" "invedge_5/m3_200_1600#"
+merge "invedge_5/m3_200_1600#" "invedge_5/m3_200_1700#"
+merge "invedge_5/m3_200_1700#" "invedge_5/m3_200_1800#"
+merge "invedge_5/m3_200_1800#" "ddab_slice_0/ddab_slice1_6/a3/vreg"
+merge "ddab_slice_0/ddab_slice1_6/a3/vreg" "invedge_7/m2_200_4800#"
+merge "invedge_7/m2_200_4800#" "invedge_7/m3_200_4800#"
+merge "invedge_7/m3_200_4800#" "invedge_5/m2_200_1200#"
+merge "invedge_5/m2_200_1200#" "invedge_5/m2_200_1300#"
+merge "invedge_5/m2_200_1300#" "invedge_5/m2_200_1400#"
+merge "invedge_5/m2_200_1400#" "invedge_5/m2_200_1500#"
+merge "invedge_5/m2_200_1500#" "invdummy_5/vdd"
+merge "invdummy_5/vdd" "invedge_5/m3_200_1200#"
+merge "invedge_5/m3_200_1200#" "invedge_5/m3_200_1300#"
+merge "invedge_5/m3_200_1300#" "invedge_5/m3_200_1400#"
+merge "invedge_5/m3_200_1400#" "invedge_5/m3_200_1500#"
+merge "invedge_5/m3_200_1500#" "invedge_7/m2_200_4200#"
+merge "invedge_7/m2_200_4200#" "invedge_7/m2_200_4300#"
+merge "invedge_7/m2_200_4300#" "invedge_7/m2_200_4400#"
+merge "invedge_7/m2_200_4400#" "invedge_7/m2_200_4500#"
+merge "invedge_7/m2_200_4500#" "invedge_7/m2_200_4600#"
+merge "invedge_7/m2_200_4600#" "invedge_7/m2_200_4700#"
+merge "invedge_7/m2_200_4700#" "invedge_7/m3_200_4200#"
+merge "invedge_7/m3_200_4200#" "invedge_7/m3_200_4300#"
+merge "invedge_7/m3_200_4300#" "invedge_7/m3_200_4400#"
+merge "invedge_7/m3_200_4400#" "invedge_7/m3_200_4500#"
+merge "invedge_7/m3_200_4500#" "invedge_7/m3_200_4600#"
+merge "invedge_7/m3_200_4600#" "invedge_7/m3_200_4700#"
+merge "invedge_7/m3_200_4700#" "ddab_slice_0/ddab_slice1_2/a3/vreg"
+merge "ddab_slice_0/ddab_slice1_2/a3/vreg" "invedge_7/m3_200_1200#"
+merge "invedge_7/m3_200_1200#" "invedge_7/m3_200_1300#"
+merge "invedge_7/m3_200_1300#" "invedge_7/m3_200_1400#"
+merge "invedge_7/m3_200_1400#" "invedge_7/m3_200_1500#"
+merge "invedge_7/m3_200_1500#" "invedge_7/m3_200_1600#"
+merge "invedge_7/m3_200_1600#" "invedge_7/m3_200_1700#"
+merge "invedge_7/m3_200_1700#" "invedge_7/m3_200_1800#"
+merge "invedge_7/m3_200_1800#" "vdd"
+merge "vdd" "invedge_7/m2_200_1200#"
+merge "invedge_7/m2_200_1200#" "invedge_7/m2_200_1300#"
+merge "invedge_7/m2_200_1300#" "invedge_7/m2_200_1400#"
+merge "invedge_7/m2_200_1400#" "invedge_7/m2_200_1500#"
+merge "invedge_7/m2_200_1500#" "invedge_7/m2_200_1600#"
+merge "invedge_7/m2_200_1600#" "invedge_7/m2_200_1700#"
+merge "invedge_7/m2_200_1700#" "invedge_7/m2_200_1800#"
+merge "invedge_7/m2_200_1800#" "invdummy_7/vdd"
+merge "ddab_slice_0/ddab_slice1_5/a1/vreg" "invedge_0/m3_200_4400#" -4802.88 0 0 0 0 0 0 0 0 0 0 -50000 -2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -2200 -65000 -2800 -35000 -4300 -35000 -4300 0 0 0 0 0 0
+merge "invedge_0/m3_200_4400#" "invedge_0/m3_200_4500#"
+merge "invedge_0/m3_200_4500#" "invedge_0/m3_200_4600#"
+merge "invedge_0/m3_200_4600#" "invedge_0/m3_200_4700#"
+merge "invedge_0/m3_200_4700#" "invedge_0/m3_200_4800#"
+merge "invedge_0/m3_200_4800#" "invedge_0/m2_200_4400#"
+merge "invedge_0/m2_200_4400#" "invedge_0/m2_200_4500#"
+merge "invedge_0/m2_200_4500#" "invedge_0/m2_200_4600#"
+merge "invedge_0/m2_200_4600#" "invedge_0/m2_200_4700#"
+merge "invedge_0/m2_200_4700#" "invedge_0/m2_200_4800#"
+merge "invedge_0/m2_200_4800#" "invedge_0/m3_200_4200#"
+merge "invedge_0/m3_200_4200#" "invedge_0/m3_200_4300#"
+merge "invedge_0/m3_200_4300#" "invedge_0/m2_200_4200#"
+merge "invedge_0/m2_200_4200#" "invedge_0/m2_200_4300#"
+merge "invedge_0/m2_200_4300#" "ddab_slice_0/ddab_slice1_5/a2/vreg"
+merge "ddab_slice_0/ddab_slice1_5/a2/vreg" "ddab_slice_0/ddab_slice1_5/a0/vreg"
+merge "ddab_slice_0/ddab_slice1_5/a0/vreg" "invedge_0/m3_200_1600#"
+merge "invedge_0/m3_200_1600#" "invedge_0/m3_200_1700#"
+merge "invedge_0/m3_200_1700#" "invedge_0/m3_200_1800#"
+merge "invedge_0/m3_200_1800#" "invedge_0/m2_200_1600#"
+merge "invedge_0/m2_200_1600#" "invedge_0/m2_200_1700#"
+merge "invedge_0/m2_200_1700#" "invedge_0/m2_200_1800#"
+merge "invedge_0/m2_200_1800#" "ddab_slice_0/ddab_slice1_5/vdd"
+merge "ddab_slice_0/ddab_slice1_5/vdd" "invdummy_0/vdd"
+merge "invdummy_0/vdd" "invedge_0/m3_200_1200#"
+merge "invedge_0/m3_200_1200#" "invedge_0/m3_200_1300#"
+merge "invedge_0/m3_200_1300#" "invedge_0/m3_200_1400#"
+merge "invedge_0/m3_200_1400#" "invedge_0/m3_200_1500#"
+merge "invedge_0/m3_200_1500#" "invedge_0/m2_200_1200#"
+merge "invedge_0/m2_200_1200#" "invedge_0/m2_200_1300#"
+merge "invedge_0/m2_200_1300#" "invedge_0/m2_200_1400#"
+merge "invedge_0/m2_200_1400#" "invedge_0/m2_200_1500#"
+merge "ddab_slice_0/ddab_slice1_5/a1/vss" "ddab_slice_0/ddab_slice1_5/a2/vss" -12031.9 0 0 0 0 0 0 0 0 -140000 -6000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140000 -6000 -185000 -7600 -40000 -5800 -40000 -6600 0 0 0 0 0 0
+merge "ddab_slice_0/ddab_slice1_5/a2/vss" "ddab_slice_0/ddab_slice1_5/vss"
+merge "ddab_slice_0/ddab_slice1_5/vss" "invedge_0/m3_200_3900#"
+merge "invedge_0/m3_200_3900#" "invedge_0/m2_200_3900#"
+merge "invedge_0/m2_200_3900#" "invedge_0/m3_200_3100#"
+merge "invedge_0/m3_200_3100#" "invedge_0/m3_200_3300#"
+merge "invedge_0/m3_200_3300#" "invedge_0/m3_200_3500#"
+merge "invedge_0/m3_200_3500#" "invedge_0/m2_200_3100#"
+merge "invedge_0/m2_200_3100#" "invedge_0/m2_200_3200#"
+merge "invedge_0/m2_200_3200#" "invedge_0/m2_200_3300#"
+merge "invedge_0/m2_200_3300#" "invedge_0/m2_200_3400#"
+merge "invedge_0/m2_200_3400#" "invedge_0/m2_200_3500#"
+merge "invedge_0/m2_200_3500#" "invedge_0/m3_200_2500#"
+merge "invedge_0/m3_200_2500#" "invedge_0/m3_200_2700#"
+merge "invedge_0/m3_200_2700#" "invedge_0/m3_200_2900#"
+merge "invedge_0/m3_200_2900#" "invedge_0/m2_200_2500#"
+merge "invedge_0/m2_200_2500#" "invedge_0/m2_200_2600#"
+merge "invedge_0/m2_200_2600#" "invedge_0/m2_200_2700#"
+merge "invedge_0/m2_200_2700#" "invedge_0/m2_200_2800#"
+merge "invedge_0/m2_200_2800#" "invedge_0/m2_200_2900#"
+merge "invedge_0/m2_200_2900#" "ddab_slice_0/ddab_slice1_5/a0/vss"
+merge "ddab_slice_0/ddab_slice1_5/a0/vss" "invdummy_0/vss"
+merge "invdummy_0/vss" "invedge_0/m3_200_2100#"
+merge "invedge_0/m3_200_2100#" "invedge_0/m2_200_2100#"
+merge "invedge_0/m2_200_2100#" "ddab_slice_0/ddab_slice1_1/a1/vss"
+merge "ddab_slice_0/ddab_slice1_1/a1/vss" "invedge_3/m3_200_3500#"
+merge "invedge_3/m3_200_3500#" "invedge_3/m3_200_3900#"
+merge "invedge_3/m3_200_3900#" "invedge_3/m2_200_3400#"
+merge "invedge_3/m2_200_3400#" "invedge_3/m2_200_3500#"
+merge "invedge_3/m2_200_3500#" "invedge_3/m2_200_3900#"
+merge "invedge_3/m2_200_3900#" "ddab_slice_0/ddab_slice1_1/a2/vss"
+merge "ddab_slice_0/ddab_slice1_1/a2/vss" "ddab_slice_0/ddab_slice1_1/a0/vss"
+merge "ddab_slice_0/ddab_slice1_1/a0/vss" "invedge_3/m3_200_2700#"
+merge "invedge_3/m3_200_2700#" "invedge_3/m3_200_2900#"
+merge "invedge_3/m3_200_2900#" "invedge_3/m3_200_3100#"
+merge "invedge_3/m3_200_3100#" "invedge_3/m3_200_3300#"
+merge "invedge_3/m3_200_3300#" "invedge_3/m2_200_2700#"
+merge "invedge_3/m2_200_2700#" "invedge_3/m2_200_2800#"
+merge "invedge_3/m2_200_2800#" "invedge_3/m2_200_2900#"
+merge "invedge_3/m2_200_2900#" "invedge_3/m2_200_3100#"
+merge "invedge_3/m2_200_3100#" "invedge_3/m2_200_3200#"
+merge "invedge_3/m2_200_3200#" "invedge_3/m2_200_3300#"
+merge "invedge_3/m2_200_3300#" "ddab_slice_0/ddab_slice1_1/vss"
+merge "ddab_slice_0/ddab_slice1_1/vss" "m3_13200_8700#"
+merge "m3_13200_8700#" "invdummy_3/vss"
+merge "invdummy_3/vss" "invedge_3/m3_200_2100#"
+merge "invedge_3/m3_200_2100#" "invedge_3/m3_200_2500#"
+merge "invedge_3/m3_200_2500#" "invedge_3/m2_200_2100#"
+merge "invedge_3/m2_200_2100#" "invedge_3/m2_200_2500#"
+merge "invedge_3/m2_200_2500#" "invedge_3/m2_200_2600#"
+merge "ddab_slice_0/ddab_slice1_5/a0/bn" "invdummy_0/bn" -6176.73 -83435000 -127200 0 0 0 0 0 0 0 0 -45000 -5650 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -47500 -5850 0 0 0 0 0 0 -175000 -7100 0 0 0 0
+merge "invdummy_0/bn" "invedge_0/w_150_2100#"
+merge "invedge_0/w_150_2100#" "ddab_slice_0/ddab_slice1_5/bn"
+merge "ddab_slice_0/ddab_slice1_5/bn" "ddab_slice_0/ddab_slice1_4/a0/bn"
+merge "ddab_slice_0/ddab_slice1_4/a0/bn" "ddab_slice_0/ddab_slice1_4/bn"
+merge "ddab_slice_0/ddab_slice1_4/bn" "ddab_slice_0/ddab_slice0_1/a0/bn"
+merge "ddab_slice_0/ddab_slice0_1/a0/bn" "ddab_slice_0/ddab_slice0_1/a1/bn"
+merge "ddab_slice_0/ddab_slice0_1/a1/bn" "ddab_slice_0/ddab_slice0_1/a2/bn"
+merge "ddab_slice_0/ddab_slice0_1/a2/bn" "ddab_slice_0/ddab_slice1_1/a0/bn"
+merge "ddab_slice_0/ddab_slice1_1/a0/bn" "ddab_slice_0/ddab_slice0_1/a6/bn"
+merge "ddab_slice_0/ddab_slice0_1/a6/bn" "ddab_slice_0/ddab_slice0_1/a7/bn"
+merge "ddab_slice_0/ddab_slice0_1/a7/bn" "ddab_slice_0/ddab_slice1_7/bn"
+merge "ddab_slice_0/ddab_slice1_7/bn" "ddab_slice_0/ddab_slice1_7/a3/bn"
+merge "ddab_slice_0/ddab_slice1_7/a3/bn" "ddab_slice_0/ddab_slice1_6/bn"
+merge "ddab_slice_0/ddab_slice1_6/bn" "ddab_slice_0/ddab_slice1_6/a3/bn"
+merge "ddab_slice_0/ddab_slice1_6/a3/bn" "invedge_5/w_150_2100#"
+merge "invedge_5/w_150_2100#" "invdummy_5/bn"
+merge "invdummy_5/bn" "w_n9400_12550#"
+merge "w_n9400_12550#" "invdummy_3/bn"
+merge "invdummy_3/bn" "invedge_3/w_150_2100#"
+merge "invedge_3/w_150_2100#" "ddab_slice_0/ddab_slice1_1/bn"
+merge "ddab_slice_0/ddab_slice1_1/bn" "ddab_slice_0/ddab_slice1_0/a0/bn"
+merge "ddab_slice_0/ddab_slice1_0/a0/bn" "ddab_slice_0/ddab_slice1_0/bn"
+merge "ddab_slice_0/ddab_slice1_0/bn" "ddab_slice_0/ddab_slice0_0/a0/bn"
+merge "ddab_slice_0/ddab_slice0_0/a0/bn" "ddab_slice_0/ddab_slice0_0/a1/bn"
+merge "ddab_slice_0/ddab_slice0_0/a1/bn" "ddab_slice_0/ddab_slice0_0/a2/bn"
+merge "ddab_slice_0/ddab_slice0_0/a2/bn" "ddab_slice_0/bn"
+merge "ddab_slice_0/bn" "ddab_slice_0/ddab_slice0_0/a6/bn"
+merge "ddab_slice_0/ddab_slice0_0/a6/bn" "ddab_slice_0/ddab_slice0_0/a7/bn"
+merge "ddab_slice_0/ddab_slice0_0/a7/bn" "ddab_slice_0/ddab_slice1_3/bn"
+merge "ddab_slice_0/ddab_slice1_3/bn" "ddab_slice_0/ddab_slice1_3/a3/bn"
+merge "ddab_slice_0/ddab_slice1_3/a3/bn" "ddab_slice_0/ddab_slice1_2/bn"
+merge "ddab_slice_0/ddab_slice1_2/bn" "ddab_slice_0/ddab_slice1_2/a3/bn"
+merge "ddab_slice_0/ddab_slice1_2/a3/bn" "invedge_7/w_150_2100#"
+merge "invedge_7/w_150_2100#" "invdummy_7/bn"
+merge "invdummy_7/bn" "bn"
+merge "ddab_slice_0/ddab_slice1_1/a1/vreg" "invedge_3/m3_200_4800#" -4789.28 0 0 0 0 0 0 0 0 0 0 -50000 -2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -2200 -65000 -2800 -35000 -4300 -35000 -4300 0 0 0 0 0 0
+merge "invedge_3/m3_200_4800#" "invedge_3/m2_200_4800#"
+merge "invedge_3/m2_200_4800#" "ddab_slice_0/ddab_slice1_1/a2/vreg"
+merge "ddab_slice_0/ddab_slice1_1/a2/vreg" "ddab_slice_0/ddab_slice1_1/a0/vreg"
+merge "ddab_slice_0/ddab_slice1_1/a0/vreg" "invedge_3/m3_200_4200#"
+merge "invedge_3/m3_200_4200#" "invedge_3/m3_200_4300#"
+merge "invedge_3/m3_200_4300#" "invedge_3/m3_200_4400#"
+merge "invedge_3/m3_200_4400#" "invedge_3/m3_200_4500#"
+merge "invedge_3/m3_200_4500#" "invedge_3/m3_200_4600#"
+merge "invedge_3/m3_200_4600#" "invedge_3/m3_200_4700#"
+merge "invedge_3/m3_200_4700#" "invedge_3/m2_200_4200#"
+merge "invedge_3/m2_200_4200#" "invedge_3/m2_200_4300#"
+merge "invedge_3/m2_200_4300#" "invedge_3/m2_200_4400#"
+merge "invedge_3/m2_200_4400#" "invedge_3/m2_200_4500#"
+merge "invedge_3/m2_200_4500#" "invedge_3/m2_200_4600#"
+merge "invedge_3/m2_200_4600#" "invedge_3/m2_200_4700#"
+merge "invedge_3/m2_200_4700#" "ddab_slice_0/ddab_slice1_1/vdd"
+merge "ddab_slice_0/ddab_slice1_1/vdd" "invdummy_3/vdd"
+merge "invdummy_3/vdd" "invedge_3/m3_200_1200#"
+merge "invedge_3/m3_200_1200#" "invedge_3/m3_200_1300#"
+merge "invedge_3/m3_200_1300#" "invedge_3/m3_200_1400#"
+merge "invedge_3/m3_200_1400#" "invedge_3/m3_200_1500#"
+merge "invedge_3/m3_200_1500#" "invedge_3/m3_200_1600#"
+merge "invedge_3/m3_200_1600#" "invedge_3/m3_200_1700#"
+merge "invedge_3/m3_200_1700#" "invedge_3/m3_200_1800#"
+merge "invedge_3/m3_200_1800#" "invedge_3/m2_200_1200#"
+merge "invedge_3/m2_200_1200#" "invedge_3/m2_200_1300#"
+merge "invedge_3/m2_200_1300#" "invedge_3/m2_200_1400#"
+merge "invedge_3/m2_200_1400#" "invedge_3/m2_200_1500#"
+merge "invedge_3/m2_200_1500#" "invedge_3/m2_200_1600#"
+merge "invedge_3/m2_200_1600#" "invedge_3/m2_200_1700#"
+merge "invedge_3/m2_200_1700#" "invedge_3/m2_200_1800#"
+merge "ddab_slice_0/ddab_slice1_5/op" "ddab_slice_0/op" -4411.28 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102550 -4802 -630000 -25300 0 0 0 0
+merge "ddab_slice_0/op" "ddab_slice_0/ddab_slice1_1/op"
+merge "ddab_slice_0/ddab_slice1_1/op" "op"
+merge "ddab_slice_0/ddab_slice1_5/a1/out" "ddab_slice_0/ddab_slice1_5/om" -5536.81 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42550 -2402 -490000 -21800 0 0 0 0
+merge "ddab_slice_0/ddab_slice1_5/om" "ddab_slice_0/ddab_slice1_1/a1/out"
+merge "ddab_slice_0/ddab_slice1_1/a1/out" "ddab_slice_0/om"
+merge "ddab_slice_0/om" "ddab_slice_0/ddab_slice1_1/om"
+merge "ddab_slice_0/ddab_slice1_1/om" "om"
+merge "ddab_slice_0/ddab_slice1_6/a3/in" "ddab_slice_0/imb" -1877.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -150 -35000 -3550 0 0 0 0
+merge "ddab_slice_0/imb" "ima"
+merge "ddab_slice_0/ddab_slice1_2/a3/in" "ddab_slice_0/ima" -1057.31 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -100 -245000 -9850 0 0 0 0
+merge "ddab_slice_0/ima" "imb"
+merge "ddab_slice_0/ddab_slice1_5/xm" "ddab_slice_0/xm" -820.464 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -42550 -2253 -315000 -12650 0 0 0 0
+merge "ddab_slice_0/xm" "ddab_slice_0/ddab_slice1_1/xm"
+merge "ddab_slice_0/ddab_slice1_1/xm" "xm"
+merge "ddab_slice_0/ipb" "ipa" -1310.62 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -750 -140000 -5650 0 0 0 0
+merge "ddab_slice_0/ddab_slice1_5/xp" "ddab_slice_0/xp" -893.94 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -27550 -1953 -175000 -7000 0 0 0 0
+merge "ddab_slice_0/xp" "ddab_slice_0/ddab_slice1_1/xp"
+merge "ddab_slice_0/ddab_slice1_1/xp" "xp"
+merge "ddab_slice_0/ipa" "ipb" -424.625 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -100 -210000 -8450 0 0 0 0

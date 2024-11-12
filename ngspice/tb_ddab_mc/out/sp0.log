@@ -1,0 +1,344 @@
+
+Note: No compatibility mode selected!
+
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+
+>>> run 1
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.107715e+01
+gbw                 =  9.897677e+07
+pm_                 =  -1.210632e+02
+pm = 5.893680e+01
+cmrr1khz            =  4.194861e+01
+psrr1khz            =  4.143305e+01
+idd = -6.63337e-03
+vos = -5.40249e-04
+vocm = 1.595086e+00
+
+>>> run 2
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.107483e+01
+gbw                 =  9.899640e+07
+pm_                 =  -1.210575e+02
+pm = 5.894250e+01
+cmrr1khz            =  4.181116e+01
+psrr1khz            =  4.130449e+01
+idd = -6.63473e-03
+vos = 3.873103e-03
+vocm = 1.575621e+00
+
+>>> run 3
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.108909e+01
+gbw                 =  9.897162e+07
+pm_                 =  -1.211199e+02
+pm = 5.888010e+01
+cmrr1khz            =  4.216233e+01
+psrr1khz            =  4.151980e+01
+idd = -6.62837e-03
+vos = -9.12134e-03
+vocm = 1.592786e+00
+
+>>> run 4
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.116691e+01
+gbw                 =  9.904823e+07
+pm_                 =  -1.212298e+02
+pm = 5.877020e+01
+cmrr1khz            =  4.237280e+01
+psrr1khz            =  4.172819e+01
+idd = -6.63397e-03
+vos = 5.229484e-03
+vocm = 1.600736e+00
+
+>>> run 5
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.098657e+01
+gbw                 =  9.889082e+07
+pm_                 =  -1.210721e+02
+pm = 5.892790e+01
+cmrr1khz            =  4.223591e+01
+psrr1khz            =  4.160436e+01
+idd = -6.62604e-03
+vos = -1.32746e-03
+vocm = 1.616409e+00
+
+>>> run 6
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.102425e+01
+gbw                 =  9.882368e+07
+pm_                 =  -1.210717e+02
+pm = 5.892830e+01
+cmrr1khz            =  4.203595e+01
+psrr1khz            =  4.151860e+01
+idd = -6.61062e-03
+vos = -5.63322e-03
+vocm = 1.612158e+00
+
+>>> run 7
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.105580e+01
+gbw                 =  9.900183e+07
+pm_                 =  -1.210409e+02
+pm = 5.895910e+01
+cmrr1khz            =  4.156708e+01
+psrr1khz            =  4.122156e+01
+idd = -6.64429e-03
+vos = 1.477466e-03
+vocm = 1.586501e+00
+
+>>> run 8
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.122081e+01
+gbw                 =  9.893945e+07
+pm_                 =  -1.212079e+02
+pm = 5.879210e+01
+cmrr1khz            =  4.204321e+01
+psrr1khz            =  4.158956e+01
+idd = -6.62141e-03
+vos = -2.17760e-03
+vocm = 1.593852e+00
+
+>>> run 9
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.101580e+01
+gbw                 =  9.876195e+07
+pm_                 =  -1.209522e+02
+pm = 5.904780e+01
+cmrr1khz            =  4.145362e+01
+psrr1khz            =  4.122514e+01
+idd = -6.62006e-03
+vos = -2.55623e-03
+vocm = 1.602049e+00
+
+>>> run 10
+
+Reset re-loads circuit * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Circuit: * num: 0 corner: tt_mm vdd: 3.3 temp: 25
+
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 71
+av1khz              =  4.095259e+01
+gbw                 =  9.888056e+07
+pm_                 =  -1.209738e+02
+pm = 5.902620e+01
+cmrr1khz            =  4.188647e+01
+psrr1khz            =  4.125102e+01
+idd = -6.61790e-03
+vos = 2.972009e-04
+vocm = 1.577192e+00
+binary raw file "./out/sp0.raw"
+Doing analysis at TEMP = 25.000000 and TNOM = 27.000000
+
+
+Total analysis time (seconds) = 0.046
+
+Total elapsed time (seconds) = 8.945 
+
+Total DRAM available = 7841.883 MB.
+DRAM currently available =  203.270 MB.
+Maximum ngspice program size =  248.266 MB.
+Current ngspice program size =  229.637 MB.
+
+Shared ngspice pages =    9.988 MB.
+Text (code) pages =    5.461 MB.
+Stack = 0 bytes.
+Library pages =  227.820 MB.
+

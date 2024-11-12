@@ -1,0 +1,44 @@
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * num: 13 corner: sf vdd: 1.65 temp: 125
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 201
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 166
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+binary raw file "./out/sp13.raw"
+Doing analysis at TEMP = 125.000000 and TNOM = 27.000000
+
+
+Total analysis time (seconds) = 9.551
+
+Total elapsed time (seconds) = 14.176 
+
+Total DRAM available = 7841.867 MB.
+DRAM currently available =  145.793 MB.
+Maximum ngspice program size =  635.457 MB.
+Current ngspice program size =  617.617 MB.
+
+Shared ngspice pages =   10.676 MB.
+Text (code) pages =    5.461 MB.
+Stack = 0 bytes.
+Library pages =  615.012 MB.
+

@@ -1,0 +1,2715 @@
+timestamp 1726842748
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use ddaa_slice ddaa_slice_0 1 0 550 0 1 11550
+use ddaa_slice ddaa_slice_4 1 0 550 0 -1 11550
+use invdummy invdummy_1 -1 0 650 0 1 7700
+use invdummy invdummy_5 -1 0 650 0 1 11550
+use invedge invedge_1 -1 0 600 0 1 6600
+use invedge invedge_5 -1 0 600 0 1 10450
+use ddaa_slice ddaa_slice_1 1 0 7750 0 -1 11550
+use ddaa_slice ddaa_slice_2 1 0 7750 0 1 11550
+use ddaa_slice ddaa_slice_3 1 0 14950 0 1 11550
+use ddaa_slice ddaa_slice_5 1 0 14950 0 -1 11550
+use invdummy invdummy_0 1 0 22200 0 1 11550
+use invdummy invdummy_6 1 0 22200 0 1 7700
+use invedge invedge_0 1 0 22250 0 1 10450
+use invedge invedge_6 1 0 22250 0 1 6600
+port "ipb" 3 -400 15350 -350 15400 m4
+port "imb" 4 -200 15350 -150 15400 m4
+port "om" 6 23000 15350 23250 15400 m4
+port "ima" 2 -600 15350 -550 15400 m4
+port "ipa" 1 -800 15350 -750 15400 m4
+port "op" 5 23400 15350 23650 15400 m4
+port "vss" 10 -900 15350 -850 15400 m4
+port "vdd" 9 -1200 15350 -950 15400 m4
+port "vsub" 11 -1300 15350 -1250 15400 m4
+port "bn" 8 300 15350 350 15400 m4
+port "bp" 7 150 15350 200 15400 m4
+node "ipb" 8 731.991 -400 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 50000 2100 385000 15500 0 0 0 0
+node "m3_n550_9400#" 0 29.9634 -550 9400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2500 200 0 0 0 0 0 0
+node "imb" 8 720.123 -200 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 40000 1700 384750 15510 0 0 0 0
+node "om" 2 2849.31 23000 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 500000 5000 1925000 15900 0 0 0 0
+node "ima" 8 777.624 -600 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 60000 2500 385000 15500 0 0 0 0
+node "ipa" 9 807.887 -800 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 70000 2900 385000 15500 0 0 0 0
+node "op" 2 3272.96 23400 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 700000 6600 1925000 15900 0 0 0 0
+node "m3_22850_8700#" 7 6886.65 22850 8700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 360000 15200 1155000 46500 0 0 0 0
+node "vss" 15 7483.19 -900 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 720000 30400 1925000 77500 0 0 0 0
+node "m3_22850_7800#" 2 8907.97 22850 7800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680000 70000 1925000 15900 0 0 0 0
+node "vdd" 2 8907.97 -1200 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1680000 70000 1925000 15900 0 0 0 0
+node "vsub" 90 29233.9 -1300 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 800 160 5000 300 5000 300 2545000 51100 770000 31000 0 0 0 0
+node "bn" 84 2506.55 300 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 400 5000 400 5000 400 5000 400 385051 15502 0 0 0 0
+node "bp" 84 1545.08 150 15350 m4 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5000 400 5000 400 5000 400 5000 400 385051 15502 0 0 0 0
+node "w_250_8700#" 4400 0 250 8700 pw 41347500 48400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_250_12550#" 4400 0 250 12550 pw 41347500 48400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "vdd" "imb" 2041.62
+cap "vss" "m3_n550_9400#" 109.925
+cap "vss" "bp" 2875.48
+cap "m3_22850_8700#" "w_250_8700#" 186.941
+cap "bn" "bp" 4759.08
+cap "m3_n550_9400#" "ima" 25.1712
+cap "vsub" "imb" 123.73
+cap "ima" "bp" 132.963
+cap "vdd" "vsub" 9232.88
+cap "om" "w_250_8700#" 303.072
+cap "op" "vsub" 369.436
+cap "w_250_12550#" "op" 303.072
+cap "w_250_8700#" "bp" 43.922
+cap "vss" "imb" 15277.9
+cap "ipa" "m3_n550_9400#" 0.753408
+cap "ipa" "bp" 132.043
+cap "m3_22850_7800#" "m3_22850_8700#" 13881.2
+cap "bn" "imb" 133.293
+cap "ima" "imb" 71.6313
+cap "vdd" "vss" 18037.7
+cap "vdd" "bn" 10.414
+cap "vdd" "ima" 2042.5
+cap "om" "m3_22850_7800#" 6698.55
+cap "vss" "vsub" 649.315
+cap "w_250_12550#" "vss" 57.3074
+cap "w_250_8700#" "imb" 192.175
+cap "bn" "vsub" 196.245
+cap "vsub" "ima" 123.818
+cap "ipa" "imb" 71.471
+cap "w_250_12550#" "bn" 694.208
+cap "w_250_12550#" "ima" 192.175
+cap "op" "w_250_8700#" 303.072
+cap "ipa" "vdd" 2044.67
+cap "bn" "vss" 5.95085
+cap "vss" "ima" 16107.8
+cap "ipb" "m3_n550_9400#" 26.4286
+cap "ipa" "vsub" 123.907
+cap "ipb" "bp" 133.67
+cap "bn" "ima" 133.289
+cap "w_250_12550#" "ipa" 192.175
+cap "op" "m3_22850_7800#" 6725.21
+cap "vss" "w_250_8700#" 57.3074
+cap "om" "m3_22850_8700#" 17868.6
+cap "ipa" "vss" 16521
+cap "bn" "w_250_8700#" 694.604
+cap "m3_22850_7800#" "vsub" 9232.88
+cap "ipa" "bn" 133.289
+cap "ipb" "imb" 167.423
+cap "ipa" "ima" 167.423
+cap "vdd" "ipb" 2041.55
+cap "ipb" "vsub" 123.73
+cap "op" "m3_22850_8700#" 19935.1
+cap "vss" "ipb" 15693.7
+cap "vsub" "m3_22850_8700#" 409.253
+cap "bn" "ipb" 133.354
+cap "bp" "imb" 135.128
+cap "ipb" "ima" 71.35
+cap "w_250_12550#" "m3_22850_8700#" 186.941
+cap "op" "om" 1585.01
+cap "vdd" "m3_n550_9400#" 0.765282
+cap "vdd" "bp" 89.2253
+cap "om" "vsub" 367.669
+cap "w_250_12550#" "om" 303.072
+cap "ipb" "w_250_8700#" 192.175
+cap "vsub" "m3_n550_9400#" 0.0763971
+cap "vsub" "bp" 186.596
+cap "ipa" "ipb" 71.35
+cap "w_250_12550#" "bp" 43.922
+cap "ddaa_slice_4/a0/vsub" "ipb" 1.707
+cap "ddaa_slice_4/a0/vsub" "imb" 2.58135
+cap "ipb" "ddaa_slice_4/a0/vreg" -5.96856e-13
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/bp" 2.0533
+cap "ddaa_slice_4/a0/vreg" "imb" -5.68434e-13
+cap "invdummy_1/vss" "invdummy_1/bp" 5.425
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/vss" 21.3342
+cap "ipa" "ddaa_slice_4/a0/vsub" 0.705746
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/a0/vreg" 38.0211
+cap "invdummy_1/vss" "ddaa_slice_4/a0/vreg" 78.4893
+cap "ddaa_slice_4/a0/vsub" "ima" 1.07642
+cap "ddaa_slice_4/a0/vsub" "bp" 0.346862
+cap "ddaa_slice_4/a0/vsub" "bn" 0.266795
+cap "ima" "ddaa_slice_4/a0/vreg" -2.06057e-13
+cap "bp" "ddaa_slice_4/a0/vreg" -7.20452
+cap "bn" "ddaa_slice_4/a0/vreg" -2.23157
+cap "bn" "invdummy_1/xpb" 19.3435
+cap "invdummy_1/xpb" "bp" 0.402296
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/vreg" -90.4756
+cap "bn" "ddaa_slice_4/a0/bp" 45.9483
+cap "ddaa_slice_4/a0/bp" "bp" 36.392
+cap "ddaa_slice_4/a0/bp" "invdummy_1/xpb" 5.76
+cap "ipb" "ddaa_slice_4/a0/vreg" 0.611526
+cap "imb" "ddaa_slice_4/a0/vreg" 0.985923
+cap "ddaa_slice_4/a0/in" "bn" 26.6596
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/a0/vreg" -12.9862
+cap "bn" "ddaa_slice_4/a0/vsub" 19.8302
+cap "invdummy_1/xpb" "imb" 0.15364
+cap "ddaa_slice_4/a0/vsub" "bp" 19.9559
+cap "ddaa_slice_4/a0/in" "invdummy_1/xpb" 4.8
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/vreg" 2.06208
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/xpb" 0.217565
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a0/bp" -1.41114
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/vss" 0.31949
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/a0/bp" -42.0282
+cap "bn" "ddaa_slice_4/a0/out" 1.77198
+cap "bn" "ddaa_slice_4/a0/vreg" 627.581
+cap "bp" "ddaa_slice_4/a0/vreg" 565.491
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/vreg" 1.02811
+cap "ddaa_slice_4/a7/in" "ddaa_slice_1/a0/in" 2.4
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_4/a7/bp" -187.297
+cap "ddaa_slice_4/a7/vsub" "ddaa_slice_4/a7/bp" -14.8459
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_4/a7/vsub" -16.1995
+cap "ddaa_slice_1/a0/in" "ddaa_slice_4/a7/bp" -1.66455
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vsub" -14.8459
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/bp" -289.831
+cap "ddaa_slice_1/a7/in" "ddaa_slice_5/a0/in" 4.8
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_5/a0/in" -1.66455
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/in" -1.66455
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/vsub" -16.1995
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vreg" -119.897
+cap "om" "invdummy_6/xpb" 0.412674
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xpb" 0.197185
+cap "ddaa_slice_5/a7/vreg" "invdummy_6/xpb" 1.02811
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/bp" -1.66455
+cap "ddaa_slice_5/a7/vsub" "ddaa_slice_5/a7/vreg" -12.9862
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xpb" 5.49911
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vsub" -42.0282
+cap "ddaa_slice_5/a7/in" "invdummy_6/xpb" 4.8
+cap "om" "ddaa_slice_5/a7/vreg" 3.91716
+cap "ddaa_slice_5/a7/vsub" "invdummy_6/xpb" 0.217565
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/vss" 1.29389
+cap "om" "ddaa_slice_5/a7/vreg" 2.84217e-13
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/vsub" 4.3924
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/in" 0.253401
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vsub" 2.0533
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vreg" 29.4211
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/in" 3.73778
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/vsub" 26.4533
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xpb" 0.260891
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/vreg" 113.841
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xpb" 7.80885
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bp" 32.8325
+cap "ddaa_slice_5/a7/vsub" "ddaa_slice_5/a7/vreg" 38.0211
+cap "ddaa_slice_5/a7/vsub" "om" 10.6976
+cap "om" "invdummy_6/vdd" -2.13163e-13
+cap "invdummy_6/vdd" "op" 7.38964e-13
+cap "invdummy_6/vss" "invdummy_6/vdd" -5.96856e-13
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/vss" 32.7765
+cap "ddaa_slice_4/ip" "invedge_1/m3_200_2000#" 0.28127
+cap "invedge_1/m2_200_2000#" "ddaa_slice_4/ip" 0.435409
+cap "ddaa_slice_4/a0/bn" "invdummy_1/vss" -7.53535
+cap "ddaa_slice_4/a0/vsub" "ipa" 1.05862
+cap "ddaa_slice_4/im" "invedge_1/m3_200_2000#" 1.20075
+cap "invedge_1/m2_200_2000#" "ddaa_slice_4/im" 0.960035
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/a0/vreg" 6.13803
+cap "invedge_1/m2_200_2000#" "invdummy_1/vss" 2.43812
+cap "invedge_1/m3_200_2000#" "invdummy_1/vss" 18.4097
+cap "ddaa_slice_4/a0/bn" "ddaa_slice_4/a0/vreg" -0.371928
+cap "invdummy_1/bp" "invdummy_1/vss" 8.74508
+cap "invedge_1/m2_200_2000#" "ipa" 0.132316
+cap "invedge_1/m3_200_2000#" "ipa" 0.0669036
+cap "ddaa_slice_4/a0/vsub" "ima" 1.61464
+cap "ddaa_slice_4/a0/vreg" "invdummy_1/vss" 13.0815
+cap "invdummy_1/bp" "ddaa_slice_4/a0/vreg" -1.20075
+cap "ddaa_slice_4/ip" "ddaa_slice_4/a0/vsub" 2.5605
+cap "invedge_1/m3_200_2000#" "ima" 0.12106
+cap "invedge_1/m2_200_2000#" "ima" 0.223757
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/vsub" 3.87202
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/op" 12.5862
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bn" 274.614
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/vsub" 2.33695
+cap "ddaa_slice_4/a0/vss" "invdummy_1/xn" 0.0483975
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/vss" 1.38029
+cap "ddaa_slice_4/a0/bp" "invedge_1/m3_200_2000#" 114.086
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_4/a0/bn" 97.897
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/vsub" 1.6334
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/bn" 12.3645
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/m1_200_700#" 0.292118
+cap "ddaa_slice_4/im" "invdummy_1/xpb" 0.722654
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a0/bn" 53.2649
+cap "ddaa_slice_4/a0/in" "invdummy_1/xn" 4.8
+cap "ddaa_slice_4/a0/in" "invedge_1/m2_200_2000#" 0.169523
+cap "ddaa_slice_4/op" "ddaa_slice_4/a0/bn" 42.6061
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/op" 2.30415
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_4/a0/vss" -29.6872
+cap "ddaa_slice_4/a0/vss" "invdummy_1/xpb" 1.50567
+cap "invdummy_1/xn" "ddaa_slice_4/op" 49.3814
+cap "ddaa_slice_4/a0/bn" "invedge_1/m3_200_2000#" 85.5832
+cap "ddaa_slice_4/im" "ddaa_slice_4/op" 0.334518
+cap "ddaa_slice_4/a0/vsub" "ddaa_slice_4/a0/bp" 14.9421
+cap "invdummy_1/xn" "ddaa_slice_4/a0/bp" 0.596669
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/bn" -430.792
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/in" 0.856136
+cap "ddaa_slice_4/a0/bp" "invedge_1/m2_200_2000#" 23.9462
+cap "ddaa_slice_4/a0/vreg" "invdummy_1/m1_200_700#" 24.0946
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/op" 12.7486
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/in" 96.752
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bp" 106.697
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_4/a0/bp" 27.7708
+cap "ddaa_slice_4/a0/vsub" "invdummy_1/xn" 0.0348613
+cap "invdummy_1/xpb" "ddaa_slice_4/a0/bp" 24.4141
+cap "invdummy_1/xn" "ddaa_slice_4/a0/bn" 23.477
+cap "ddaa_slice_4/a0/bp" "invdummy_1/m1_200_700#" 8.98974
+cap "ddaa_slice_4/im" "invdummy_1/xn" 0.0236688
+cap "invedge_1/m2_200_2000#" "ddaa_slice_4/a0/bn" 5.31817
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a0/bp" -13.914
+cap "ddaa_slice_4/a0/in" "invedge_1/m3_200_2000#" 0.0880594
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/bp" 4.14281
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/bn" 43.3564
+cap "invedge_1/m3_200_2000#" "ddaa_slice_4/a0/in" 0.145637
+cap "ddaa_slice_4/a1/vss" "ddaa_slice_4/a0/in" 4.19673
+cap "ddaa_slice_4/a0/in" "invdummy_1/xn" 9.06937
+cap "ddaa_slice_4/a0/in" "invdummy_1/xpb" 10.5268
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/bp" 5.91583
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/out" 6.42237
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/vss" 1.28447
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/bn" 3.40235
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/ip" 12.3557
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/vreg" -29.6872
+cap "ddaa_slice_4/op" "ddaa_slice_4/ip" 6.42237
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/ip" 3.40235
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/op" -125.899
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/ip" -8.8428
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/vss" -84.7634
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/ip" 40.7167
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/vss" -37.418
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/vreg" -58.4219
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/ip" 1.28447
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/bp" -258.508
+cap "ddaa_slice_1/a7/in" "ddaa_slice_1/a7/bp" 5.91583
+cap "ddaa_slice_1/a7/in" "ddaa_slice_1/a7/bn" 3.40235
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 12.3557
+cap "ddaa_slice_1/a7/out" "ddaa_slice_1/a7/in" 6.42237
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/in" 1.28447
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/bn" 2.22045e-16
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/ip" 3.40235
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vreg" -69.9579
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 69.0776
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/vss" -84.7634
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/ip" 1.28447
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/out" 1.42109e-14
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/vreg" -29.6872
+cap "ddaa_slice_1/a7/out" "ddaa_slice_1/ip" 6.42237
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/bn" -258.508
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/out" -125.899
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/ip" -8.8428
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/in" -14.7586
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vss" -37.418
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/bp" -14.7586
+cap "invdummy_6/xn" "ddaa_slice_5/a7/bn" 3.12232
+cap "invdummy_6/xpb" "ddaa_slice_5/a7/vss" 0.931528
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/vss" -29.6872
+cap "ddaa_slice_5/a7/vreg" "invdummy_6/m1_200_700#" 24.0946
+cap "invdummy_6/xn" "ddaa_slice_5/a7/vsub" 0.0348613
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" 74.13
+cap "ddaa_slice_5/a7/in" "invdummy_6/xpb" 96.752
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xpb" 19.1998
+cap "invdummy_6/xpb" "ddaa_slice_5/a7/out" 1.28132
+cap "ddaa_slice_5/a7/in" "invedge_6/m3_200_2000#" 0.0880594
+cap "ddaa_slice_5/a7/bp" "invedge_6/m3_200_2000#" 17.4067
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/bp" -66.2949
+cap "invdummy_6/xn" "ddaa_slice_5/a7/vss" -38.8561
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/bn" -498.508
+cap "invdummy_6/m1_200_700#" "ddaa_slice_5/a7/vsub" 0.292118
+cap "ddaa_slice_5/a7/vsub" "ddaa_slice_5/a7/vss" 2.33695
+cap "om" "ddaa_slice_5/a7/vss" 1.56686
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/out" -187.785
+cap "invedge_6/m2_200_2000#" "ddaa_slice_5/a7/in" 0.169523
+cap "invedge_6/m2_200_2000#" "ddaa_slice_5/a7/bp" 18.6281
+cap "invdummy_6/xn" "ddaa_slice_5/a7/bp" 0.596669
+cap "invdummy_6/xn" "ddaa_slice_5/a7/in" 4.8
+cap "invdummy_6/xn" "ddaa_slice_5/a7/out" 114.723
+cap "ddaa_slice_5/a7/bp" "invdummy_6/m1_200_700#" 8.98974
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vss" -7.44326
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/out" 517.516
+cap "invdummy_6/xpb" "ddaa_slice_5/a7/vsub" 1.6334
+cap "om" "invdummy_6/xpb" 2.05797
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/vsub" 76.0734
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bp" 13.5852
+cap "ddaa_slice_5/a7/vsub" "ddaa_slice_5/a7/vss" 7.10056
+cap "om" "invedge_6/m2_200_2000#" 3.3538
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/in" 2.22262
+cap "om" "ddaa_slice_5/a7/vreg" 2.84217e-14
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/bn" -5.82044
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/bp" 0.844669
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xpb" 2.8239
+cap "om" "invedge_6/m3_200_2000#" 3.12124
+cap "ddaa_slice_5/op" "invedge_6/m2_200_2000#" 0.868829
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" -41.5359
+cap "ddaa_slice_5/a7/vss" "invedge_6/m2_200_2000#" 1.62526
+cap "invdummy_6/xpb" "ddaa_slice_5/a7/bp" 3.51053
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/bp" 4.25282
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xn" 1.56177
+cap "ddaa_slice_5/op" "invedge_6/m3_200_2000#" 0.455023
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/vreg" 17.906
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/vss" 499.75
+cap "om" "ddaa_slice_5/a7/vsub" 9.36043
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/bp" 2.97897
+cap "ddaa_slice_5/a7/vss" "invedge_6/m3_200_2000#" 21.3477
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/bp" 92.8743
+cap "ddaa_slice_5/a7/vsub" "ddaa_slice_5/a7/vreg" 6.13803
+cap "invdummy_6/vdd" "op" -2.84217e-14
+cap "invdummy_6/vdd" "invedge_6/m3_200_2100#" 8.52651e-14
+cap "invedge_1/a_200_1100#" "ddaa_slice_4/ip" 12.9569
+cap "ipa" "invedge_1/a_200_1100#" 0.882183
+cap "invedge_1/a_200_1100#" "m3_n550_9400#" 0.17334
+cap "invdummy_1/vss" "ddaa_slice_4/a0/bn" -30.1414
+cap "invdummy_1/vss" "ddaa_slice_4/im" 41.9668
+cap "invedge_1/a_200_1100#" "ima" 1.34553
+cap "ddaa_slice_4/a0/bp" "invedge_1/a_200_1100#" 0.000142953
+cap "invedge_1/a_200_1100#" "invdummy_1/vss" 37.1532
+cap "ddaa_slice_4/ip" "invdummy_1/vss" 228.152
+cap "ipa" "invdummy_1/vss" 0.264633
+cap "invdummy_1/vss" "m3_n550_9400#" 0.147355
+cap "ima" "invdummy_1/vss" 0.447515
+cap "ddaa_slice_4/a0/bp" "invdummy_1/vss" 2.42997
+cap "invedge_1/a_200_1100#" "ddaa_slice_4/im" 2.87058
+cap "ddaa_slice_4/ip" "ddaa_slice_4/im" -9.48718
+cap "invdummy_1/xn" "ddaa_slice_4/a0/bp" 5.96669
+cap "ddaa_slice_4/a0/bn" "ddaa_slice_4/a0/bp" -845.496
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/im" 202.392
+cap "ddaa_slice_4/a0/vss" "invedge_1/a_200_1100#" 3.79754
+cap "ima" "ddaa_slice_4/a0/bp" -0.0975505
+cap "ddaa_slice_4/a0/bn" "invdummy_1/vdd" 0.00221297
+cap "ddaa_slice_4/a0/bp" "invdummy_1/vdd" 0.00221866
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/im" -37.9487
+cap "ddaa_slice_4/a0/bn" "ddaa_slice_4/im" -12.8145
+cap "invdummy_1/xn" "ddaa_slice_4/im" 0.236688
+cap "invdummy_1/xn" "invedge_1/a_200_1100#" 0.348613
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/xt" 1.27124
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/bp" -13.0537
+cap "invedge_1/a_200_1100#" "ddaa_slice_4/a0/bp" 18.693
+cap "invedge_1/m3_200_2000#" "ddaa_slice_4/a0/bn" 0.00400428
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/in" 1110.19
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bn" 988.645
+cap "invdummy_1/xn" "ddaa_slice_4/a0/vss" -30.5552
+cap "invedge_1/m3_200_2000#" "ddaa_slice_4/a0/bp" 0.00401812
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bp" 566.571
+cap "ddaa_slice_4/a0/bn" "ddaa_slice_4/a0/in" -124.334
+cap "invdummy_1/xn" "ddaa_slice_4/a0/in" 121.361
+cap "invdummy_1/xn" "ddaa_slice_4/a0/bn" 126.829
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a0/bp" -27.744
+cap "ddaa_slice_4/a1/vss" "ddaa_slice_4/a0/in" 10.1584
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/bn" 46.8973
+cap "ddaa_slice_4/a0/in" "invdummy_1/xn" 20.4586
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/ip" 36.5579
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/in" 5.1379
+cap "ddaa_slice_4/ip" "ddaa_slice_4/a7/in" 69.2343
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/bn" -420
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/in" -25.2757
+cap "ddaa_slice_4/ip" "ddaa_slice_4/a7/vss" -106.764
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/bn" -41.0304
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/in" 5.1379
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 36.5579
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/vss" -106.764
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/vss" -41.0304
+cap "ddaa_slice_1/a7/in" "ddaa_slice_1/a7/vss" -25.2757
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 103.195
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/in" -4.44089e-16
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/bn" -420
+cap "ddaa_slice_5/ip" "ddaa_slice_5/a7/vss" 57.5318
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/vss" 29.1003
+cap "ddaa_slice_5/a7/vss" "invedge_6/a_200_1100#" 4.08966
+cap "invdummy_6/xn" "ddaa_slice_5/a7/bp" 11.699
+cap "invdummy_6/xn" "ddaa_slice_5/a7/vss" 0.633329
+cap "ddaa_slice_5/a7/xt" "ddaa_slice_5/a7/vss" 1.27124
+cap "ddaa_slice_5/ip" "invdummy_6/xn" 4.56385e-16
+cap "ddaa_slice_5/a7/in" "invdummy_6/xn" 94.3517
+cap "ddaa_slice_5/om" "ddaa_slice_5/a7/vss" 10.1846
+cap "invdummy_6/xn" "invedge_6/a_200_1100#" 1.3842
+cap "ddaa_slice_5/ip" "ddaa_slice_5/om" 0.0669036
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/bp" -840
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" 259.946
+cap "ddaa_slice_5/ip" "ddaa_slice_5/a7/bn" 2.2754e-15
+cap "ddaa_slice_5/om" "invdummy_6/xn" 2.72676
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vss" 52.4558
+cap "invdummy_6/xn" "ddaa_slice_5/a7/out" 1.21907
+cap "ddaa_slice_5/a7/bn" "invdummy_6/xn" 50.3086
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" -65.1425
+cap "ddaa_slice_5/ip" "ddaa_slice_5/a7/vss" 0.382634
+cap "invdummy_6/xn" "ddaa_slice_5/a7/vss" 12.1945
+cap "ddaa_slice_5/op" "invedge_6/a_200_1100#" 7.13765
+cap "invedge_6/a_200_1100#" "ddaa_slice_5/a7/vss" 24.5208
+cap "invedge_6/a_200_1100#" "ddaa_slice_5/om" 17.3836
+cap "ddaa_slice_5/op" "ddaa_slice_5/a7/vss" 5.70921
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vss" 22.9565
+cap "ddaa_slice_5/om" "ddaa_slice_5/a7/vss" 26.1327
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/vss" 6.70795
+cap "invdummy_1/vss" "ddaa_slice_4/ip" 0.870817
+cap "invedge_1/w_150_2100#" "ima" 1.61464
+cap "invdummy_1/vss" "ipa" 0.264633
+cap "ddaa_slice_4/im" "invedge_1/w_150_2100#" 9.92676
+cap "invdummy_1/vss" "invedge_1/w_150_2100#" 34.687
+cap "invdummy_1/vss" "ima" 0.447515
+cap "ddaa_slice_4/im" "invdummy_1/vss" 144.499
+cap "invedge_1/w_150_2100#" "ddaa_slice_4/ip" 2.5605
+cap "ipa" "invedge_1/w_150_2100#" 1.05862
+cap "invdummy_1/vss" "ddaa_slice_4/a0/bp" 6.64016
+cap "ddaa_slice_4/a0/bn" "invdummy_1/vss" -15.0707
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/vss" 289.611
+cap "invedge_1/w_150_2100#" "ddaa_slice_4/a0/vss" 4.08966
+cap "ddaa_slice_4/a0/vss" "invdummy_1/xn" -10.298
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a0/bn" 68.8523
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/in" 35.2881
+cap "ddaa_slice_4/im" "ddaa_slice_4/a1/out" 0.334518
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/bn" -132.899
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/vss" 664.878
+cap "ddaa_slice_4/a0/bn" "ddaa_slice_4/a1/out" 42.6061
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a1/out" 12.7486
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bn" 672.833
+cap "invedge_1/w_150_2100#" "ddaa_slice_4/a0/bp" 13.5837
+cap "invedge_1/w_150_2100#" "invdummy_1/xn" 0.0348613
+cap "ddaa_slice_4/a0/bp" "invdummy_1/xn" 0.596669
+cap "invdummy_1/xn" "ddaa_slice_4/a0/in" 4.8
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/bp" -4.56775
+cap "ddaa_slice_4/im" "invdummy_1/xn" 13.5285
+cap "invedge_1/w_150_2100#" "ddaa_slice_4/a1/out" 2.30415
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a1/out" 12.5862
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/bn" -833.23
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/xb" 1.27124
+cap "invdummy_1/xn" "ddaa_slice_4/a1/out" 49.3814
+cap "invdummy_1/xn" "ddaa_slice_4/a0/bn" 34.714
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/vss" 8.96985
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/bn" 50.8522
+cap "ddaa_slice_4/im" "ddaa_slice_4/a0/in" 1.04748
+cap "ddaa_slice_4/a0/in" "invdummy_1/xn" 14.3021
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/vss" 2.56895
+cap "ddaa_slice_4/ip" "ddaa_slice_4/a7/in" 16.9422
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/in" 3.40235
+cap "ddaa_slice_4/om" "ddaa_slice_4/a7/in" 6.42237
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/ip" 20.6267
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/ip" 2.56895
+cap "ddaa_slice_4/om" "ddaa_slice_4/ip" 6.42237
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/in" 2.22045e-16
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/vss" -68.9125
+cap "ddaa_slice_4/a7/in" "ddaa_slice_4/a7/vss" -60.2683
+cap "ddaa_slice_4/om" "ddaa_slice_4/a7/vss" -125.899
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/ip" 3.40235
+cap "ddaa_slice_4/a7/bn" "ddaa_slice_4/a7/bp" -420
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/in" 6.42237
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/in" 2.56895
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 16.9422
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/in" 3.40235
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/bn" 1.42109e-14
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/vss" -68.9125
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/in" 23.0267
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/bn" 3.40235
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/vss" -125.899
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/bn" -420
+cap "ddaa_slice_1/ip" "ddaa_slice_1/om" 6.42237
+cap "ddaa_slice_1/ip" "ddaa_slice_1/a7/vss" 2.56895
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/in" 1.42109e-14
+cap "ddaa_slice_1/a7/in" "ddaa_slice_1/a7/vss" -60.2683
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bp" 52.4558
+cap "ddaa_slice_5/om" "ddaa_slice_5/a7/bn" -187.785
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/om" 0.0669036
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xn" 0.596669
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/xb" 1.27124
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xn" -39.2504
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/bn" -840
+cap "ddaa_slice_5/a7/vss" "invedge_6/w_150_2100#" 4.08966
+cap "invdummy_6/xn" "invedge_6/w_150_2100#" 0.0348613
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bn" 253.131
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/in" 96.0724
+cap "ddaa_slice_5/a7/in" "invdummy_6/xn" 4.8
+cap "invdummy_6/xn" "ddaa_slice_5/a7/bn" 3.12232
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/om" 523.783
+cap "invdummy_6/xn" "ddaa_slice_5/om" 114.723
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/om" -5.82044
+cap "ddaa_slice_5/a7/vss" "invedge_6/w_150_2100#" 7.05031
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/om" 512.932
+cap "invedge_6/w_150_2100#" "ddaa_slice_5/op" 7.13765
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bp" -12.4185
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/bn" -67.345
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xn" 6.24708
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/a7/in" 4.12042
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_5/op" 3.06151
+cap "invedge_6/w_150_2100#" "ddaa_slice_5/om" 76.9443
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/om" 88.3452
+cap "invdummy_1/vss" "bp" -1.20075
+cap "invdummy_1/vdd" "ddaa_slice_4/im" -2.84217e-14
+cap "invdummy_1/vdd" "ddaa_slice_0/a0/vsub" 24.5521
+cap "ipa" "invedge_1/m2_200_4000#" 0.132316
+cap "ddaa_slice_4/im" "invedge_1/m2_200_4000#" 0.960035
+cap "invdummy_1/vdd" "ipb" -2.84217e-14
+cap "ipb" "invedge_1/m2_200_4000#" 0.435409
+cap "ima" "ddaa_slice_0/a0/vsub" 1.21098
+cap "invdummy_1/vss" "ddaa_slice_0/a0/vsub" 25.7594
+cap "invdummy_1/vss" "ddaa_slice_4/a0/bp" 7.23333
+cap "invdummy_1/vdd" "bn" -1.48771
+cap "ipa" "ddaa_slice_0/a0/vsub" 0.793964
+cap "invedge_1/m3_200_4000#" "ima" 0.12106
+cap "ddaa_slice_4/im" "ddaa_slice_0/a0/vsub" 2.90401
+cap "invdummy_1/vss" "ddaa_slice_4/a0/bn" -7.16342
+cap "invdummy_1/vss" "invedge_1/m3_200_4000#" 18.4097
+cap "ipb" "ddaa_slice_0/a0/vsub" 1.92038
+cap "invdummy_1/vss" "bn" -0.371928
+cap "invdummy_1/vdd" "bp" -4.80302
+cap "invedge_1/m3_200_4000#" "ipa" 0.0669036
+cap "invdummy_1/vdd" "ima" 9.9476e-14
+cap "ddaa_slice_4/im" "invedge_1/m3_200_4000#" 1.20075
+cap "invdummy_1/vdd" "invdummy_1/vss" 52.3262
+cap "invedge_1/m3_200_4000#" "ipb" 0.28127
+cap "ima" "invedge_1/m2_200_4000#" 0.223757
+cap "invdummy_1/vss" "invedge_1/m2_200_4000#" 2.43812
+cap "ddaa_slice_0/a0/vsub" "invdummy_1/m1_200_3100#" 0.292118
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/in" -13.914
+cap "bp" "ddaa_slice_4/a0/bp" 46.7686
+cap "invedge_1/m3_200_4000#" "ddaa_slice_4/a0/in" 0.0880594
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/bn" -65.0009
+cap "bn" "ddaa_slice_4/a0/in" 47.3724
+cap "bp" "invedge_1/m3_200_4000#" 96.6789
+cap "bp" "ddaa_slice_4/a0/vreg" 382.078
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_4/im" 0.591554
+cap "ddaa_slice_4/a0/vss" "invdummy_1/xpt" 1.82516
+cap "invedge_1/m2_200_4000#" "ddaa_slice_4/a0/in" 0.169523
+cap "bp" "invedge_1/m2_200_4000#" 5.31817
+cap "bn" "ddaa_slice_4/a0/bn" -13.97
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_0/a0/vsub" 0.292118
+cap "ddaa_slice_0/a0/vsub" "invdummy_1/xpt" 1.8161
+cap "invedge_1/m3_200_4000#" "ddaa_slice_4/a0/bp" 17.4067
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_4/a0/bp" -65.3787
+cap "invedge_1/m2_200_4000#" "ddaa_slice_4/a0/bp" 18.6281
+cap "bn" "ddaa_slice_4/a0/bp" 79.1821
+cap "invdummy_1/xpt" "ddaa_slice_4/a0/in" 96.752
+cap "bn" "invedge_1/m3_200_4000#" 85.5832
+cap "ddaa_slice_4/a0/vss" "bp" 81.9106
+cap "ddaa_slice_4/a0/bp" "invdummy_1/m1_200_3100#" 8.98974
+cap "invdummy_1/xpt" "ddaa_slice_4/im" 0.876294
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bn" -1.63198
+cap "bn" "ddaa_slice_4/a0/vreg" 423.856
+cap "bp" "invdummy_1/xpt" 2.10601
+cap "bn" "invedge_1/m2_200_4000#" 5.31817
+cap "ddaa_slice_4/a0/vreg" "invdummy_1/m1_200_3100#" 24.0946
+cap "bp" "ddaa_slice_0/a0/vsub" 10.867
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/bp" -31.0608
+cap "invdummy_1/xpt" "ddaa_slice_4/a0/bp" 28.1746
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_4/a0/vreg" -28.4499
+cap "ddaa_slice_4/a0/vss" "bn" 88.484
+cap "bn" "invdummy_1/xpt" 27.9623
+cap "bp" "ddaa_slice_4/a0/bn" -0.967093
+cap "ddaa_slice_4/a0/out" "bn" 0.354397
+cap "ddaa_slice_4/a0/vreg" "ipb" 0.366915
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_4/a0/vreg" 1.75271
+cap "bn" "ddaa_slice_4/a0/in" 15.5218
+cap "bn" "ddaa_slice_4/a1/vreg" 0.676974
+cap "ddaa_slice_4/a0/in" "invdummy_1/xpt" 10.5268
+cap "invdummy_1/xpt" "ddaa_slice_4/a1/vreg" 11.6021
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/bp" 4.14281
+cap "ddaa_slice_4/a1/vreg" "ddaa_slice_4/a1/bp" 2.31418
+cap "ddaa_slice_4/a0/in" "ddaa_slice_4/a1/vss" 1.04748
+cap "invedge_1/m3_200_4000#" "ddaa_slice_4/a0/in" 0.145637
+cap "ddaa_slice_0/a1/vsub" "ddaa_slice_4/a0/out" 2.56317
+cap "ddaa_slice_0/a1/vsub" "ddaa_slice_4/a0/in" -0.23483
+cap "vsub" "ddaa_slice_4/a0/out" 2.04435
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_4/a0/out" 0.283989
+cap "ddaa_slice_4/a2/in" "vsub" 0.110648
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_4/a2/in" -0.345478
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/om" 1.02288
+cap "ddaa_slice_4/om" "vsub" 3.14227
+cap "ddaa_slice_4/om" "ddaa_slice_0/vsub" 0.23605
+cap "vsub" "ddaa_slice_4/a3/in" 0.110648
+cap "ddaa_slice_4/a3/in" "ddaa_slice_0/vsub" -0.345478
+cap "vsub" "ddaa_slice_4/om" 0.725139
+cap "vsub" "ddaa_slice_4/im" 0.110648
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a4/out" 0.4721
+cap "ddaa_slice_4/a4/out" "vsub" 1.45028
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/im" -0.345478
+cap "ddaa_slice_4/om" "vsub" 0.110648
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/om" -0.345478
+cap "ddaa_slice_4/a4/out" "vsub" 2.41713
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a4/out" 0.786834
+cap "vsub" "ddaa_slice_4/a6/out" 2.65884
+cap "vsub" "ddaa_slice_4/a6/in" 0.110648
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/a6/out" 0.865517
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a7/vsub" -0.345478
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_1/a0/in" 27.351
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/im" 5.91583
+cap "ddaa_slice_4/a6/out" "vsub" 1.20856
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/vreg" -3.71361
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/im" -0.345478
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/im" 1.28447
+cap "vsub" "ddaa_slice_4/im" 0.110648
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/a6/out" 0.393417
+cap "ddaa_slice_4/im" "ddaa_slice_1/a0/in" 8.9673
+cap "ddaa_slice_4/om" "vsub" 0.966852
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/bn" -39.2538
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_1/a0/in" -0.345478
+cap "ddaa_slice_4/om" "ddaa_slice_0/a7/vsub" 0.314733
+cap "ddaa_slice_4/im" "ddaa_slice_4/a7/vreg" 27.351
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_4/a7/vss" -29.6872
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_4/a7/bp" -128.135
+cap "ddaa_slice_4/im" "ddaa_slice_1/a0/in" 34.9282
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/bp" -37.418
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_1/a0/in" 1.28447
+cap "ddaa_slice_4/a7/vss" "ddaa_slice_4/a7/bn" -6.445
+cap "ddaa_slice_1/a0/in" "ddaa_slice_4/a7/bp" -8.8428
+cap "vsub" "ddaa_slice_1/a0/in" 0.110648
+cap "vsub" "ddaa_slice_4/om" 3.0112
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/om" 0.598722
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_1/a1/in" 0.70815
+cap "vsub" "ddaa_slice_1/a1/in" 2.17542
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_1/a2/in" -0.345478
+cap "vsub" "ddaa_slice_1/a2/in" 0.110648
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/om" 0.550783
+cap "vsub" "ddaa_slice_1/om" 1.69199
+cap "ddaa_slice_1/a3/in" "ddaa_slice_1/vsub" -0.345478
+cap "ddaa_slice_1/a3/in" "vsub" 0.110648
+cap "vsub" "ddaa_slice_1/im" 0.110648
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/im" -0.345478
+cap "vsub" "ddaa_slice_1/a4/out" 0.483426
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a4/out" 0.157367
+cap "ddaa_slice_1/a4/out" "ddaa_slice_1/vsub" 1.02288
+cap "ddaa_slice_1/a4/out" "vsub" 3.14227
+cap "ddaa_slice_1/a6/vsub" "ddaa_slice_1/a5/in" -0.345478
+cap "ddaa_slice_1/a5/out" "vsub" 0.241713
+cap "ddaa_slice_1/a5/out" "ddaa_slice_1/a6/vsub" 0.0786834
+cap "vsub" "ddaa_slice_1/a5/in" 0.110648
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a6/out" 0.629467
+cap "vsub" "ddaa_slice_1/a6/in" 0.110648
+cap "vsub" "ddaa_slice_1/a6/out" 1.9337
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a6/in" -0.345478
+cap "ddaa_slice_5/a0/in" "ddaa_slice_1/a7/vreg" 27.351
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a6/out" 0.629467
+cap "vsub" "ddaa_slice_1/im" 0.110648
+cap "ddaa_slice_5/a0/in" "ddaa_slice_1/im" 8.9673
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/bp" -3.71361
+cap "ddaa_slice_1/im" "ddaa_slice_1/a7/vss" 1.28447
+cap "ddaa_slice_1/im" "ddaa_slice_1/a7/vsub" -0.345478
+cap "vsub" "ddaa_slice_1/a6/out" 1.9337
+cap "ddaa_slice_1/im" "ddaa_slice_1/a7/bp" 5.91583
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vreg" -205.67
+cap "ddaa_slice_1/om" "ddaa_slice_1/im" -1.11022e-16
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/vreg" -29.6872
+cap "vsub" "ddaa_slice_5/a0/in" 0.110648
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/im" -14.7586
+cap "ddaa_slice_1/im" "ddaa_slice_5/a0/in" 60.8892
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_5/a0/in" -0.345478
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_5/a0/in" -8.8428
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/bp" -37.418
+cap "ddaa_slice_1/a7/bn" "ddaa_slice_1/a7/bp" -39.2538
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_5/a0/in" 1.28447
+cap "ddaa_slice_1/a7/vss" "ddaa_slice_1/a7/bn" -6.445
+cap "ddaa_slice_1/im" "ddaa_slice_1/a7/vreg" 27.351
+cap "vsub" "ddaa_slice_1/om" 3.14227
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/vsub" 1.02288
+cap "vsub" "ddaa_slice_5/a0/out" 0.835787
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_5/a0/out" -0.109428
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_5/a1/in" 0.4721
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_5/a2/in" -0.345478
+cap "ddaa_slice_5/a1/in" "vsub" 1.45028
+cap "ddaa_slice_5/a2/in" "vsub" 0.110648
+cap "vsub" "ddaa_slice_5/a3/in" 0.110648
+cap "ddaa_slice_5/om" "vsub" 2.41713
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/a3/in" -0.345478
+cap "ddaa_slice_5/om" "ddaa_slice_3/vsub" 0.786834
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/a4/out" 0.865517
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/im" -0.345478
+cap "vsub" "ddaa_slice_5/a4/out" 2.65884
+cap "vsub" "ddaa_slice_5/im" 0.110648
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_5/a4/out" 0.393417
+cap "ddaa_slice_5/a5/in" "vsub" 0.110648
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_5/a5/in" -0.345478
+cap "vsub" "ddaa_slice_5/a4/out" 1.20856
+cap "vsub" "ddaa_slice_5/a6/in" 0.110648
+cap "vsub" "ddaa_slice_5/a6/out" 0.966852
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/in" -0.345478
+cap "ddaa_slice_5/a6/out" "ddaa_slice_3/a7/vsub" 0.314733
+cap "vsub" "ddaa_slice_5/a7/in" 0.110648
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/out" 0.9442
+cap "vsub" "ddaa_slice_5/a6/out" 2.90056
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/vsub" -0.345478
+cap "ddaa_slice_5/a7/bp" "invedge_6/m3_200_4000#" 17.4067
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/bn" -69.2538
+cap "ddaa_slice_5/a7/vss" "ddaa_slice_3/a7/vsub" 0.292118
+cap "ddaa_slice_5/a7/bp" "invdummy_6/m1_200_3100#" 8.98974
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/in" -14.7586
+cap "ddaa_slice_5/a7/vreg" "invdummy_6/m1_200_3100#" 24.0946
+cap "ddaa_slice_5/a7/in" "invdummy_6/xpt" 96.752
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vss" -33.6712
+cap "invedge_6/m2_200_4000#" "ddaa_slice_5/a7/in" 0.169523
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/vss" -28.9109
+cap "ddaa_slice_5/a7/vss" "invdummy_6/xpt" 1.12871
+cap "ddaa_slice_5/a7/in" "invedge_6/m3_200_4000#" 0.0880594
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/a7/vsub" 1.75271
+cap "ddaa_slice_3/a7/vsub" "invdummy_6/xpt" 1.8161
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" -1.63198
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vreg" -89.2105
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xpt" 24.6641
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/om" 2.35029
+cap "ddaa_slice_5/a7/bp" "invedge_6/m2_200_4000#" 18.6281
+cap "invdummy_6/xpt" "ddaa_slice_5/om" 3.75197
+cap "ddaa_slice_3/a7/vsub" "invdummy_6/m1_200_3100#" 0.292118
+cap "invdummy_6/xpt" "ddaa_slice_5/a7/bp" 3.51053
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/vss" 4.46528
+cap "ddaa_slice_5/om" "ddaa_slice_5/a7/bp" 4.52919
+cap "ddaa_slice_5/om" "ddaa_slice_3/a7/vsub" 12.0348
+cap "op" "ddaa_slice_3/a7/vsub" 4.94145
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/in" 0.844669
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vss" 54.5283
+cap "ddaa_slice_5/om" "invedge_6/m3_200_4000#" 3.12124
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a7/vss" 22.3841
+cap "op" "invedge_6/m3_200_4000#" 0.455023
+cap "ddaa_slice_5/om" "invedge_6/m2_200_4000#" 3.3538
+cap "op" "invedge_6/m2_200_4000#" 0.868829
+cap "ddaa_slice_5/om" "ddaa_slice_5/a7/vreg" 1.7053e-13
+cap "invedge_6/m3_200_4000#" "ddaa_slice_5/a7/vss" 21.3477
+cap "ddaa_slice_5/a7/bn" "ddaa_slice_5/a7/vss" -12.586
+cap "ddaa_slice_5/a7/vss" "invedge_6/m2_200_4000#" 1.62526
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/vss" 75.8913
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/bn" 4.25282
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/bp" 23.8318
+cap "invdummy_6/xpt" "ddaa_slice_5/a7/vss" 9.07097
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/a7/vsub" 24.5521
+cap "invdummy_6/vdd" "om" 4.26326e-14
+cap "invdummy_6/vdd" "op" -1.7053e-13
+cap "invedge_6/m3_200_4200#" "op" -5.68434e-14
+cap "invdummy_6/vss" "invdummy_6/vdd" 8.52651e-14
+cap "invdummy_6/vss" "invedge_6/m3_200_4200#" 8.52651e-14
+cap "ddaa_slice_0/a0/vreg" "bn" -1.11578
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vsub" 139.274
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/vss" 1.80833
+cap "ipb" "invdummy_1/vdd" 7.10543e-14
+cap "ddaa_slice_0/a0/vreg" "invdummy_1/vdd" 10.8696
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_4/a0/vss" 39.2446
+cap "ddaa_slice_0/a0/vreg" "imb" 7.10543e-14
+cap "bn" "ddaa_slice_0/a0/vsub" 0.53359
+cap "ima" "ddaa_slice_0/a0/vsub" 0.807318
+cap "bn" "invdummy_1/vdd" -1.11578
+cap "invdummy_1/vdd" "ddaa_slice_0/a0/vsub" 139.274
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_0/a0/vsub" 14.0341
+cap "imb" "ddaa_slice_0/a0/vsub" 1.93601
+cap "ddaa_slice_0/a0/vreg" "bp" -3.60226
+cap "ipa" "ddaa_slice_0/a0/vsub" 0.52931
+cap "ddaa_slice_4/a0/vss" "invdummy_1/vdd" 39.2446
+cap "imb" "invdummy_1/vdd" 7.10543e-14
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vsub" 2.0533
+cap "bp" "ddaa_slice_0/a0/vsub" 0.693724
+cap "ddaa_slice_4/a0/vss" "ddaa_slice_0/a0/bp" 1.80833
+cap "invdummy_1/vdd" "bp" -3.60226
+cap "ddaa_slice_0/a0/vreg" "ipb" 7.10543e-14
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_0/a0/vsub" 2.0533
+cap "ipb" "ddaa_slice_0/a0/vsub" 1.28025
+cap "bn" "ddaa_slice_4/a0/in" 5.33192
+cap "ddaa_slice_0/a0/vreg" "bn" 297.218
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/in" -1.41114
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_4/a0/vreg" 171.729
+cap "invdummy_1/xpt" "bn" 3.74567
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/vreg" 0.824834
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_0/a0/in" 2.47542
+cap "ddaa_slice_4/a0/vreg" "bp" 269.591
+cap "bn" "ddaa_slice_0/a0/bp" 24.4265
+cap "invdummy_1/xpt" "ddaa_slice_0/a0/vss" 3.30465e-18
+cap "invdummy_1/xpt" "ddaa_slice_4/a0/vreg" 1.02811
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/in" 0.912777
+cap "ddaa_slice_4/a0/bp" "bn" 24.4265
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/vreg" -88.4128
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/vreg" 1.02811
+cap "imb" "ddaa_slice_4/a0/vreg" 0.394369
+cap "bn" "ddaa_slice_0/a0/vsub" -20.9039
+cap "invdummy_1/xpt" "invdummy_5/xpb" 7.59473
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_0/a0/vsub" 672.811
+cap "ipb" "ddaa_slice_4/a0/vreg" 0.24461
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/bp" 0.295719
+cap "bn" "ddaa_slice_0/a0/in" 5.33192
+cap "invdummy_5/xpb" "ddaa_slice_4/a0/bp" 3.05915
+cap "ddaa_slice_4/a0/vreg" "ddaa_slice_0/a0/in" 0.946622
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/vsub" 2.68491
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_4/a0/in" 0.946622
+cap "ddaa_slice_0/a0/vreg" "bp" 269.591
+cap "invdummy_1/xpt" "ddaa_slice_4/a0/in" 4.8
+cap "invdummy_1/xpt" "ddaa_slice_0/a0/vreg" 0.960207
+cap "bn" "ddaa_slice_4/a0/vreg" 297.218
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_4/a0/vreg" 0.824834
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/bp" -88.4128
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_4/a0/in" 2.47542
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/in" 4.8
+cap "ddaa_slice_0/a0/bp" "bp" 13.0076
+cap "invdummy_1/xpt" "ddaa_slice_0/a0/bp" 3.05915
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_4/a0/in" -1.41114
+cap "imb" "ddaa_slice_0/a0/vreg" 0.394369
+cap "ddaa_slice_4/a0/bp" "bp" 13.0076
+cap "invdummy_5/xpb" "bn" 3.74567
+cap "invdummy_1/xpt" "ddaa_slice_4/a0/bp" 0.295719
+cap "ipb" "ddaa_slice_0/a0/vreg" 0.24461
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vsub" 672.811
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_4/a0/in" 0.912777
+cap "ddaa_slice_0/a0/vsub" "bp" -12.7536
+cap "invdummy_1/xpt" "ddaa_slice_0/a0/vsub" 2.68491
+cap "ddaa_slice_0/a0/vss" "invdummy_5/xpb" 3.30465e-18
+cap "invdummy_5/xpb" "ddaa_slice_4/a0/vreg" 0.960207
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vsub" -42.0282
+cap "ddaa_slice_0/a0/in" "ddaa_slice_4/a0/in" 5.10638
+cap "ddaa_slice_4/a0/bp" "ddaa_slice_0/a0/vsub" -42.0282
+cap "ddaa_slice_0/a1/vreg" "ddaa_slice_4/a1/vreg" 152.174
+cap "ddaa_slice_4/a1/vreg" "ddaa_slice_4/a1/bp" 0.771393
+cap "ddaa_slice_0/a0/out" "ddaa_slice_0/a1/vsub" 2.04153
+cap "ddaa_slice_4/a1/vreg" "ddaa_slice_0/a0/out" 0.329126
+cap "ddaa_slice_0/a1/bp" "ddaa_slice_4/a0/in" 10.7268
+cap "ddaa_slice_4/a0/in" "ddaa_slice_0/a0/in" 22.1277
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a1/vsub" 2.04153
+cap "ddaa_slice_0/a1/vreg" "ddaa_slice_0/a1/bp" 0.771393
+cap "ddaa_slice_4/a1/bp" "ddaa_slice_0/a0/in" 10.7268
+cap "ddaa_slice_0/a1/vreg" "bn" 0.225658
+cap "ddaa_slice_0/a1/vreg" "ddaa_slice_4/a0/in" 4.10203
+cap "ddaa_slice_4/a1/vreg" "ddaa_slice_0/a1/vsub" 674.682
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a1/bp" 1.40887
+cap "invdummy_1/xpt" "ddaa_slice_4/a1/vreg" 3.86736
+cap "ddaa_slice_4/a1/bp" "ddaa_slice_0/a0/out" 1.40887
+cap "ddaa_slice_0/a1/vsub" "ddaa_slice_0/a0/in" 3.95537
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a1/vreg" 0.329126
+cap "ddaa_slice_4/a0/in" "ddaa_slice_0/a1/vsub" 3.95537
+cap "ddaa_slice_4/a1/vreg" "ddaa_slice_0/a0/in" 4.10203
+cap "ddaa_slice_4/a1/vreg" "bn" 0.225658
+cap "invdummy_5/xpb" "ddaa_slice_0/a1/vreg" 3.86736
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a0/out" 4.19048
+cap "ddaa_slice_0/a1/vreg" "ddaa_slice_0/a1/vsub" 674.682
+cap "vsub" "ddaa_slice_0/a2/vsub" 145.53
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a2/vsub" 4.18998
+cap "vsub" "ddaa_slice_4/a0/out" 1.50265
+cap "ddaa_slice_0/a0/out" "ddaa_slice_0/a2/vsub" 4.18998
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_4/a2/vreg" 161.952
+cap "vsub" "ddaa_slice_0/a0/out" 1.50265
+cap "ddaa_slice_4/a0/out" "ddaa_slice_0/a0/out" 24.616
+cap "ddaa_slice_4/a2/bp" "ddaa_slice_0/a0/out" 11.3105
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_4/a2/vreg" 4.46864
+cap "ddaa_slice_0/a2/bp" "ddaa_slice_4/a0/out" 11.3105
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_0/a2/vsub" 4.46864
+cap "vsub" "ddaa_slice_4/a2/vreg" 676.648
+cap "vsub" "ddaa_slice_0/a2/vreg" 676.648
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_4/a0/out" 4.11561
+cap "ddaa_slice_0/a0/out" "ddaa_slice_4/a2/vreg" 4.11561
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_4/a2/in" 2.43407
+cap "ddaa_slice_0/a2/in" "ddaa_slice_0/a2/vsub" 2.43407
+cap "ddaa_slice_4/a2/bp" "ddaa_slice_0/a1/in" 4.70943
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_4/a2/in" 2.52432
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_0/a2/vsub" 4.46864
+cap "ddaa_slice_0/a1/in" "ddaa_slice_0/a2/vsub" 1.75591
+cap "vsub" "ddaa_slice_4/a1/in" 1.50265
+cap "vsub" "ddaa_slice_4/a2/vreg" 676.648
+cap "ddaa_slice_0/a2/bp" "ddaa_slice_4/a1/in" 4.70943
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_4/a1/in" 1.75591
+cap "ddaa_slice_0/a2/in" "ddaa_slice_4/a2/vreg" 2.52432
+cap "ddaa_slice_4/a2/vreg" "ddaa_slice_0/a2/vsub" 4.46864
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_4/a1/in" 1.59129
+cap "ddaa_slice_0/a2/vreg" "ddaa_slice_4/a2/vreg" 161.952
+cap "ddaa_slice_0/a1/in" "ddaa_slice_4/a1/in" 10.999
+cap "vsub" "ddaa_slice_0/a2/vsub" 145.53
+cap "ddaa_slice_0/a1/in" "ddaa_slice_4/a2/vreg" 1.59129
+cap "ddaa_slice_0/a2/vreg" "vsub" 676.648
+cap "ddaa_slice_4/a2/in" "ddaa_slice_0/a2/bp" 6.60112
+cap "ddaa_slice_4/a2/bp" "ddaa_slice_0/a2/in" 6.60112
+cap "ddaa_slice_0/a1/in" "vsub" 1.50265
+cap "ddaa_slice_0/a2/in" "ddaa_slice_4/a2/in" 13.617
+cap "ddaa_slice_0/a3/in" "ddaa_slice_4/vreg" 1.5777
+cap "ddaa_slice_0/bp" "ddaa_slice_4/a3/in" 4.1257
+cap "ddaa_slice_0/a3/in" "ddaa_slice_4/bp" 4.1257
+cap "ddaa_slice_0/a3/in" "ddaa_slice_0/vsub" 1.5213
+cap "ddaa_slice_0/a3/in" "ddaa_slice_4/a3/in" 8.51064
+cap "ddaa_slice_4/a2/in" "ddaa_slice_0/vreg" 2.52432
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/vreg" 161.952
+cap "ddaa_slice_0/vreg" "vsub" 676.648
+cap "ddaa_slice_4/vreg" "vsub" 676.648
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/vreg" 4.46864
+cap "ddaa_slice_4/a2/in" "ddaa_slice_0/vsub" 2.43407
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/a3/in" 1.5777
+cap "ddaa_slice_0/a2/in" "ddaa_slice_4/a2/in" 13.617
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/vreg" 4.46864
+cap "ddaa_slice_0/a2/in" "ddaa_slice_4/vreg" 2.52432
+cap "ddaa_slice_0/vsub" "vsub" 145.53
+cap "ddaa_slice_4/a2/in" "ddaa_slice_0/bp" 6.60112
+cap "ddaa_slice_0/a2/in" "ddaa_slice_4/bp" 6.60112
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a3/in" 1.5213
+cap "ddaa_slice_0/a2/in" "ddaa_slice_0/vsub" 2.43407
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/vreg" 4.46864
+cap "ddaa_slice_0/a4/in" "ddaa_slice_0/vsub" 0.304259
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/vreg" 4.46864
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a4/in" 0.304259
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a2/out" 0.538875
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a3/in" 3.34685
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/a2/out" 0.538875
+cap "ddaa_slice_0/vreg" "vsub" 676.648
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/bp" 0.82514
+cap "ddaa_slice_4/vreg" "vsub" 676.648
+cap "ddaa_slice_4/vreg" "ddaa_slice_0/a3/in" 3.47095
+cap "vsub" "ddaa_slice_4/a2/out" 1.50265
+cap "ddaa_slice_4/a3/in" "ddaa_slice_0/a3/in" 18.7234
+cap "ddaa_slice_0/bp" "ddaa_slice_4/a2/out" 1.40887
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/bp" 0.82514
+cap "vsub" "ddaa_slice_0/a2/out" 1.50265
+cap "ddaa_slice_4/bp" "ddaa_slice_0/a2/out" 1.40887
+cap "ddaa_slice_4/a3/in" "ddaa_slice_0/bp" 9.07654
+cap "ddaa_slice_0/vsub" "vsub" 145.53
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/a3/in" 3.34685
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/vreg" 161.952
+cap "ddaa_slice_4/bp" "ddaa_slice_0/a3/in" 9.07654
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/a2/out" 0.329126
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/a4/in" 0.315541
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/vreg" 0.315541
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/a3/in" 3.47095
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/a4/in" 1.70213
+cap "ddaa_slice_4/vreg" "ddaa_slice_0/a2/out" 0.329126
+cap "ddaa_slice_0/a2/out" "ddaa_slice_4/a2/out" 4.19048
+cap "ddaa_slice_4/a4/out" "ddaa_slice_0/vsub" 0.538875
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/vreg" 2.03139
+cap "ddaa_slice_0/a4/out" "ddaa_slice_0/vsub" 0.538875
+cap "vsub" "ddaa_slice_0/a4/in" -2.80276e-15
+cap "ddaa_slice_0/vreg" "vsub" 672.651
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/vsub" 3.95537
+cap "ddaa_slice_4/bp" "ddaa_slice_0/a4/in" 10.7268
+cap "ddaa_slice_4/a4/out" "ddaa_slice_0/vreg" 0.329126
+cap "ddaa_slice_4/a4/out" "vsub" 1.50265
+cap "ddaa_slice_4/vreg" "ddaa_slice_0/a4/in" 4.10203
+cap "ddaa_slice_4/vreg" "vsub" 672.651
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/vreg" 152.174
+cap "ddaa_slice_4/a4/out" "ddaa_slice_0/bp" 1.40887
+cap "ddaa_slice_0/a4/out" "vsub" 1.50265
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/a4/in" 3.95537
+cap "ddaa_slice_0/vsub" "vsub" 145.53
+cap "ddaa_slice_0/vreg" "ddaa_slice_0/vsub" 2.03139
+cap "ddaa_slice_0/a4/out" "ddaa_slice_4/bp" 1.40887
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/a4/in" 22.1277
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/vreg" 4.10203
+cap "ddaa_slice_4/a4/out" "ddaa_slice_0/a4/out" 4.19048
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/bp" 10.7268
+cap "ddaa_slice_0/a4/out" "ddaa_slice_4/vreg" 0.329126
+cap "vsub" "ddaa_slice_0/vsub" 145.53
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/vsub" 3.04259
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/a4/out" 0.538875
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/a5/in" 17.0213
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/bp" 8.2514
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/vreg" 0.631081
+cap "vsub" "ddaa_slice_4/vreg" 676.648
+cap "ddaa_slice_4/a4/out" "ddaa_slice_0/bp" 1.40887
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/a4/in" 3.40426
+cap "ddaa_slice_0/a4/out" "ddaa_slice_0/vsub" 0.538875
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/vreg" 4.46864
+cap "vsub" "ddaa_slice_4/a4/out" 1.50265
+cap "ddaa_slice_0/a4/out" "ddaa_slice_4/bp" 1.40887
+cap "ddaa_slice_4/vreg" "ddaa_slice_0/vreg" 161.952
+cap "ddaa_slice_0/a4/out" "ddaa_slice_4/vreg" 0.329126
+cap "ddaa_slice_0/a4/in" "ddaa_slice_0/vsub" 0.608518
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/bp" 1.65028
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/vsub" 0.608518
+cap "ddaa_slice_0/a4/in" "ddaa_slice_4/vreg" 0.631081
+cap "ddaa_slice_0/a4/out" "vsub" 1.50265
+cap "vsub" "ddaa_slice_0/vreg" 676.648
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/vreg" 3.15541
+cap "ddaa_slice_0/vreg" "ddaa_slice_4/a4/out" 0.329126
+cap "ddaa_slice_0/a4/out" "ddaa_slice_4/a4/out" 4.19048
+cap "ddaa_slice_4/a4/in" "ddaa_slice_0/bp" 1.65028
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/a5/in" 3.04259
+cap "ddaa_slice_0/vsub" "ddaa_slice_4/vreg" 4.46864
+cap "ddaa_slice_4/bp" "ddaa_slice_0/a5/in" 8.2514
+cap "ddaa_slice_4/vreg" "ddaa_slice_0/a5/in" 3.15541
+cap "ddaa_slice_4/a6/vreg" "ddaa_slice_0/a6/vsub" 4.46864
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a6/vreg" 2.20878
+cap "ddaa_slice_4/a6/vreg" "ddaa_slice_0/a6/in" 2.20878
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/a6/vreg" 1.89324
+cap "ddaa_slice_0/a6/vreg" "vsub" 676.648
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a6/bp" 5.77598
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a6/vsub" 2.12981
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a6/in" 11.9149
+cap "ddaa_slice_0/a6/bp" "ddaa_slice_4/a5/in" 4.95084
+cap "ddaa_slice_0/a6/vsub" "ddaa_slice_4/a5/in" 1.82555
+cap "ddaa_slice_0/a6/vsub" "ddaa_slice_0/a5/in" 1.82555
+cap "ddaa_slice_0/a5/in" "ddaa_slice_4/a6/bp" 4.95084
+cap "ddaa_slice_0/a6/vsub" "vsub" 145.53
+cap "ddaa_slice_0/a6/in" "vsub" -3.56715e-15
+cap "ddaa_slice_4/a6/vreg" "ddaa_slice_0/a5/in" 1.89324
+cap "ddaa_slice_4/a6/vreg" "vsub" 676.648
+cap "ddaa_slice_0/a6/vsub" "ddaa_slice_0/a6/vreg" 4.46864
+cap "ddaa_slice_0/a6/vsub" "ddaa_slice_0/a6/in" 2.12981
+cap "ddaa_slice_0/a6/in" "ddaa_slice_4/a6/bp" 5.77598
+cap "ddaa_slice_4/a5/in" "ddaa_slice_0/a5/in" 10.2128
+cap "ddaa_slice_4/a6/vreg" "ddaa_slice_0/a6/vreg" 161.952
+cap "ddaa_slice_0/a5/in" "vsub" 7.64389e-16
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a7/vsub" 2.73833
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/vsub" 0.912777
+cap "vsub" "ddaa_slice_0/a6/out" 1.50265
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/a6/in" 7.42626
+cap "ddaa_slice_0/a7/in" "ddaa_slice_4/a7/bp" 2.47542
+cap "ddaa_slice_0/a7/in" "ddaa_slice_4/a7/in" 5.10638
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_4/a6/in" 7.42626
+cap "ddaa_slice_4/a6/out" "ddaa_slice_0/a7/vsub" 0.538875
+cap "ddaa_slice_0/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a7/vsub" 4.46864
+cap "ddaa_slice_0/a6/out" "ddaa_slice_4/a6/out" 4.19048
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_4/a6/out" 1.40887
+cap "ddaa_slice_0/a6/out" "ddaa_slice_4/a7/vreg" 0.329126
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/a6/in" 2.83986
+cap "ddaa_slice_4/a7/in" "ddaa_slice_0/a7/vsub" 0.912777
+cap "ddaa_slice_4/a6/in" "ddaa_slice_0/a6/in" 15.3191
+cap "ddaa_slice_0/a6/out" "ddaa_slice_0/a7/vsub" 0.538875
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/a6/out" 0.329126
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/a7/vreg" 161.952
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/a6/out" 1.40887
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_4/a7/in" 2.47542
+cap "vsub" "ddaa_slice_4/a6/out" 1.50265
+cap "vsub" "ddaa_slice_4/a7/vreg" 676.648
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/vsub" 4.46864
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a6/in" 2.83986
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/a7/in" 0.946622
+cap "ddaa_slice_0/a7/in" "ddaa_slice_4/a7/vreg" 0.946622
+cap "vsub" "ddaa_slice_0/a7/vsub" 145.53
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a6/in" 2.73833
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/vreg" -1.23787
+cap "ddaa_slice_0/a7/in" "ddaa_slice_4/a7/in" 22.1277
+cap "ddaa_slice_4/a6/out" "ddaa_slice_0/a7/vreg" 0.329126
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/a6/out" 0.538875
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/a6/out" 1.40887
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a6/out" 0.538875
+cap "ddaa_slice_4/a7/in" "ddaa_slice_0/a7/vreg" 4.10203
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/a7/in" 3.95537
+cap "vsub" "ddaa_slice_0/a7/vreg" 672.651
+cap "ddaa_slice_0/a7/vsub" "vsub" 145.53
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a6/out" 0.329126
+cap "ddaa_slice_4/a7/vreg" "vsub" 672.651
+cap "ddaa_slice_4/a6/out" "ddaa_slice_0/a7/bp" 1.40887
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/a7/in" 10.7268
+cap "ddaa_slice_4/a7/in" "ddaa_slice_0/a7/bp" 10.7268
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_1/a0/in" 9.11699
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/vsub" 3.95537
+cap "ddaa_slice_0/a6/out" "ddaa_slice_4/a6/out" 4.19048
+cap "ddaa_slice_0/a7/in" "ddaa_slice_4/a7/vreg" 4.10203
+cap "vsub" "ddaa_slice_4/a6/out" 1.50265
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a7/vreg" 2.03139
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/vreg" -1.23787
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a7/vreg" 152.174
+cap "vsub" "ddaa_slice_0/a6/out" 1.50265
+cap "ddaa_slice_2/a0/in" "ddaa_slice_0/a7/vreg" 9.11699
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a7/vsub" 2.03139
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/om" 0.538875
+cap "vsub" "ddaa_slice_0/a7/vsub" 145.53
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/om" 0.329126
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/om" 1.40887
+cap "ddaa_slice_4/a7/in" "ddaa_slice_1/a0/in" 2.4
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/vreg" 9.11699
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_1/a0/in" 3.78649
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a7/vreg" -11.7309
+cap "vsub" "ddaa_slice_0/om" 1.50265
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/bp" -122.536
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_2/a0/in" 3.78649
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/a7/vreg" -11.7309
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_4/a7/vreg" -122.536
+cap "vsub" "ddaa_slice_0/a7/vreg" 676.648
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_4/om" 0.538875
+cap "ddaa_slice_0/a7/in" "ddaa_slice_2/a0/in" 2.4
+cap "ddaa_slice_1/a0/in" "ddaa_slice_2/a0/in" 20.4255
+cap "ddaa_slice_4/om" "ddaa_slice_0/a7/bp" 1.40887
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_1/a0/in" 3.65111
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_2/a0/in" 3.65111
+cap "ddaa_slice_0/om" "ddaa_slice_4/a7/vreg" 0.329126
+cap "vsub" "ddaa_slice_4/a7/vreg" 676.648
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_2/a0/in" 9.90168
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_1/a0/in" -1.66455
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_0/a7/vsub" -14.8459
+cap "ddaa_slice_1/a0/in" "ddaa_slice_0/a7/bp" 9.90168
+cap "ddaa_slice_2/a0/in" "ddaa_slice_0/a7/bp" -1.66455
+cap "ddaa_slice_0/om" "ddaa_slice_4/om" 4.19048
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a7/bp" -14.8459
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_4/a7/in" 9.11699
+cap "vsub" "ddaa_slice_4/om" 1.50265
+cap "ddaa_slice_4/a7/vreg" "ddaa_slice_0/a7/vreg" 161.952
+cap "ddaa_slice_0/om" "vsub" 1.50265
+cap "ddaa_slice_1/a1/vreg" "ddaa_slice_0/a7/vsub" 4.46864
+cap "ddaa_slice_4/om" "ddaa_slice_0/a7/vsub" 2.97295
+cap "vsub" "ddaa_slice_0/a7/vsub" 145.53
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_1/a0/in" 3.30056
+cap "ddaa_slice_1/a1/vreg" "vsub" 676.648
+cap "vsub" "ddaa_slice_4/om" 1.50265
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_1/a0/in" 1.26216
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_4/om" 8.00999
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/vsub" 4.46864
+cap "ddaa_slice_1/a1/vreg" "ddaa_slice_0/a7/vreg" 161.952
+cap "ddaa_slice_0/om" "ddaa_slice_4/a7/bp" 8.00999
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_4/om" 2.85345
+cap "ddaa_slice_0/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_4/a7/bp" "ddaa_slice_2/a0/in" 3.30056
+cap "ddaa_slice_1/a0/in" "ddaa_slice_2/a0/in" 6.80851
+cap "ddaa_slice_0/om" "ddaa_slice_0/a7/vsub" 2.97295
+cap "ddaa_slice_0/om" "ddaa_slice_1/a1/vreg" 2.85345
+cap "ddaa_slice_1/a0/in" "ddaa_slice_0/a7/vsub" 1.21704
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_2/a0/in" 1.21704
+cap "ddaa_slice_0/om" "ddaa_slice_4/om" 17.8075
+cap "ddaa_slice_1/a1/vreg" "ddaa_slice_2/a0/in" 1.26216
+cap "ddaa_slice_1/a2/vsub" "ddaa_slice_2/a1/in" 2.43407
+cap "vsub" "ddaa_slice_2/a2/vreg" 676.648
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a2/bp" 4.1257
+cap "vsub" "ddaa_slice_1/a2/vsub" 145.53
+cap "ddaa_slice_2/a2/bp" "ddaa_slice_1/a1/in" 6.60112
+cap "ddaa_slice_1/a2/vreg" "ddaa_slice_2/a2/in" 1.5777
+cap "ddaa_slice_1/a2/vreg" "ddaa_slice_2/a2/vreg" 161.952
+cap "ddaa_slice_1/a2/bp" "ddaa_slice_2/a2/in" 4.1257
+cap "ddaa_slice_1/a2/vreg" "ddaa_slice_1/a2/vsub" 4.46864
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a2/in" 8.51064
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a2/vreg" 1.5777
+cap "ddaa_slice_1/a2/vreg" "ddaa_slice_2/a1/in" 2.52432
+cap "ddaa_slice_1/a1/in" "ddaa_slice_2/a2/vreg" 2.52432
+cap "ddaa_slice_2/a2/in" "ddaa_slice_1/a2/vsub" 1.5213
+cap "ddaa_slice_1/a2/vsub" "ddaa_slice_2/a2/vreg" 4.46864
+cap "ddaa_slice_1/a2/bp" "ddaa_slice_2/a1/in" 6.60112
+cap "ddaa_slice_1/a2/in" "ddaa_slice_1/a2/vsub" 1.5213
+cap "ddaa_slice_1/a1/in" "ddaa_slice_1/a2/vsub" 2.43407
+cap "ddaa_slice_1/a2/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a1/in" "ddaa_slice_2/a1/in" 13.617
+cap "ddaa_slice_1/a3/vreg" "ddaa_slice_2/a1/in" 0.329126
+cap "ddaa_slice_1/a1/in" "ddaa_slice_2/a1/in" 4.19048
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_2/a1/in" 0.538875
+cap "ddaa_slice_1/a2/in" "ddaa_slice_1/a3/vsub" 3.34685
+cap "ddaa_slice_1/a3/in" "ddaa_slice_1/a3/vsub" 0.304259
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/a3/bp" 0.82514
+cap "ddaa_slice_1/a3/vreg" "ddaa_slice_2/a3/vreg" 161.952
+cap "ddaa_slice_1/a1/in" "ddaa_slice_2/a3/vreg" 0.329126
+cap "ddaa_slice_1/a1/in" "ddaa_slice_2/a3/bp" 1.40887
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_2/a3/vreg" 4.46864
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a2/in" 18.7234
+cap "ddaa_slice_1/a3/vreg" "ddaa_slice_2/a3/in" 0.315541
+cap "vsub" "ddaa_slice_2/a1/in" 1.50265
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_2/a3/in" 0.304259
+cap "ddaa_slice_1/a3/vreg" "ddaa_slice_1/a3/vsub" 4.46864
+cap "ddaa_slice_1/a1/in" "ddaa_slice_1/a3/vsub" 0.538875
+cap "ddaa_slice_2/a2/in" "ddaa_slice_1/a3/bp" 9.07654
+cap "vsub" "ddaa_slice_2/a3/vreg" 676.648
+cap "ddaa_slice_2/a1/in" "ddaa_slice_1/a3/bp" 1.40887
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a3/vreg" 3.47095
+cap "ddaa_slice_1/a3/vreg" "ddaa_slice_2/a2/in" 3.47095
+cap "ddaa_slice_1/a2/in" "ddaa_slice_2/a3/bp" 9.07654
+cap "ddaa_slice_1/a3/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a3/in" "ddaa_slice_2/a3/vreg" 0.315541
+cap "ddaa_slice_1/a3/in" "ddaa_slice_2/a3/bp" 0.82514
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_2/a2/in" 3.34685
+cap "ddaa_slice_1/a1/in" "vsub" 1.50265
+cap "ddaa_slice_1/a3/vsub" "vsub" 145.53
+cap "ddaa_slice_1/a3/in" "ddaa_slice_2/a3/in" 1.70213
+cap "ddaa_slice_2/vreg" "ddaa_slice_1/a2/out" 0.329126
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/bp" 10.7268
+cap "vsub" "ddaa_slice_1/vreg" 672.651
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/vreg" 4.10203
+cap "ddaa_slice_2/vreg" "ddaa_slice_1/vreg" 152.174
+cap "ddaa_slice_1/a3/in" "ddaa_slice_1/vsub" 3.95537
+cap "ddaa_slice_2/bp" "ddaa_slice_1/a3/in" 10.7268
+cap "vsub" "ddaa_slice_2/a2/out" 1.50265
+cap "ddaa_slice_2/a2/out" "ddaa_slice_1/a2/out" 4.19048
+cap "ddaa_slice_1/bp" "ddaa_slice_2/a2/out" 1.40887
+cap "vsub" "ddaa_slice_1/vsub" 145.53
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/vsub" 3.95537
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/a2/out" 0.329126
+cap "ddaa_slice_2/vreg" "ddaa_slice_1/vsub" 2.03139
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/a3/in" 22.1277
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a2/out" 0.538875
+cap "ddaa_slice_2/bp" "ddaa_slice_1/a2/out" 1.40887
+cap "ddaa_slice_2/vreg" "ddaa_slice_1/a3/in" 4.10203
+cap "ddaa_slice_1/vreg" "ddaa_slice_1/vsub" 2.03139
+cap "vsub" "ddaa_slice_2/a3/in" -2.80276e-15
+cap "ddaa_slice_2/a2/out" "ddaa_slice_1/vsub" 0.538875
+cap "vsub" "ddaa_slice_2/vreg" 672.651
+cap "vsub" "ddaa_slice_1/a2/out" 1.50265
+cap "ddaa_slice_1/a4/out" "ddaa_slice_2/vreg" 0.329126
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/bp" 1.65028
+cap "ddaa_slice_1/vreg" "ddaa_slice_1/vsub" 4.46864
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/a3/in" 3.40426
+cap "ddaa_slice_1/vreg" "vsub" 676.648
+cap "ddaa_slice_1/bp" "ddaa_slice_2/a4/in" 8.2514
+cap "ddaa_slice_1/vsub" "vsub" 145.53
+cap "ddaa_slice_1/a4/in" "ddaa_slice_2/vreg" 3.15541
+cap "ddaa_slice_1/a4/out" "ddaa_slice_2/bp" 1.40887
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/vreg" 0.631081
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a4/out" 0.538875
+cap "vsub" "ddaa_slice_1/a4/out" 1.50265
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/a4/in" 3.15541
+cap "ddaa_slice_1/bp" "ddaa_slice_2/a4/out" 1.40887
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/vsub" 0.608518
+cap "ddaa_slice_1/a4/in" "ddaa_slice_2/bp" 8.2514
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/a4/in" 3.04259
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a4/in" 3.04259
+cap "ddaa_slice_1/a3/in" "ddaa_slice_2/vreg" 0.631081
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/a4/out" 0.329126
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/vreg" 161.952
+cap "vsub" "ddaa_slice_2/a4/out" 1.50265
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/a4/out" 0.538875
+cap "ddaa_slice_1/a3/in" "ddaa_slice_2/bp" 1.65028
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a3/in" 0.608518
+cap "ddaa_slice_1/a4/in" "ddaa_slice_2/a4/in" 17.0213
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/vreg" 4.46864
+cap "vsub" "ddaa_slice_2/vreg" 676.648
+cap "ddaa_slice_1/a4/out" "ddaa_slice_2/a4/out" 4.19048
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/a5/in" 2.12981
+cap "ddaa_slice_2/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a4/in" "ddaa_slice_2/a4/in" 10.2128
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/a4/in" 1.89324
+cap "ddaa_slice_1/vsub" "vsub" 145.53
+cap "ddaa_slice_2/a4/in" "vsub" 7.64389e-16
+cap "ddaa_slice_1/a5/in" "ddaa_slice_2/a5/in" 11.9149
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/vreg" 4.46864
+cap "ddaa_slice_1/bp" "ddaa_slice_2/a4/in" 4.95084
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/a5/in" 2.20878
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/a4/in" 1.82555
+cap "ddaa_slice_1/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a5/in" "ddaa_slice_2/vreg" 2.20878
+cap "ddaa_slice_2/bp" "ddaa_slice_1/a5/in" 5.77598
+cap "ddaa_slice_2/a5/in" "vsub" -3.56715e-15
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a5/in" 2.12981
+cap "ddaa_slice_1/vreg" "ddaa_slice_2/vreg" 161.952
+cap "ddaa_slice_2/vreg" "ddaa_slice_1/a4/in" 1.89324
+cap "ddaa_slice_2/bp" "ddaa_slice_1/a4/in" 4.95084
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/vreg" 4.46864
+cap "ddaa_slice_1/vsub" "ddaa_slice_1/a4/in" 1.82555
+cap "ddaa_slice_1/bp" "ddaa_slice_2/a5/in" 5.77598
+cap "ddaa_slice_1/a6/bp" "ddaa_slice_2/a5/in" 7.42626
+cap "ddaa_slice_2/a6/in" "ddaa_slice_1/a6/vsub" 0.912777
+cap "ddaa_slice_1/a6/in" "ddaa_slice_2/a6/in" 5.10638
+cap "ddaa_slice_2/a5/out" "ddaa_slice_1/a6/vsub" 0.538875
+cap "ddaa_slice_1/a6/in" "ddaa_slice_1/a6/vsub" 0.912777
+cap "ddaa_slice_1/a6/vreg" "ddaa_slice_2/a6/in" 0.946622
+cap "ddaa_slice_1/a5/out" "ddaa_slice_1/a6/vsub" 0.538875
+cap "ddaa_slice_1/a6/vreg" "ddaa_slice_1/a6/vsub" 4.46864
+cap "ddaa_slice_1/a5/in" "ddaa_slice_1/a6/vsub" 2.73833
+cap "ddaa_slice_1/a6/vsub" "vsub" 145.53
+cap "ddaa_slice_1/a6/in" "ddaa_slice_2/a6/bp" 2.47542
+cap "ddaa_slice_1/a5/out" "ddaa_slice_2/a6/bp" 1.40887
+cap "ddaa_slice_1/a5/in" "ddaa_slice_2/a6/bp" 7.42626
+cap "ddaa_slice_1/a6/vsub" "ddaa_slice_2/a5/in" 2.73833
+cap "ddaa_slice_2/a5/out" "ddaa_slice_1/a6/vreg" 0.329126
+cap "ddaa_slice_2/a5/out" "ddaa_slice_1/a5/out" 4.19048
+cap "ddaa_slice_2/a5/out" "vsub" 1.50265
+cap "ddaa_slice_2/a6/vreg" "ddaa_slice_1/a6/vsub" 4.46864
+cap "ddaa_slice_1/a5/out" "vsub" 1.50265
+cap "ddaa_slice_1/a6/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a6/bp" "ddaa_slice_2/a6/in" 2.47542
+cap "ddaa_slice_1/a6/vreg" "ddaa_slice_2/a5/in" 2.83986
+cap "ddaa_slice_1/a5/in" "ddaa_slice_2/a5/in" 15.3191
+cap "ddaa_slice_2/a6/vreg" "ddaa_slice_1/a6/in" 0.946622
+cap "ddaa_slice_2/a6/vreg" "ddaa_slice_1/a5/out" 0.329126
+cap "ddaa_slice_2/a6/vreg" "ddaa_slice_1/a6/vreg" 161.952
+cap "ddaa_slice_2/a6/vreg" "ddaa_slice_1/a5/in" 2.83986
+cap "ddaa_slice_2/a6/vreg" "vsub" 676.648
+cap "ddaa_slice_1/a6/bp" "ddaa_slice_2/a5/out" 1.40887
+cap "ddaa_slice_1/a6/in" "ddaa_slice_1/a7/vsub" 3.95537
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a6/out" 4.19048
+cap "ddaa_slice_1/a6/in" "ddaa_slice_2/a7/vreg" 4.10203
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a6/in" 3.95537
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/vreg" 0.329126
+cap "ddaa_slice_1/a6/out" "ddaa_slice_2/a7/bp" 1.40887
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a7/vreg" 2.03139
+cap "ddaa_slice_1/a7/vreg" "vsub" 672.651
+cap "ddaa_slice_1/a6/out" "vsub" 1.50265
+cap "ddaa_slice_2/a6/out" "vsub" 1.50265
+cap "ddaa_slice_2/a6/in" "ddaa_slice_1/a7/vreg" 4.10203
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a6/out" 0.538875
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a7/vreg" 2.03139
+cap "ddaa_slice_1/a6/in" "ddaa_slice_2/a7/bp" 10.7268
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/a7/vreg" 152.174
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/a6/out" 0.329126
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/bp" 1.40887
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/vsub" 0.538875
+cap "ddaa_slice_1/a6/in" "ddaa_slice_2/a6/in" 22.1277
+cap "ddaa_slice_1/a7/vsub" "vsub" 145.53
+cap "ddaa_slice_2/a7/vreg" "vsub" 672.651
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_2/a6/in" 10.7268
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a6/out" 4.19048
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_2/a7/bp" -1.23787
+cap "vsub" "ddaa_slice_1/a6/out" 1.50265
+cap "ddaa_slice_2/a7/in" "ddaa_slice_1/a7/vreg" 3.78649
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vreg" -1.23787
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_5/a0/in" 9.11699
+cap "vsub" "ddaa_slice_2/a6/out" 1.50265
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a7/vreg" 4.46864
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a6/out" 0.538875
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/bp" 1.40887
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/a7/vreg" 161.952
+cap "ddaa_slice_1/a6/out" "ddaa_slice_2/a7/bp" 1.40887
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/vsub" 0.538875
+cap "vsub" "ddaa_slice_1/a7/vsub" 145.53
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/a6/out" 0.329126
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_2/a7/in" 9.90168
+cap "vsub" "ddaa_slice_2/a7/vreg" 676.648
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a7/in" 3.65111
+cap "ddaa_slice_1/a7/in" "ddaa_slice_2/a7/in" 20.4255
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/a7/in" 3.65111
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/vreg" 0.329126
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_3/a0/in" 9.11699
+cap "ddaa_slice_1/a7/in" "ddaa_slice_2/a7/bp" 9.90168
+cap "vsub" "ddaa_slice_1/a7/vreg" 676.648
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a7/vreg" 4.46864
+cap "ddaa_slice_1/a7/in" "ddaa_slice_2/a7/vreg" 3.78649
+cap "ddaa_slice_2/a7/in" "ddaa_slice_1/a7/vsub" 1.21704
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/vsub" -14.8459
+cap "ddaa_slice_2/a7/in" "ddaa_slice_1/a7/bp" 3.30056
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_2/om" 0.329126
+cap "ddaa_slice_5/a0/in" "ddaa_slice_2/a7/vreg" 2.52432
+cap "ddaa_slice_1/a7/in" "ddaa_slice_2/a7/vreg" 1.26216
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_2/a7/vreg" 161.952
+cap "ddaa_slice_3/a0/in" "ddaa_slice_5/a0/in" 13.617
+cap "ddaa_slice_5/a0/in" "ddaa_slice_2/a7/bp" 6.60112
+cap "ddaa_slice_5/a0/in" "ddaa_slice_1/a7/vsub" 2.43407
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_1/a7/in" 3.30056
+cap "ddaa_slice_3/a0/in" "ddaa_slice_1/a7/vreg" 2.52432
+cap "ddaa_slice_1/a7/in" "ddaa_slice_1/a7/vsub" 1.21704
+cap "ddaa_slice_5/a0/in" "ddaa_slice_1/a7/bp" -1.66455
+cap "ddaa_slice_2/a7/in" "ddaa_slice_1/a7/in" 6.80851
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/vsub" -11.7309
+cap "ddaa_slice_2/a7/in" "ddaa_slice_1/a7/vreg" 1.26216
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_1/a7/in" -1.66455
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/bp" -159.07
+cap "vsub" "ddaa_slice_2/om" 1.50265
+cap "vsub" "ddaa_slice_1/om" 1.50265
+cap "vsub" "ddaa_slice_2/a7/vreg" 676.648
+cap "ddaa_slice_5/a0/in" "ddaa_slice_1/a7/in" 4.8
+cap "ddaa_slice_1/a7/vreg" "ddaa_slice_1/a7/in" 9.11699
+cap "vsub" "ddaa_slice_1/a7/vsub" 145.53
+cap "ddaa_slice_2/om" "ddaa_slice_1/om" 4.19048
+cap "ddaa_slice_1/om" "ddaa_slice_2/a7/vreg" 0.329126
+cap "ddaa_slice_2/om" "ddaa_slice_1/a7/vsub" 0.538875
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vreg" -159.07
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_1/om" 1.40887
+cap "ddaa_slice_2/om" "ddaa_slice_1/a7/bp" 1.40887
+cap "ddaa_slice_1/om" "ddaa_slice_1/a7/vsub" 0.538875
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/a7/vsub" -11.7309
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/a7/vreg" 9.11699
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/a7/bp" -1.66455
+cap "ddaa_slice_3/a0/in" "ddaa_slice_1/a7/vsub" 2.43407
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/a7/in" 4.8
+cap "ddaa_slice_1/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_1/a7/vsub" -14.8459
+cap "ddaa_slice_3/a0/in" "ddaa_slice_1/a7/bp" 6.60112
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/a7/bp" -1.66455
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a7/vreg" 4.46864
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_5/a0/in" 6.60112
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_5/a0/in" 2.43407
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_2/om" 4.1257
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/om" 1.5213
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_5/a1/vreg" 161.952
+cap "ddaa_slice_2/om" "ddaa_slice_5/a1/vreg" 1.5777
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_1/om" 1.5777
+cap "ddaa_slice_2/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_2/om" "ddaa_slice_1/om" 8.51064
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_5/a1/vreg" 4.46864
+cap "ddaa_slice_3/a0/in" "ddaa_slice_5/a0/in" 13.617
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_1/om" 4.1257
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_1/om" 1.5213
+cap "ddaa_slice_1/a7/vsub" "vsub" 145.53
+cap "ddaa_slice_1/a7/bp" "ddaa_slice_3/a0/in" 6.60112
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_3/a0/in" 2.43407
+cap "ddaa_slice_5/a1/vreg" "vsub" 676.648
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_5/a0/in" 2.52432
+cap "ddaa_slice_3/a0/in" "ddaa_slice_5/a1/vreg" 2.52432
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_5/a2/in" 0.304259
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_5/a2/vreg" 4.46864
+cap "vsub" "ddaa_slice_5/a0/out" 1.50265
+cap "vsub" "ddaa_slice_3/a0/out" 1.50265
+cap "ddaa_slice_3/a0/out" "ddaa_slice_5/a2/vreg" 3.80007
+cap "ddaa_slice_3/a2/bp" "ddaa_slice_5/a2/in" 0.82514
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_3/a2/vreg" 4.46864
+cap "ddaa_slice_3/a2/in" "ddaa_slice_3/a2/vsub" 0.304259
+cap "ddaa_slice_5/a0/out" "ddaa_slice_3/a2/vreg" 3.80007
+cap "vsub" "ddaa_slice_5/a2/vreg" 676.648
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_5/a0/out" 3.88572
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_3/a0/out" 3.88572
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a2/bp" 0.82514
+cap "ddaa_slice_5/a0/out" "ddaa_slice_3/a0/out" 22.9139
+cap "ddaa_slice_5/a0/out" "ddaa_slice_3/a2/bp" 10.4854
+cap "ddaa_slice_3/a0/out" "ddaa_slice_5/a2/bp" 10.4854
+cap "vsub" "ddaa_slice_3/a2/vreg" 676.648
+cap "vsub" "ddaa_slice_3/a2/vsub" 145.53
+cap "ddaa_slice_3/a2/vreg" "ddaa_slice_5/a2/in" 0.315541
+cap "ddaa_slice_3/a2/vreg" "ddaa_slice_5/a2/vreg" 161.952
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a2/vreg" 0.315541
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a2/in" 1.70213
+cap "ddaa_slice_3/a3/vsub" "vsub" 145.53
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a3/vreg" 4.10203
+cap "ddaa_slice_3/a3/vreg" "ddaa_slice_3/a3/vsub" 2.03139
+cap "ddaa_slice_5/a3/vreg" "ddaa_slice_3/a1/in" 0.329126
+cap "ddaa_slice_3/a3/vreg" "vsub" 672.651
+cap "ddaa_slice_3/a2/in" "ddaa_slice_3/a3/vsub" 3.95537
+cap "ddaa_slice_3/a3/bp" "ddaa_slice_5/a1/in" 1.40887
+cap "ddaa_slice_3/a2/in" "vsub" -2.80276e-15
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_5/a1/in" 0.538875
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_3/a1/in" 0.538875
+cap "vsub" "ddaa_slice_5/a1/in" 1.50265
+cap "vsub" "ddaa_slice_3/a1/in" 1.50265
+cap "ddaa_slice_3/a3/bp" "ddaa_slice_5/a2/in" 10.7268
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a3/bp" 10.7268
+cap "ddaa_slice_5/a2/in" "ddaa_slice_3/a3/vsub" 3.95537
+cap "ddaa_slice_3/a3/vreg" "ddaa_slice_5/a1/in" 0.329126
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_5/a3/vreg" 2.03139
+cap "ddaa_slice_5/a3/bp" "ddaa_slice_3/a1/in" 1.40887
+cap "ddaa_slice_5/a3/vreg" "vsub" 672.651
+cap "ddaa_slice_5/a2/in" "ddaa_slice_3/a3/vreg" 4.10203
+cap "ddaa_slice_3/a3/vreg" "ddaa_slice_5/a3/vreg" 152.174
+cap "ddaa_slice_5/a1/in" "ddaa_slice_3/a1/in" 4.19048
+cap "ddaa_slice_5/a2/in" "ddaa_slice_3/a2/in" 22.1277
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/vsub" 4.46864
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a3/in" 8.2514
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/vreg" 0.631081
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a2/out" 1.40887
+cap "ddaa_slice_3/vsub" "vsub" 145.53
+cap "ddaa_slice_5/a2/out" "vsub" 1.50265
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/a2/out" 0.329126
+cap "ddaa_slice_3/a3/in" "ddaa_slice_3/vsub" 3.04259
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a3/in" 3.15541
+cap "ddaa_slice_3/a2/out" "vsub" 1.50265
+cap "ddaa_slice_5/a2/out" "ddaa_slice_3/vreg" 0.329126
+cap "ddaa_slice_3/vreg" "ddaa_slice_3/vsub" 4.46864
+cap "ddaa_slice_5/a3/in" "ddaa_slice_3/vsub" 3.04259
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a2/in" 1.65028
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a2/in" 1.65028
+cap "ddaa_slice_5/a2/out" "ddaa_slice_3/vsub" 0.538875
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a2/out" 1.40887
+cap "ddaa_slice_3/a2/in" "ddaa_slice_3/vsub" 0.608518
+cap "ddaa_slice_5/vreg" "vsub" 676.648
+cap "ddaa_slice_3/a2/out" "ddaa_slice_3/vsub" 0.538875
+cap "ddaa_slice_3/a3/in" "ddaa_slice_5/vreg" 3.15541
+cap "ddaa_slice_5/a2/out" "ddaa_slice_3/a2/out" 4.19048
+cap "ddaa_slice_5/a2/in" "ddaa_slice_3/vreg" 0.631081
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/vreg" 161.952
+cap "ddaa_slice_3/vreg" "vsub" 676.648
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a3/in" 8.2514
+cap "ddaa_slice_5/a2/in" "ddaa_slice_3/vsub" 0.608518
+cap "ddaa_slice_3/a3/in" "ddaa_slice_5/a3/in" 17.0213
+cap "ddaa_slice_3/a2/in" "ddaa_slice_5/a2/in" 3.40426
+cap "ddaa_slice_5/a3/in" "ddaa_slice_3/vsub" 1.82555
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/vreg" 161.952
+cap "ddaa_slice_3/a3/in" "ddaa_slice_5/a3/in" 10.2128
+cap "vsub" "ddaa_slice_3/vsub" 145.53
+cap "ddaa_slice_3/a4/in" "vsub" -3.56715e-15
+cap "ddaa_slice_3/a4/in" "ddaa_slice_3/vsub" 2.12981
+cap "ddaa_slice_3/a3/in" "vsub" 7.64389e-16
+cap "ddaa_slice_3/a3/in" "ddaa_slice_3/vsub" 1.82555
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a3/in" 4.95084
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a3/in" 1.89324
+cap "ddaa_slice_3/vreg" "vsub" 676.648
+cap "ddaa_slice_3/vreg" "ddaa_slice_3/vsub" 4.46864
+cap "ddaa_slice_5/a4/in" "ddaa_slice_3/vsub" 2.12981
+cap "ddaa_slice_3/a4/in" "ddaa_slice_5/a4/in" 11.9149
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a4/in" 5.77598
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a4/in" 2.20878
+cap "ddaa_slice_5/vreg" "vsub" 676.648
+cap "ddaa_slice_3/a4/in" "ddaa_slice_5/vreg" 2.20878
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/vsub" 4.46864
+cap "ddaa_slice_3/a3/in" "ddaa_slice_5/vreg" 1.89324
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a4/in" 5.77598
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a3/in" 4.95084
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/vreg" 161.952
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/a4/in" 2.73833
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a4/out" 0.329126
+cap "ddaa_slice_3/vsub" "vsub" 145.53
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a5/in" 2.47542
+cap "ddaa_slice_3/vsub" "ddaa_slice_3/a5/in" 0.912777
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a4/out" 1.40887
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/vreg" 4.46864
+cap "ddaa_slice_5/a4/out" "ddaa_slice_3/vsub" 0.538875
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a5/in" 0.946622
+cap "vsub" "ddaa_slice_5/vreg" 676.648
+cap "ddaa_slice_5/a4/out" "vsub" 1.50265
+cap "ddaa_slice_5/bp" "ddaa_slice_3/a4/in" 7.42626
+cap "ddaa_slice_3/a4/out" "ddaa_slice_5/bp" 1.40887
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a5/in" 2.47542
+cap "ddaa_slice_3/a5/in" "ddaa_slice_5/vreg" 0.946622
+cap "ddaa_slice_3/vsub" "ddaa_slice_3/a4/in" 2.73833
+cap "ddaa_slice_3/a4/out" "ddaa_slice_3/vsub" 0.538875
+cap "ddaa_slice_3/vsub" "ddaa_slice_5/a5/in" 0.912777
+cap "ddaa_slice_5/a4/in" "ddaa_slice_3/a4/in" 15.3191
+cap "ddaa_slice_3/a4/out" "vsub" 1.50265
+cap "ddaa_slice_3/vreg" "ddaa_slice_3/vsub" 4.46864
+cap "ddaa_slice_3/a5/in" "ddaa_slice_5/a5/in" 5.10638
+cap "ddaa_slice_3/vreg" "ddaa_slice_5/a4/in" 2.83986
+cap "ddaa_slice_5/vreg" "ddaa_slice_3/a4/in" 2.83986
+cap "ddaa_slice_3/vreg" "vsub" 676.648
+cap "ddaa_slice_3/a4/out" "ddaa_slice_5/vreg" 0.329126
+cap "ddaa_slice_3/a4/out" "ddaa_slice_5/a4/out" 4.19048
+cap "ddaa_slice_3/bp" "ddaa_slice_5/a4/in" 7.42626
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_5/a5/in" 3.95537
+cap "ddaa_slice_3/a6/bp" "ddaa_slice_5/a5/in" 10.7268
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_3/a5/in" 3.95537
+cap "ddaa_slice_5/a4/out" "ddaa_slice_3/a6/vreg" 0.329126
+cap "ddaa_slice_3/a5/in" "ddaa_slice_5/a6/vreg" 4.10203
+cap "ddaa_slice_5/a4/out" "ddaa_slice_3/a4/out" 4.19048
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_3/a6/vreg" 2.03139
+cap "ddaa_slice_5/a6/vreg" "ddaa_slice_3/a6/vreg" 152.174
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_3/a4/out" 0.538875
+cap "ddaa_slice_5/a6/vreg" "ddaa_slice_3/a4/out" 0.329126
+cap "vsub" "ddaa_slice_3/a6/vreg" 672.651
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_5/a4/out" 0.538875
+cap "ddaa_slice_5/a4/out" "ddaa_slice_3/a6/bp" 1.40887
+cap "vsub" "ddaa_slice_3/a4/out" 1.50265
+cap "ddaa_slice_3/a6/vsub" "ddaa_slice_5/a6/vreg" 2.03139
+cap "ddaa_slice_3/a5/in" "ddaa_slice_5/a5/in" 22.1277
+cap "ddaa_slice_5/a6/bp" "ddaa_slice_3/a5/in" 10.7268
+cap "ddaa_slice_5/a4/out" "vsub" 1.50265
+cap "ddaa_slice_3/a6/vsub" "vsub" 145.53
+cap "ddaa_slice_5/a5/in" "ddaa_slice_3/a6/vreg" 4.10203
+cap "vsub" "ddaa_slice_5/a6/vreg" 672.651
+cap "ddaa_slice_5/a6/bp" "ddaa_slice_3/a4/out" 1.40887
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_5/a6/out" 1.40887
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a6/in" 3.65111
+cap "ddaa_slice_3/a6/out" "ddaa_slice_3/a7/vsub" 0.538875
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a6/in" 3.78649
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a7/vreg" 4.46864
+cap "ddaa_slice_3/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_5/a6/in" "ddaa_slice_3/a6/in" 20.4255
+cap "vsub" "ddaa_slice_5/a6/out" 1.50265
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a6/out" 0.329126
+cap "vsub" "ddaa_slice_3/a6/out" 1.50265
+cap "ddaa_slice_3/a6/out" "ddaa_slice_5/a6/out" 4.19048
+cap "vsub" "ddaa_slice_5/a7/vreg" 676.648
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a7/vreg" 161.952
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/in" 3.65111
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_5/a6/in" 9.90168
+cap "ddaa_slice_3/a6/in" "ddaa_slice_5/a7/vreg" 3.78649
+cap "ddaa_slice_3/a6/in" "ddaa_slice_5/a7/bp" 9.90168
+cap "ddaa_slice_3/a6/out" "ddaa_slice_5/a7/vreg" 0.329126
+cap "ddaa_slice_3/a6/out" "ddaa_slice_5/a7/bp" 1.40887
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" 4.46864
+cap "vsub" "ddaa_slice_3/a7/vsub" 145.53
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/out" 0.538875
+cap "ddaa_slice_3/a6/in" "ddaa_slice_5/a6/in" 6.80851
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a7/vreg" 161.952
+cap "ddaa_slice_3/a7/vsub" "vsub" 145.53
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/in" 1.21704
+cap "ddaa_slice_5/a6/out" "vsub" 1.50265
+cap "ddaa_slice_5/a6/in" "ddaa_slice_3/a7/bp" 3.30056
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a6/in" 1.21704
+cap "ddaa_slice_3/a7/in" "ddaa_slice_5/a7/in" 13.617
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/vsub" 2.43407
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_3/a6/in" 3.30056
+cap "ddaa_slice_3/a6/out" "vsub" 1.50265
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/vsub" 2.43407
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_3/a7/in" 6.60112
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a6/out" 0.538875
+cap "vsub" "ddaa_slice_5/a7/vreg" 676.648
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/bp" 6.60112
+cap "ddaa_slice_5/a6/out" "ddaa_slice_3/a7/bp" 1.40887
+cap "ddaa_slice_3/a7/vreg" "vsub" 676.648
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a6/in" 1.26216
+cap "ddaa_slice_3/a6/in" "ddaa_slice_5/a7/vreg" 1.26216
+cap "ddaa_slice_3/a7/in" "ddaa_slice_5/a7/vreg" 2.52432
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a6/out" 0.538875
+cap "ddaa_slice_3/a6/out" "ddaa_slice_5/a6/out" 4.19048
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_3/a6/out" 1.40887
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a7/vreg" 4.46864
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" 4.46864
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/vreg" 2.52432
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a6/out" 0.329126
+cap "ddaa_slice_3/a6/out" "ddaa_slice_5/a7/vreg" 0.329126
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vss" 0.517554
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_3/a7/vsub" -42.0282
+cap "invdummy_6/xpt" "ddaa_slice_3/a7/vreg" 0.960207
+cap "ddaa_slice_3/a7/in" "ddaa_slice_5/a7/vreg" 2.52432
+cap "ddaa_slice_3/a7/in" "ddaa_slice_5/a7/in" 13.617
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" -7.83305
+cap "ddaa_slice_3/a7/in" "invdummy_0/xpb" 4.8
+cap "invdummy_6/xpt" "ddaa_slice_3/a7/vss" 3.30465e-18
+cap "invdummy_6/xpt" "ddaa_slice_3/a7/vsub" 1.18225
+cap "ddaa_slice_3/a7/in" "ddaa_slice_5/a7/bp" 6.60112
+cap "vsub" "ddaa_slice_5/a7/vreg" 680.644
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/bp" 6.60112
+cap "vsub" "invdummy_0/xpb" 1.50265
+cap "ddaa_slice_3/a7/bp" "invdummy_0/xpb" 0.0348283
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/vsub" 2.43407
+cap "ddaa_slice_3/a7/vreg" "vsub" 680.644
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/bp" -96.981
+cap "invdummy_6/xpt" "vsub" 1.50265
+cap "vsub" "ddaa_slice_3/a7/vsub" 145.53
+cap "invdummy_6/xpt" "ddaa_slice_3/a7/bp" 3.05915
+cap "ddaa_slice_5/a7/vreg" "invdummy_0/xpb" 0.960207
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/bp" -42.0282
+cap "ddaa_slice_5/a7/in" "ddaa_slice_5/a7/bp" -1.66455
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_5/a7/bp" -96.981
+cap "ddaa_slice_5/a7/bp" "invdummy_0/xpb" 3.05915
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a7/in" 2.52432
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/om" 1.56686
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_5/a7/vreg" 171.729
+cap "ddaa_slice_3/a7/vreg" "invdummy_0/xpb" 1.02811
+cap "invdummy_6/xpt" "ddaa_slice_5/a7/in" 4.8
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" -1.66455
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_5/a7/vreg" 0.517554
+cap "invdummy_6/xpt" "ddaa_slice_5/a7/vreg" 1.02811
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xpb" 3.30465e-18
+cap "invdummy_6/xpt" "invdummy_0/xpb" 7.59473
+cap "ddaa_slice_5/a7/in" "ddaa_slice_3/a7/vsub" 2.43407
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/a7/vsub" -7.83305
+cap "ddaa_slice_3/a7/vsub" "invdummy_0/xpb" 1.18225
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/om" 1.56686
+cap "invdummy_6/xpt" "ddaa_slice_5/a7/bp" 0.0348283
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/in" 0.253401
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/vss" 1.56177
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/a7/vreg" 76.087
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a7/vreg" 22.6642
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vss" 11.7839
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vss" 12.9165
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vss" 55.856
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_5/a7/bp" 2.0533
+cap "ddaa_slice_3/a7/vsub" "op" 3.2943
+cap "ddaa_slice_3/a7/vreg" "vsub" 336.326
+cap "ddaa_slice_3/a7/vsub" "vsub" 91.1363
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/vss" 0.747556
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/om" 8.02322
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/a7/vss" 55.856
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/vreg" -1.98952e-13
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/vreg" 8.56827
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_3/a7/vss" 12.9165
+cap "ddaa_slice_5/a7/vreg" "vsub" 336.326
+cap "ddaa_slice_5/a7/vreg" "ddaa_slice_3/om" -2.27374e-13
+cap "ddaa_slice_3/a7/vss" "invdummy_6/xpt" 1.56177
+cap "ddaa_slice_5/a7/bp" "invdummy_6/xpt" 0.260891
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_5/a7/in" 0.747556
+cap "ddaa_slice_5/a7/bp" "ddaa_slice_5/a7/in" 0.253401
+cap "ddaa_slice_3/a7/bp" "invdummy_0/xpb" 0.260891
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vreg" 22.6642
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vsub" 2.0533
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vreg" 8.56827
+cap "invdummy_6/vdd" "op" -2.27374e-13
+cap "invdummy_6/vdd" "invdummy_0/vss" 7.10543e-14
+cap "invdummy_0/vdd" "op" -2.27374e-13
+cap "invdummy_0/vdd" "invdummy_0/vss" 5.68434e-14
+cap "invdummy_6/vdd" "om" 7.10543e-15
+cap "invdummy_0/vdd" "om" 7.10543e-15
+cap "bp" "ddaa_slice_0/a0/vreg" -4.80302
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/bn" -7.16342
+cap "invedge_5/m3_200_2000#" "imb" 1.20075
+cap "invedge_5/m3_200_2000#" "ipb" 0.28127
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/vss" 25.7594
+cap "ddaa_slice_0/a0/vsub" "imb" 2.90401
+cap "invedge_5/m3_200_2000#" "ddaa_slice_0/im" 0.12106
+cap "bn" "ddaa_slice_0/a0/vss" -0.371928
+cap "ipb" "ddaa_slice_0/a0/vsub" 1.92038
+cap "ddaa_slice_0/im" "ddaa_slice_0/a0/vsub" 1.21098
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vsub" 24.5521
+cap "ddaa_slice_0/a0/vss" "invedge_5/m2_200_2000#" 2.43812
+cap "ddaa_slice_0/a0/vreg" "bn" -1.48771
+cap "ipa" "invedge_5/m3_200_2000#" 0.0669036
+cap "imb" "invedge_5/m2_200_2000#" 0.960035
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vss" 52.3262
+cap "ipb" "invedge_5/m2_200_2000#" 0.435409
+cap "ddaa_slice_0/a0/vreg" "imb" -2.84217e-14
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vss" 7.23333
+cap "ddaa_slice_0/a0/vreg" "ipb" -2.84217e-14
+cap "ddaa_slice_0/im" "invedge_5/m2_200_2000#" 0.223757
+cap "ipa" "ddaa_slice_0/a0/vsub" 0.793964
+cap "bp" "ddaa_slice_0/a0/vss" -1.20075
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/im" 9.9476e-14
+cap "invedge_5/m3_200_2000#" "ddaa_slice_0/a0/vss" 18.4097
+cap "ipa" "invedge_5/m2_200_2000#" 0.132316
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vss" -28.4499
+cap "ddaa_slice_0/a0/bp" "invedge_5/m3_200_2000#" 17.4067
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vreg" -65.3787
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/in" -13.914
+cap "bp" "ddaa_slice_0/a0/bn" -0.967093
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/vss" 1.82516
+cap "ipb" "ddaa_slice_0/a0/vreg" 0.366915
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/bp" 28.1746
+cap "bp" "invedge_5/m2_200_2000#" 5.31817
+cap "invedge_5/m2_200_2000#" "ddaa_slice_0/a0/in" 0.169523
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vss" -31.0608
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/vss" -1.63198
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/bp" -65.0009
+cap "invedge_5/m3_200_2000#" "bn" 85.5832
+cap "imb" "ddaa_slice_0/a0/vreg" 0.591554
+cap "bn" "ddaa_slice_0/a0/vreg" 423.856
+cap "invedge_5/m2_200_2000#" "ddaa_slice_0/a0/bp" 18.6281
+cap "ddaa_slice_0/a0/in" "bn" 47.3724
+cap "invdummy_5/xpb" "imb" 0.876294
+cap "invdummy_5/xpb" "bn" 27.9623
+cap "bn" "ddaa_slice_0/a0/vss" 88.484
+cap "ddaa_slice_0/a0/bp" "bn" 79.1821
+cap "invdummy_5/m1_200_700#" "ddaa_slice_0/a0/vsub" 0.292118
+cap "ddaa_slice_0/a0/bn" "bn" -13.97
+cap "invdummy_5/m1_200_700#" "ddaa_slice_0/a0/vreg" 24.0946
+cap "bp" "ddaa_slice_0/a0/vsub" 10.867
+cap "invedge_5/m2_200_2000#" "bn" 5.31817
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/vreg" 1.75271
+cap "ddaa_slice_0/a0/out" "bn" 0.354397
+cap "bp" "invedge_5/m3_200_2000#" 96.6789
+cap "ddaa_slice_0/a0/in" "invedge_5/m3_200_2000#" 0.0880594
+cap "bp" "ddaa_slice_0/a0/vreg" 382.078
+cap "invdummy_5/m1_200_700#" "ddaa_slice_0/a0/bp" 8.98974
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/vsub" 1.8161
+cap "invdummy_5/xpb" "bp" 2.10601
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/vss" 0.292118
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/in" 96.752
+cap "bp" "ddaa_slice_0/a0/bp" 46.7686
+cap "bp" "ddaa_slice_0/a0/vss" 81.9106
+cap "ddaa_slice_0/a0/out" "ddaa_slice_0/a1/vsub" 2.56317
+cap "bn" "ddaa_slice_0/a0/in" 15.5218
+cap "invdummy_5/xpb" "ddaa_slice_0/a0/in" 10.5268
+cap "ddaa_slice_0/a1/vss" "ddaa_slice_0/a0/in" 1.04748
+cap "ddaa_slice_0/a0/in" "ddaa_slice_0/a1/vsub" -0.23483
+cap "ddaa_slice_0/a1/bp" "ddaa_slice_0/a1/vreg" 2.31418
+cap "ddaa_slice_0/a1/bp" "ddaa_slice_0/a0/in" 4.14281
+cap "invedge_5/m3_200_2000#" "ddaa_slice_0/a0/in" 0.145637
+cap "bn" "ddaa_slice_0/a1/vreg" 0.676974
+cap "invdummy_5/xpb" "ddaa_slice_0/a1/vreg" 11.6021
+cap "vsub" "ddaa_slice_0/a0/out" 2.04435
+cap "ddaa_slice_0/a0/out" "ddaa_slice_0/a2/vsub" 0.283989
+cap "vsub" "ddaa_slice_0/a2/in" 0.110648
+cap "ddaa_slice_0/a2/vsub" "ddaa_slice_0/a2/in" -0.345478
+cap "ddaa_slice_0/om" "vsub" 3.14227
+cap "ddaa_slice_0/om" "ddaa_slice_0/vsub" 1.02288
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/a3/in" -0.345478
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/om" 0.23605
+cap "vsub" "ddaa_slice_0/a3/in" 0.110648
+cap "vsub" "ddaa_slice_0/om" 0.725139
+cap "ddaa_slice_0/a4/out" "vsub" 1.45028
+cap "ddaa_slice_0/vsub" "ddaa_slice_0/im" -0.345478
+cap "ddaa_slice_0/a4/out" "ddaa_slice_0/vsub" 0.4721
+cap "vsub" "ddaa_slice_0/im" 0.110648
+cap "vsub" "ddaa_slice_0/om" 0.110648
+cap "ddaa_slice_0/om" "ddaa_slice_0/vsub" -0.345478
+cap "ddaa_slice_0/a4/out" "vsub" 2.41713
+cap "ddaa_slice_0/a4/out" "ddaa_slice_0/vsub" 0.786834
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a6/in" -0.345478
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a6/out" 0.865517
+cap "vsub" "ddaa_slice_0/a6/in" 0.110648
+cap "ddaa_slice_0/a6/out" "vsub" 2.65884
+cap "ddaa_slice_0/im" "ddaa_slice_0/a7/vss" 1.28447
+cap "ddaa_slice_0/im" "ddaa_slice_0/a7/vsub" -0.345478
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_2/a0/in" 27.351
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/bp" -3.71361
+cap "vsub" "ddaa_slice_0/a6/out" 1.20856
+cap "ddaa_slice_0/im" "ddaa_slice_2/a0/in" 8.9673
+cap "ddaa_slice_0/im" "vsub" 0.110648
+cap "ddaa_slice_0/im" "ddaa_slice_0/a7/bp" 5.91583
+cap "ddaa_slice_0/a6/out" "ddaa_slice_0/a7/vsub" 0.393417
+cap "ddaa_slice_0/om" "vsub" 0.966852
+cap "ddaa_slice_0/im" "ddaa_slice_2/a0/in" 34.9282
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_2/a0/in" -0.345478
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/bn" -6.445
+cap "ddaa_slice_0/im" "ddaa_slice_0/a7/vreg" 27.351
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_2/a0/in" 1.28447
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/bn" -39.2538
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/vss" -37.418
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_2/a0/in" -8.8428
+cap "ddaa_slice_0/om" "ddaa_slice_0/a7/vsub" 0.314733
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/vreg" -29.6872
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/vreg" -128.135
+cap "vsub" "ddaa_slice_2/a0/in" 0.110648
+cap "ddaa_slice_0/om" "vsub" 3.0112
+cap "ddaa_slice_0/om" "ddaa_slice_0/a7/vsub" 0.598722
+cap "ddaa_slice_2/a2/in" "ddaa_slice_1/a3/vsub" -0.345478
+cap "ddaa_slice_2/a2/in" "vsub" 0.110648
+cap "ddaa_slice_1/a3/vsub" "ddaa_slice_2/a1/in" 0.70815
+cap "vsub" "ddaa_slice_2/a1/in" 2.17542
+cap "ddaa_slice_2/a3/in" "ddaa_slice_1/vsub" -0.345478
+cap "vsub" "ddaa_slice_2/a3/in" 0.110648
+cap "ddaa_slice_2/om" "ddaa_slice_1/vsub" 0.550783
+cap "vsub" "ddaa_slice_2/om" 1.69199
+cap "ddaa_slice_2/a4/out" "vsub" 0.483426
+cap "vsub" "ddaa_slice_2/im" 0.110648
+cap "ddaa_slice_2/a4/out" "ddaa_slice_1/vsub" 0.157367
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/im" -0.345478
+cap "ddaa_slice_2/a4/out" "vsub" 3.14227
+cap "ddaa_slice_1/vsub" "ddaa_slice_2/a4/out" 1.02288
+cap "ddaa_slice_2/a5/out" "ddaa_slice_1/a6/vsub" 0.0786834
+cap "ddaa_slice_2/a5/in" "ddaa_slice_1/a6/vsub" -0.345478
+cap "vsub" "ddaa_slice_2/a5/out" 0.241713
+cap "vsub" "ddaa_slice_2/a5/in" 0.110648
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a6/in" -0.345478
+cap "vsub" "ddaa_slice_2/a6/out" 1.9337
+cap "vsub" "ddaa_slice_2/a6/in" 0.110648
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/a6/out" 0.629467
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/im" 5.91583
+cap "ddaa_slice_2/a6/out" "ddaa_slice_1/a7/vsub" 0.629467
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vreg" -3.71361
+cap "ddaa_slice_2/a6/out" "vsub" 1.9337
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/im" -0.345478
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/im" 8.9673
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/a7/vreg" 27.351
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/im" 1.28447
+cap "vsub" "ddaa_slice_2/im" 0.110648
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/vreg" -29.6872
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/bn" -6.445
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_3/a0/in" -8.8428
+cap "ddaa_slice_3/a0/in" "ddaa_slice_1/a7/vsub" -0.345478
+cap "ddaa_slice_2/im" "ddaa_slice_2/om" -1.11022e-16
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/im" 60.8892
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vreg" -205.67
+cap "ddaa_slice_3/a0/in" "ddaa_slice_2/a7/vss" 1.28447
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/im" -14.7586
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/bn" -39.2538
+cap "ddaa_slice_2/im" "ddaa_slice_2/a7/vreg" 27.351
+cap "ddaa_slice_3/a0/in" "vsub" 0.110648
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vss" -37.418
+cap "ddaa_slice_1/a7/vsub" "ddaa_slice_2/om" 1.02288
+cap "vsub" "ddaa_slice_2/om" 3.14227
+cap "ddaa_slice_3/a2/vsub" "ddaa_slice_3/a0/out" -0.109428
+cap "ddaa_slice_3/a0/out" "vsub" 0.835787
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_3/a2/in" -0.345478
+cap "ddaa_slice_3/a3/vsub" "ddaa_slice_3/a1/in" 0.4721
+cap "ddaa_slice_3/a2/in" "vsub" 0.110648
+cap "ddaa_slice_3/a1/in" "vsub" 1.45028
+cap "ddaa_slice_3/a3/in" "ddaa_slice_3/vsub" -0.345478
+cap "ddaa_slice_3/om" "vsub" 2.41713
+cap "ddaa_slice_3/om" "ddaa_slice_3/vsub" 0.786834
+cap "vsub" "ddaa_slice_3/a3/in" 0.110648
+cap "vsub" "ddaa_slice_3/a4/out" 2.65884
+cap "ddaa_slice_3/vsub" "ddaa_slice_3/im" -0.345478
+cap "vsub" "ddaa_slice_3/im" 0.110648
+cap "ddaa_slice_3/vsub" "ddaa_slice_3/a4/out" 0.865517
+cap "ddaa_slice_3/a5/in" "ddaa_slice_3/a6/vsub" -0.345478
+cap "ddaa_slice_3/a5/in" "vsub" 0.110648
+cap "ddaa_slice_3/a4/out" "ddaa_slice_3/a6/vsub" 0.393417
+cap "ddaa_slice_3/a4/out" "vsub" 1.20856
+cap "vsub" "ddaa_slice_3/a6/in" 0.110648
+cap "ddaa_slice_3/a6/in" "ddaa_slice_3/a7/vsub" -0.345478
+cap "vsub" "ddaa_slice_3/a6/out" 0.966852
+cap "ddaa_slice_3/a6/out" "ddaa_slice_3/a7/vsub" 0.314733
+cap "ddaa_slice_3/a6/out" "vsub" 2.90056
+cap "ddaa_slice_3/a6/out" "ddaa_slice_3/a7/vsub" 0.9442
+cap "vsub" "ddaa_slice_3/a7/in" 0.110648
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/in" -0.345478
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/vreg" 2.35029
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/vsub" 1.8161
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/vsub" 0.292118
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/in" 96.752
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vss" -28.9109
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/bp" 24.6641
+cap "invedge_0/m2_200_2000#" "ddaa_slice_3/a7/in" 0.169523
+cap "invdummy_0/m1_200_700#" "ddaa_slice_3/a7/vsub" 0.292118
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" -33.6712
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/bp" -69.2538
+cap "ddaa_slice_3/a7/vreg" "invdummy_0/m1_200_700#" 24.0946
+cap "invedge_0/m2_200_2000#" "ddaa_slice_3/a7/bp" 18.6281
+cap "invdummy_0/m1_200_700#" "ddaa_slice_3/a7/bp" 8.98974
+cap "ddaa_slice_3/om" "invdummy_0/xpb" 3.75197
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/vss" 1.12871
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bn" -1.63198
+cap "invedge_0/m3_200_2000#" "ddaa_slice_3/a7/in" 0.0880594
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" 1.75271
+cap "invedge_0/m3_200_2000#" "ddaa_slice_3/a7/bp" 17.4067
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/bp" -89.2105
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" -14.7586
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 4.46528
+cap "ddaa_slice_3/om" "invedge_0/m3_200_2000#" 3.12124
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/bp" 4.25282
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/bp" 3.51053
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vss" 22.3841
+cap "op" "invedge_0/m3_200_2000#" 0.455023
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/vreg" 75.8913
+cap "ddaa_slice_3/a7/vss" "invedge_0/m2_200_2000#" 1.62526
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" 54.5283
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/om" 12.0348
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/vreg" 1.7053e-13
+cap "ddaa_slice_3/om" "invedge_0/m2_200_2000#" 3.3538
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/bp" 4.52919
+cap "ddaa_slice_3/a7/vsub" "op" 4.94145
+cap "op" "invedge_0/m2_200_2000#" 0.868829
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/vss" -12.586
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/in" 0.844669
+cap "invdummy_0/xpb" "ddaa_slice_3/a7/vss" 9.07097
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vreg" 24.5521
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vreg" 23.8318
+cap "ddaa_slice_3/a7/vss" "invedge_0/m3_200_2000#" 21.3477
+cap "invdummy_0/vdd" "op" -1.7053e-13
+cap "invdummy_0/vdd" "om" 4.26326e-14
+cap "invdummy_0/vss" "invdummy_0/vdd" 8.52651e-14
+cap "invdummy_0/vss" "invdummy_0/vdd" 8.52651e-14
+cap "invdummy_0/vdd" "op" -5.68434e-14
+cap "imb" "invdummy_5/vss" 0.960035
+cap "invedge_5/a_200_1100#" "ddaa_slice_0/im" 10.2376
+cap "invdummy_5/vss" "ddaa_slice_0/a0/bn" -15.0707
+cap "invedge_5/a_200_1100#" "ipb" 2.34713
+cap "ddaa_slice_0/ip" "invdummy_5/vss" 0.264633
+cap "invedge_5/a_200_1100#" "invdummy_5/vss" 34.2512
+cap "invdummy_5/vss" "ddaa_slice_0/a0/bp" 6.64016
+cap "imb" "invedge_5/a_200_1100#" 3.54935
+cap "invdummy_5/vss" "ddaa_slice_0/im" 146.392
+cap "invdummy_5/vss" "ipb" 0.435409
+cap "ddaa_slice_0/ip" "invedge_5/a_200_1100#" 1.05862
+cap "ddaa_slice_0/a0/xb" "ddaa_slice_0/a0/vss" 1.27124
+cap "imb" "ddaa_slice_0/a1/out" 0.334518
+cap "ddaa_slice_0/a0/bp" "invdummy_5/xn" 0.596669
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/bn" -833.23
+cap "ddaa_slice_0/a0/vss" "ipb" 1.34536
+cap "ddaa_slice_0/a0/bp" "invedge_5/a_200_1100#" 13.5837
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/bn" 672.833
+cap "ddaa_slice_0/a0/vss" "invdummy_5/xn" -10.298
+cap "ddaa_slice_0/a0/vss" "invedge_5/a_200_1100#" 4.08966
+cap "imb" "ddaa_slice_0/a0/vss" 2.16903
+cap "ddaa_slice_0/im" "ddaa_slice_0/a0/bp" -4.56775
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/in" 33.8204
+cap "invdummy_5/xn" "ddaa_slice_0/a0/bn" 34.714
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a1/out" 12.5862
+cap "ddaa_slice_0/im" "ddaa_slice_0/a0/vss" 663.2
+cap "invedge_5/a_200_1100#" "invdummy_5/xn" 0.0348613
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a1/out" 12.7486
+cap "imb" "invdummy_5/xn" 0.0236688
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/in" 68.8523
+cap "invdummy_5/xn" "ddaa_slice_0/a0/in" 4.8
+cap "ddaa_slice_0/im" "invdummy_5/xn" 13.5048
+cap "ddaa_slice_0/im" "ddaa_slice_0/a0/bn" -132.899
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a1/out" 42.6061
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vss" 289.611
+cap "invdummy_5/xn" "ddaa_slice_0/a1/out" 49.3814
+cap "invedge_5/a_200_1100#" "ddaa_slice_0/a1/out" 2.30415
+cap "invdummy_5/xn" "ddaa_slice_0/a0/in" 14.3021
+cap "ddaa_slice_0/a1/vss" "ddaa_slice_0/a0/in" 8.96985
+cap "ddaa_slice_0/im" "ddaa_slice_0/a0/in" 1.04748
+cap "ddaa_slice_0/a1/bn" "ddaa_slice_0/a0/in" 50.8522
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/om" 6.42237
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/vss" 2.56895
+cap "ddaa_slice_0/ip" "ddaa_slice_0/a7/in" 16.9422
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/a7/in" 3.40235
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/ip" 20.6267
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/a7/vss" -68.9125
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/a7/in" 2.22045e-16
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/ip" 3.40235
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/bn" -420
+cap "ddaa_slice_0/om" "ddaa_slice_0/a7/vss" -125.899
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/vss" -60.2683
+cap "ddaa_slice_0/ip" "ddaa_slice_0/a7/vss" 2.56895
+cap "ddaa_slice_0/ip" "ddaa_slice_0/om" 6.42237
+cap "ddaa_slice_2/om" "ddaa_slice_2/a7/in" 6.42237
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/a7/vss" 2.56895
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/in" 16.9422
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/in" 3.40235
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/om" -125.899
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/bn" -68.9125
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/bp" -420
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/ip" 2.56895
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/in" 23.0267
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/om" 1.42109e-14
+cap "ddaa_slice_2/ip" "ddaa_slice_2/om" 6.42237
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/in" -60.2683
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/bn" 3.40235
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/bn" -840
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/om" 523.783
+cap "ddaa_slice_3/a7/xb" "ddaa_slice_3/a7/vss" 1.27124
+cap "invedge_0/a_200_1100#" "ddaa_slice_3/a7/vss" 4.08966
+cap "invdummy_0/xn" "ddaa_slice_3/om" 114.723
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/om" -187.785
+cap "invedge_0/a_200_1100#" "invdummy_0/xn" 0.0348613
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xn" -39.2504
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bn" 253.131
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/in" 0.0669036
+cap "invdummy_0/xn" "ddaa_slice_3/a7/bn" 3.12232
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 96.0724
+cap "invdummy_0/xn" "ddaa_slice_3/a7/in" 4.8
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vss" 52.4558
+cap "ddaa_slice_3/a7/bp" "invdummy_0/xn" 0.596669
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vss" -12.4185
+cap "invdummy_0/xn" "ddaa_slice_3/a7/vss" 6.24708
+cap "invedge_0/a_200_1100#" "ddaa_slice_3/a7/vss" 7.05031
+cap "ddaa_slice_3/op" "ddaa_slice_3/a7/vss" 3.06151
+cap "ddaa_slice_3/op" "invedge_0/a_200_1100#" 7.13765
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/bn" -5.82044
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/bp" 88.3452
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/vss" 4.12042
+cap "ddaa_slice_3/om" "ddaa_slice_3/a7/vss" 512.932
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/vss" -67.345
+cap "ddaa_slice_3/om" "invedge_0/a_200_1100#" 76.9443
+cap "ddaa_slice_0/ip" "ddaa_slice_0/im" -9.48718
+cap "ddaa_slice_0/a0/bn" "invdummy_5/vss" -30.1414
+cap "ddaa_slice_0/a0/bp" "invdummy_5/vss" 2.43032
+cap "ddaa_slice_0/im" "invdummy_5/vss" 41.3349
+cap "invedge_5/a_200_1100#" "ddaa_slice_0/im" 1.21098
+cap "ddaa_slice_0/ip" "invdummy_5/vss" 228.862
+cap "invedge_5/a_200_1100#" "ddaa_slice_0/ip" 13.0272
+cap "imb" "invdummy_5/vss" 0.960035
+cap "invedge_5/a_200_1100#" "invdummy_5/vss" 36.8759
+cap "ipb" "invdummy_5/vss" 0.435409
+cap "imb" "invedge_5/a_200_1100#" 2.90401
+cap "ipb" "invedge_5/a_200_1100#" 1.92038
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/im" -12.8145
+cap "ddaa_slice_0/a0/bp" "ipb" -0.150669
+cap "ddaa_slice_0/a0/vss" "imb" 1.57748
+cap "ddaa_slice_0/a0/vss" "invdummy_5/xn" -30.5552
+cap "invdummy_5/xn" "imb" 0.236688
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/vss" 988.039
+cap "ddaa_slice_0/a0/vss" "invedge_5/a_200_1100#" 3.79754
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/in" -27.569
+cap "invedge_5/a_200_1100#" "invdummy_5/xn" 0.348613
+cap "ddaa_slice_0/a0/bn" "invdummy_5/xn" 126.829
+cap "ddaa_slice_0/a0/vss" "ipb" 0.978441
+cap "ddaa_slice_0/a0/in" "ddaa_slice_0/im" -37.9487
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/in" 1109.21
+cap "ddaa_slice_0/a0/in" "invdummy_5/xn" 121.361
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/im" -12.912
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/xt" 1.27124
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/in" -124.324
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vss" 565.985
+cap "ddaa_slice_0/a0/bp" "imb" -0.239166
+cap "ddaa_slice_0/a0/bp" "invdummy_5/xn" 5.96669
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/im" 200.835
+cap "ddaa_slice_0/a0/bp" "invedge_5/a_200_1100#" 18.693
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/bp" -845.532
+cap "invdummy_5/xn" "ddaa_slice_0/a0/in" 20.4586
+cap "ddaa_slice_0/a1/bn" "ddaa_slice_0/a0/in" 46.8933
+cap "ddaa_slice_0/a1/vss" "ddaa_slice_0/a0/in" 10.165
+cap "ddaa_slice_0/ip" "ddaa_slice_0/a7/in" 36.5579
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/in" 5.1379
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/in" -25.2757
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/ip" -106.764
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/a7/bn" -420
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/ip" 69.2343
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/bn" -41.0304
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/in" 5.1379
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/ip" 36.5579
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/bp" -420
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/in" 103.195
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/bn" -41.0304
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/ip" -106.764
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/in" -25.2757
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/om" 10.1846
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/bp" -840
+cap "ddaa_slice_3/a7/vss" "invedge_0/a_200_1100#" 4.08966
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" 52.4558
+cap "ddaa_slice_3/ip" "invdummy_0/xn" 4.56385e-16
+cap "ddaa_slice_3/a7/bn" "invdummy_0/xn" 50.3086
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xn" 0.633329
+cap "ddaa_slice_3/a7/in" "invdummy_0/xn" 94.3517
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/xt" 1.27124
+cap "ddaa_slice_3/om" "invdummy_0/xn" 2.72676
+cap "ddaa_slice_3/a7/out" "invdummy_0/xn" 1.21907
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/ip" 2.2754e-15
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/ip" 57.5318
+cap "invedge_0/a_200_1100#" "invdummy_0/xn" 1.3842
+cap "invdummy_0/xn" "ddaa_slice_3/a7/bp" 11.699
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bn" 259.946
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 29.1003
+cap "ddaa_slice_3/om" "ddaa_slice_3/ip" 0.0669036
+cap "ddaa_slice_3/a7/vss" "invedge_0/a_200_1100#" 24.5208
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/vss" -65.1425
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/ip" 0.382634
+cap "ddaa_slice_3/op" "ddaa_slice_3/a7/vss" 5.70921
+cap "ddaa_slice_3/om" "invedge_0/a_200_1100#" 17.3836
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xn" 12.1945
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" 22.9565
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 6.70795
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/om" 26.1327
+cap "ddaa_slice_3/op" "invedge_0/a_200_1100#" 7.13765
+cap "invedge_5/m2_200_4000#" "ddaa_slice_0/im" 0.223757
+cap "invdummy_5/vss" "invedge_5/m3_200_4000#" 18.4097
+cap "invdummy_5/vss" "invdummy_5/bp" 8.74508
+cap "invedge_5/m3_200_4000#" "ddaa_slice_0/im" 0.12106
+cap "invdummy_5/bp" "ddaa_slice_0/a0/vreg" -1.20075
+cap "invedge_5/m2_200_4000#" "ddaa_slice_0/ip" 0.132316
+cap "ddaa_slice_0/a0/vsub" "ipb" 2.5605
+cap "invedge_5/m3_200_4000#" "ddaa_slice_0/ip" 0.0669036
+cap "invdummy_5/vss" "ddaa_slice_0/a0/vsub" 32.7765
+cap "imb" "invedge_5/m2_200_4000#" 0.960035
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/im" 1.61464
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/vreg" 6.13803
+cap "invedge_5/m3_200_4000#" "imb" 1.20075
+cap "invdummy_5/vss" "ddaa_slice_0/a0/bn" -7.53535
+cap "invdummy_5/vss" "ddaa_slice_0/a0/vreg" 13.0815
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/ip" 1.05862
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/vreg" -0.371928
+cap "ddaa_slice_0/a0/vsub" "imb" 3.87202
+cap "invedge_5/m2_200_4000#" "ipb" 0.435409
+cap "invedge_5/m3_200_4000#" "ipb" 0.28127
+cap "invdummy_5/vss" "invedge_5/m2_200_4000#" 2.43812
+cap "imb" "ddaa_slice_0/op" 0.334518
+cap "invedge_5/m2_200_4000#" "ddaa_slice_0/a0/bp" 23.9462
+cap "invdummy_5/xn" "ddaa_slice_0/a0/bp" 0.596669
+cap "ddaa_slice_0/a0/bn" "invdummy_5/xpt" 12.3645
+cap "invedge_5/m2_200_4000#" "ddaa_slice_0/a0/bn" 5.31817
+cap "ddaa_slice_0/a0/bp" "invedge_5/m3_200_4000#" 114.086
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/in" -13.914
+cap "invdummy_5/xn" "ddaa_slice_0/op" 49.3814
+cap "ddaa_slice_0/a0/vsub" "invdummy_5/xpt" 1.6334
+cap "invdummy_5/xn" "ddaa_slice_0/a0/bn" 23.477
+cap "ddaa_slice_0/a0/bn" "invedge_5/m3_200_4000#" 85.5832
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/bp" 106.697
+cap "imb" "invdummy_5/xpt" 0.722654
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/in" 53.2649
+cap "ddaa_slice_0/a0/vsub" "invdummy_5/xn" 0.0348613
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/vreg" -29.6872
+cap "invdummy_5/m1_200_3100#" "ddaa_slice_0/a0/bp" 8.98974
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/a0/bn" 274.614
+cap "invdummy_5/xn" "imb" 0.0236688
+cap "ddaa_slice_0/a0/vss" "ddaa_slice_0/op" 12.7486
+cap "invdummy_5/m1_200_3100#" "ddaa_slice_0/a0/vreg" 24.0946
+cap "ddaa_slice_0/a0/vss" "ipb" 0.856136
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/vss" 2.33695
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/a0/vreg" 27.7708
+cap "ddaa_slice_0/a0/in" "invdummy_5/xpt" 96.752
+cap "invedge_5/m2_200_4000#" "ddaa_slice_0/a0/in" 0.169523
+cap "ddaa_slice_0/a0/vss" "imb" 1.38029
+cap "ddaa_slice_0/a0/bp" "ddaa_slice_0/op" 12.5862
+cap "ddaa_slice_0/a0/vsub" "invdummy_5/m1_200_3100#" 0.292118
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/bp" -430.792
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/a0/vreg" 97.897
+cap "invdummy_5/xn" "ddaa_slice_0/a0/in" 4.8
+cap "ddaa_slice_0/a0/vss" "invdummy_5/xpt" 1.50567
+cap "invedge_5/m3_200_4000#" "ddaa_slice_0/a0/in" 0.0880594
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/bp" 14.9421
+cap "ddaa_slice_0/a0/bn" "ddaa_slice_0/op" 42.6061
+cap "invdummy_5/xn" "ddaa_slice_0/a0/vss" 0.0483975
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/op" 2.30415
+cap "ddaa_slice_0/a0/bp" "invdummy_5/xpt" 24.4141
+cap "ddaa_slice_0/a1/vss" "ddaa_slice_0/a0/in" 4.19673
+cap "invedge_5/m3_200_4000#" "ddaa_slice_0/a0/in" 0.145637
+cap "invdummy_5/xn" "ddaa_slice_0/a0/in" 9.06937
+cap "invdummy_5/xpt" "ddaa_slice_0/a0/in" 10.5268
+cap "ddaa_slice_0/a1/bn" "ddaa_slice_0/a0/in" 43.3564
+cap "ddaa_slice_0/a1/bp" "ddaa_slice_0/a0/in" 4.14281
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/in" 1.28447
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/bn" 3.40235
+cap "ddaa_slice_0/a7/out" "ddaa_slice_0/a7/in" 6.42237
+cap "ddaa_slice_0/ip" "ddaa_slice_0/a7/in" 12.3557
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/a7/bp" 5.91583
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/bn" -84.7634
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/ip" 1.28447
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/op" -125.899
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/bp" -37.418
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/ip" 3.40235
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/bp" -58.4219
+cap "ddaa_slice_0/a7/vss" "ddaa_slice_0/a7/vreg" -29.6872
+cap "ddaa_slice_0/a7/in" "ddaa_slice_0/ip" 40.7167
+cap "ddaa_slice_0/op" "ddaa_slice_0/ip" 6.42237
+cap "ddaa_slice_0/a7/bp" "ddaa_slice_0/ip" -8.8428
+cap "ddaa_slice_0/a7/bn" "ddaa_slice_0/a7/bp" -258.508
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/bn" 2.22045e-16
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/in" 1.28447
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/in" 5.91583
+cap "ddaa_slice_2/a7/out" "ddaa_slice_2/a7/in" 6.42237
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/in" 12.3557
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/in" 3.40235
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/out" -125.899
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/ip" 69.0776
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/bn" 3.40235
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/bp" -8.8428
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/vss" 1.28447
+cap "ddaa_slice_2/ip" "ddaa_slice_2/a7/out" 6.42237
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_2/a7/bp" -69.9579
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/a7/bp" -14.7586
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/bp" -258.508
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_2/a7/vss" -29.6872
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/vss" -84.7634
+cap "ddaa_slice_2/a7/bn" "ddaa_slice_2/a7/out" 1.42109e-14
+cap "ddaa_slice_2/a7/vss" "ddaa_slice_2/a7/bp" -37.418
+cap "om" "ddaa_slice_3/a7/vss" 1.56686
+cap "ddaa_slice_3/a7/in" "invdummy_0/xpt" 96.752
+cap "ddaa_slice_3/a7/in" "invedge_0/m2_200_4000#" 0.169523
+cap "ddaa_slice_3/a7/out" "ddaa_slice_3/a7/bn" -187.785
+cap "invedge_0/m2_200_4000#" "ddaa_slice_3/a7/bp" 18.6281
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/bp" 19.1998
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xpt" 0.931528
+cap "invdummy_0/m1_200_3100#" "ddaa_slice_3/a7/bp" 8.98974
+cap "ddaa_slice_3/a7/vsub" "invdummy_0/xpt" 1.6334
+cap "ddaa_slice_3/a7/in" "invedge_0/m3_200_4000#" 0.0880594
+cap "ddaa_slice_3/a7/vsub" "invdummy_0/m1_200_3100#" 0.292118
+cap "invedge_0/m3_200_4000#" "ddaa_slice_3/a7/bp" 17.4067
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" -14.7586
+cap "ddaa_slice_3/a7/in" "invdummy_0/xn" 4.8
+cap "invdummy_0/xn" "ddaa_slice_3/a7/bp" 0.596669
+cap "invdummy_0/m1_200_3100#" "ddaa_slice_3/a7/vreg" 24.0946
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" -7.44326
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xn" -38.8561
+cap "ddaa_slice_3/a7/out" "invdummy_0/xpt" 1.28132
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vss" 2.33695
+cap "ddaa_slice_3/a7/vsub" "invdummy_0/xn" 0.0348613
+cap "om" "invdummy_0/xpt" 2.05797
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vreg" -66.2949
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/vreg" -29.6872
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/bn" -498.508
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bn" 74.13
+cap "invdummy_0/xn" "ddaa_slice_3/a7/bn" 3.12232
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/out" 517.516
+cap "invdummy_0/xn" "ddaa_slice_3/a7/out" 114.723
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/vsub" 7.10056
+cap "ddaa_slice_3/a7/vreg" "om" 2.84217e-14
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/op" 499.75
+cap "invedge_0/m2_200_4000#" "ddaa_slice_3/op" 0.868829
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xn" 1.56177
+cap "om" "ddaa_slice_3/a7/vsub" 9.36043
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" 6.13803
+cap "ddaa_slice_3/op" "ddaa_slice_3/a7/bp" 92.8743
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/op" -5.82044
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/op" 76.0734
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 2.22262
+cap "invedge_0/m3_200_4000#" "ddaa_slice_3/a7/vss" 21.3477
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" 0.844669
+cap "invedge_0/m3_200_4000#" "om" 3.12124
+cap "invedge_0/m2_200_4000#" "ddaa_slice_3/a7/vss" 1.62526
+cap "ddaa_slice_3/a7/vss" "invdummy_0/xpt" 2.8239
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" 13.5852
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/bp" 3.51053
+cap "invedge_0/m2_200_4000#" "om" 3.3538
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/vss" -41.5359
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vss" 17.906
+cap "invedge_0/m3_200_4000#" "ddaa_slice_3/op" 0.455023
+cap "ddaa_slice_3/a7/bn" "ddaa_slice_3/a7/bp" 4.25282
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/bp" 2.97897
+cap "op" "invedge_0/m3_200_4200#" -2.84217e-14
+cap "invedge_0/m3_200_4200#" "invdummy_0/vss" 8.52651e-14
+cap "ipb" "ddaa_slice_0/a0/vreg" -5.96856e-13
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vsub" 38.0211
+cap "ima" "ddaa_slice_0/a0/vsub" 1.07642
+cap "ipb" "ddaa_slice_0/a0/vsub" 1.707
+cap "invdummy_5/bp" "invdummy_5/vss" 5.425
+cap "imb" "ddaa_slice_0/a0/vreg" -5.68434e-13
+cap "imb" "ddaa_slice_0/a0/vsub" 2.58135
+cap "bn" "ddaa_slice_0/a0/vreg" -2.23157
+cap "invdummy_5/bp" "ddaa_slice_0/a0/vsub" 2.0533
+cap "bn" "ddaa_slice_0/a0/vsub" 0.266795
+cap "bp" "ddaa_slice_0/a0/vreg" -7.20452
+cap "bp" "ddaa_slice_0/a0/vsub" 0.346862
+cap "ipa" "ddaa_slice_0/a0/vsub" 0.705746
+cap "ddaa_slice_0/a0/vreg" "invdummy_5/vss" 78.4893
+cap "invdummy_5/vss" "ddaa_slice_0/a0/vsub" 21.3342
+cap "ima" "ddaa_slice_0/a0/vreg" -2.13163e-13
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vss" 2.06208
+cap "ddaa_slice_0/a0/vreg" "bn" 627.581
+cap "bp" "ddaa_slice_0/a0/vsub" 19.9559
+cap "ddaa_slice_0/a0/vreg" "invdummy_5/xpt" 1.02811
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/bp" -90.4756
+cap "bn" "ddaa_slice_0/a0/vsub" 19.8302
+cap "ddaa_slice_0/a0/vsub" "invdummy_5/xpt" 0.217565
+cap "ddaa_slice_0/a0/vsub" "ddaa_slice_0/a0/bp" -42.0282
+cap "ddaa_slice_0/a0/vreg" "ipb" 0.611526
+cap "imb" "invdummy_5/xpt" 0.15364
+cap "bp" "invdummy_5/xpt" 0.402296
+cap "bn" "ddaa_slice_0/a0/in" 26.6596
+cap "bp" "ddaa_slice_0/a0/bp" 36.392
+cap "ddaa_slice_0/a0/in" "invdummy_5/xpt" 4.8
+cap "ddaa_slice_0/a0/vreg" "ddaa_slice_0/a0/vsub" -12.9862
+cap "ddaa_slice_0/a0/out" "bn" 1.77198
+cap "ddaa_slice_0/a0/vss" "invdummy_5/xpt" 0.31949
+cap "ddaa_slice_0/a0/in" "ddaa_slice_0/a0/bp" -1.41114
+cap "bn" "invdummy_5/xpt" 19.3435
+cap "bn" "ddaa_slice_0/a0/bp" 45.9483
+cap "invdummy_5/xpt" "ddaa_slice_0/a0/bp" 5.76
+cap "imb" "ddaa_slice_0/a0/vreg" 0.985923
+cap "bp" "ddaa_slice_0/a0/vreg" 565.491
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/vsub" -16.1995
+cap "ddaa_slice_2/a0/in" "ddaa_slice_0/a7/bp" -1.66455
+cap "ddaa_slice_0/a7/vsub" "ddaa_slice_0/a7/bp" -14.8459
+cap "ddaa_slice_0/a7/vreg" "ddaa_slice_0/a7/bp" -187.297
+cap "ddaa_slice_0/a7/in" "ddaa_slice_2/a0/in" 2.4
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vsub" -14.8459
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_3/a0/in" -1.66455
+cap "ddaa_slice_2/a7/in" "ddaa_slice_3/a0/in" 4.8
+cap "ddaa_slice_2/a7/in" "ddaa_slice_2/a7/bp" -1.66455
+cap "ddaa_slice_2/a7/vreg" "ddaa_slice_2/a7/vsub" -16.1995
+cap "ddaa_slice_2/a7/bp" "ddaa_slice_2/a7/vreg" -289.831
+cap "ddaa_slice_3/a7/vreg" "invdummy_0/xpt" 1.02811
+cap "ddaa_slice_3/a7/vreg" "om" 3.91716
+cap "invdummy_0/xpt" "om" 0.412674
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" -1.66455
+cap "ddaa_slice_3/a7/bp" "ddaa_slice_3/a7/vsub" -42.0282
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/in" 4.8
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vsub" -12.9862
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/vsub" 0.217565
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/vss" 1.29389
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/vss" 0.197185
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/bp" 5.49911
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/bp" -119.897
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/bp" 0.260891
+cap "ddaa_slice_3/a7/vsub" "om" 10.6976
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/vreg" 113.841
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vss" 26.4533
+cap "ddaa_slice_3/a7/vreg" "ddaa_slice_3/a7/bp" 29.4211
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/in" 3.73778
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/op" 4.3924
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/bp" 2.0533
+cap "ddaa_slice_3/a7/in" "ddaa_slice_3/a7/bp" 0.253401
+cap "ddaa_slice_3/a7/vsub" "ddaa_slice_3/a7/vreg" 38.0211
+cap "invdummy_0/xpt" "ddaa_slice_3/a7/vss" 7.80885
+cap "om" "ddaa_slice_3/a7/vreg" 2.27374e-13
+cap "ddaa_slice_3/a7/vss" "ddaa_slice_3/a7/bp" 32.8325
+cap "invdummy_0/vdd" "invdummy_0/vss" -5.96856e-13
+cap "invdummy_0/vdd" "op" 7.38964e-13
+cap "invdummy_0/vdd" "om" -2.13163e-13
+merge "invedge_0/w_150_2100#" "invdummy_0/bn" -5288.97 -82672500 -122700 0 0 0 0 0 0 0 0 -40000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -45000 -4800 0 0 0 0 0 0 -140000 -5650 0 0 0 0
+merge "invdummy_0/bn" "ddaa_slice_3/a7/bn"
+merge "ddaa_slice_3/a7/bn" "ddaa_slice_3/a6/bn"
+merge "ddaa_slice_3/a6/bn" "ddaa_slice_3/bn"
+merge "ddaa_slice_3/bn" "ddaa_slice_3/a3/bn"
+merge "ddaa_slice_3/a3/bn" "ddaa_slice_3/a2/bn"
+merge "ddaa_slice_3/a2/bn" "ddaa_slice_3/a1/bn"
+merge "ddaa_slice_3/a1/bn" "ddaa_slice_3/a0/bn"
+merge "ddaa_slice_3/a0/bn" "ddaa_slice_2/a7/bn"
+merge "ddaa_slice_2/a7/bn" "ddaa_slice_2/a6/bn"
+merge "ddaa_slice_2/a6/bn" "ddaa_slice_2/bn"
+merge "ddaa_slice_2/bn" "ddaa_slice_2/a3/bn"
+merge "ddaa_slice_2/a3/bn" "ddaa_slice_2/a2/bn"
+merge "ddaa_slice_2/a2/bn" "ddaa_slice_2/a1/bn"
+merge "ddaa_slice_2/a1/bn" "ddaa_slice_2/a0/bn"
+merge "ddaa_slice_2/a0/bn" "ddaa_slice_0/a7/bn"
+merge "ddaa_slice_0/a7/bn" "ddaa_slice_0/a6/bn"
+merge "ddaa_slice_0/a6/bn" "ddaa_slice_0/bn"
+merge "ddaa_slice_0/bn" "ddaa_slice_0/a2/bn"
+merge "ddaa_slice_0/a2/bn" "ddaa_slice_0/a1/bn"
+merge "ddaa_slice_0/a1/bn" "invedge_5/w_150_2100#"
+merge "invedge_5/w_150_2100#" "invdummy_5/bn"
+merge "invdummy_5/bn" "ddaa_slice_0/a0/bn"
+merge "ddaa_slice_0/a0/bn" "w_250_12550#"
+merge "w_250_12550#" "invedge_6/w_150_2100#"
+merge "invedge_6/w_150_2100#" "bn"
+merge "bn" "invdummy_6/bn"
+merge "invdummy_6/bn" "ddaa_slice_5/a7/bn"
+merge "ddaa_slice_5/a7/bn" "ddaa_slice_5/a6/bn"
+merge "ddaa_slice_5/a6/bn" "ddaa_slice_5/bn"
+merge "ddaa_slice_5/bn" "ddaa_slice_5/a3/bn"
+merge "ddaa_slice_5/a3/bn" "ddaa_slice_5/a2/bn"
+merge "ddaa_slice_5/a2/bn" "ddaa_slice_5/a1/bn"
+merge "ddaa_slice_5/a1/bn" "ddaa_slice_5/a0/bn"
+merge "ddaa_slice_5/a0/bn" "ddaa_slice_1/a7/bn"
+merge "ddaa_slice_1/a7/bn" "ddaa_slice_1/a6/bn"
+merge "ddaa_slice_1/a6/bn" "ddaa_slice_1/bn"
+merge "ddaa_slice_1/bn" "ddaa_slice_1/a3/bn"
+merge "ddaa_slice_1/a3/bn" "ddaa_slice_1/a2/bn"
+merge "ddaa_slice_1/a2/bn" "ddaa_slice_1/a1/bn"
+merge "ddaa_slice_1/a1/bn" "ddaa_slice_1/a0/bn"
+merge "ddaa_slice_1/a0/bn" "ddaa_slice_4/a7/bn"
+merge "ddaa_slice_4/a7/bn" "ddaa_slice_4/a6/bn"
+merge "ddaa_slice_4/a6/bn" "ddaa_slice_4/bn"
+merge "ddaa_slice_4/bn" "ddaa_slice_4/a2/bn"
+merge "ddaa_slice_4/a2/bn" "ddaa_slice_4/a1/bn"
+merge "ddaa_slice_4/a1/bn" "invedge_1/w_150_2100#"
+merge "invedge_1/w_150_2100#" "invdummy_1/bn"
+merge "invdummy_1/bn" "ddaa_slice_4/a0/bn"
+merge "ddaa_slice_4/a0/bn" "w_250_8700#"
+merge "invedge_0/dw_150_1995#" "invdummy_0/bp" -23499.9 0 0 -672500 -27400 -1125000 -22300 0 0 -25000 -3000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -30000 -3400 0 0 0 0 0 0 -140000 -5650 0 0 0 0
+merge "invdummy_0/bp" "ddaa_slice_3/a7/bp"
+merge "ddaa_slice_3/a7/bp" "ddaa_slice_3/bp"
+merge "ddaa_slice_3/bp" "ddaa_slice_2/bp"
+merge "ddaa_slice_2/bp" "invedge_5/dw_150_1995#"
+merge "invedge_5/dw_150_1995#" "ddaa_slice_0/bp"
+merge "ddaa_slice_0/bp" "ddaa_slice_0/a2/bp"
+merge "ddaa_slice_0/a2/bp" "ddaa_slice_0/a1/bp"
+merge "ddaa_slice_0/a1/bp" "invdummy_5/bp"
+merge "invdummy_5/bp" "ddaa_slice_0/a0/bp"
+merge "ddaa_slice_0/a0/bp" "invedge_6/dw_150_1995#"
+merge "invedge_6/dw_150_1995#" "invdummy_6/bp"
+merge "invdummy_6/bp" "ddaa_slice_5/a7/bp"
+merge "ddaa_slice_5/a7/bp" "ddaa_slice_5/bp"
+merge "ddaa_slice_5/bp" "ddaa_slice_1/bp"
+merge "ddaa_slice_1/bp" "invedge_1/dw_150_1995#"
+merge "invedge_1/dw_150_1995#" "ddaa_slice_4/bp"
+merge "ddaa_slice_4/bp" "bp"
+merge "bp" "ddaa_slice_4/a2/bp"
+merge "ddaa_slice_4/a2/bp" "ddaa_slice_4/a1/bp"
+merge "ddaa_slice_4/a1/bp" "invdummy_1/bp"
+merge "invdummy_1/bp" "ddaa_slice_4/a0/bp"
+merge "invedge_5/m2_200_3900#" "invedge_5/m3_200_3900#" -13326.9 0 0 0 0 0 0 0 0 -140000 -6000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140000 -6000 -185000 -7600 -40000 -5800 -200800 -14636 -385000 -15500 0 0 0 0
+merge "invedge_5/m3_200_3900#" "invedge_5/m2_200_3100#"
+merge "invedge_5/m2_200_3100#" "invedge_5/m2_200_3200#"
+merge "invedge_5/m2_200_3200#" "invedge_5/m2_200_3300#"
+merge "invedge_5/m2_200_3300#" "invedge_5/m2_200_3400#"
+merge "invedge_5/m2_200_3400#" "invedge_5/m2_200_3500#"
+merge "invedge_5/m2_200_3500#" "invedge_5/m3_200_3100#"
+merge "invedge_5/m3_200_3100#" "invedge_5/m3_200_3300#"
+merge "invedge_5/m3_200_3300#" "invedge_5/m3_200_3500#"
+merge "invedge_5/m3_200_3500#" "invedge_5/m2_200_2500#"
+merge "invedge_5/m2_200_2500#" "invedge_5/m2_200_2600#"
+merge "invedge_5/m2_200_2600#" "invedge_5/m2_200_2700#"
+merge "invedge_5/m2_200_2700#" "invedge_5/m2_200_2800#"
+merge "invedge_5/m2_200_2800#" "invedge_5/m2_200_2900#"
+merge "invedge_5/m2_200_2900#" "invedge_5/m3_200_2500#"
+merge "invedge_5/m3_200_2500#" "invedge_5/m3_200_2700#"
+merge "invedge_5/m3_200_2700#" "invedge_5/m3_200_2900#"
+merge "invedge_5/m3_200_2900#" "invedge_5/m3_200_2100#"
+merge "invedge_5/m3_200_2100#" "ddaa_slice_0/a1/vss"
+merge "ddaa_slice_0/a1/vss" "invedge_5/m2_200_2100#"
+merge "invedge_5/m2_200_2100#" "invdummy_5/vss"
+merge "invdummy_5/vss" "ddaa_slice_0/a0/vss"
+merge "ddaa_slice_0/a0/vss" "invedge_1/m2_200_3400#"
+merge "invedge_1/m2_200_3400#" "invedge_1/m2_200_3500#"
+merge "invedge_1/m2_200_3500#" "invedge_1/m2_200_3900#"
+merge "invedge_1/m2_200_3900#" "invedge_1/m3_200_3500#"
+merge "invedge_1/m3_200_3500#" "invedge_1/m3_200_3900#"
+merge "invedge_1/m3_200_3900#" "invedge_1/m2_200_2700#"
+merge "invedge_1/m2_200_2700#" "invedge_1/m2_200_2800#"
+merge "invedge_1/m2_200_2800#" "invedge_1/m2_200_2900#"
+merge "invedge_1/m2_200_2900#" "invedge_1/m2_200_3100#"
+merge "invedge_1/m2_200_3100#" "invedge_1/m2_200_3200#"
+merge "invedge_1/m2_200_3200#" "invedge_1/m2_200_3300#"
+merge "invedge_1/m2_200_3300#" "invedge_1/m3_200_2700#"
+merge "invedge_1/m3_200_2700#" "invedge_1/m3_200_2900#"
+merge "invedge_1/m3_200_2900#" "invedge_1/m3_200_3100#"
+merge "invedge_1/m3_200_3100#" "invedge_1/m3_200_3300#"
+merge "invedge_1/m3_200_3300#" "invedge_1/m3_200_2100#"
+merge "invedge_1/m3_200_2100#" "ddaa_slice_4/a1/vss"
+merge "ddaa_slice_4/a1/vss" "invedge_1/m3_200_2500#"
+merge "invedge_1/m3_200_2500#" "vss"
+merge "vss" "invedge_1/m2_200_2100#"
+merge "invedge_1/m2_200_2100#" "invedge_1/m2_200_2500#"
+merge "invedge_1/m2_200_2500#" "invedge_1/m2_200_2600#"
+merge "invedge_1/m2_200_2600#" "invdummy_1/vss"
+merge "invdummy_1/vss" "ddaa_slice_4/a0/vss"
+merge "ddaa_slice_3/im" "ddaa_slice_2/a7/in" -2168.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -700 -35000 -4250 0 0 0 0
+merge "ddaa_slice_2/a7/in" "ddaa_slice_0/a7/in"
+merge "ddaa_slice_0/a7/in" "ddaa_slice_2/im"
+merge "ddaa_slice_2/im" "ddaa_slice_0/im"
+merge "ddaa_slice_0/im" "ima"
+merge "ddaa_slice_2/a1/vsub" "ddaa_slice_2/a0/vsub" -2660.15 0 0 0 0 0 0 0 0 0 0 -10000 -6600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -6600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/a0/vsub" "ddaa_slice_1/a1/vsub"
+merge "ddaa_slice_1/a1/vsub" "ddaa_slice_0/a7/vsub"
+merge "ddaa_slice_0/a7/vsub" "ddaa_slice_1/a0/vsub"
+merge "ddaa_slice_1/a0/vsub" "ddaa_slice_4/a7/vsub"
+merge "invedge_5/m2_200_4400#" "invedge_5/m2_200_4500#" -14005.3 0 0 0 0 0 0 0 0 0 0 -100000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -100000 -4400 -130000 -5600 -70000 -8600 -410800 -27134 -175000 -1650 0 0 0 0
+merge "invedge_5/m2_200_4500#" "invedge_5/m2_200_4600#"
+merge "invedge_5/m2_200_4600#" "invedge_5/m2_200_4700#"
+merge "invedge_5/m2_200_4700#" "invedge_5/m2_200_4800#"
+merge "invedge_5/m2_200_4800#" "invedge_5/m3_200_4400#"
+merge "invedge_5/m3_200_4400#" "invedge_5/m3_200_4500#"
+merge "invedge_5/m3_200_4500#" "invedge_5/m3_200_4600#"
+merge "invedge_5/m3_200_4600#" "invedge_5/m3_200_4700#"
+merge "invedge_5/m3_200_4700#" "invedge_5/m3_200_4800#"
+merge "invedge_5/m3_200_4800#" "invedge_5/m2_200_4200#"
+merge "invedge_5/m2_200_4200#" "invedge_5/m2_200_4300#"
+merge "invedge_5/m2_200_4300#" "invedge_5/m3_200_4200#"
+merge "invedge_5/m3_200_4200#" "invedge_5/m3_200_4300#"
+merge "invedge_5/m3_200_4300#" "invedge_5/m2_200_1600#"
+merge "invedge_5/m2_200_1600#" "invedge_5/m2_200_1700#"
+merge "invedge_5/m2_200_1700#" "invedge_5/m2_200_1800#"
+merge "invedge_5/m2_200_1800#" "invedge_5/m3_200_1600#"
+merge "invedge_5/m3_200_1600#" "invedge_5/m3_200_1700#"
+merge "invedge_5/m3_200_1700#" "invedge_5/m3_200_1800#"
+merge "invedge_5/m3_200_1800#" "invedge_1/m2_200_4800#"
+merge "invedge_1/m2_200_4800#" "ddaa_slice_0/a1/vreg"
+merge "ddaa_slice_0/a1/vreg" "invedge_5/m2_200_1200#"
+merge "invedge_5/m2_200_1200#" "invedge_5/m2_200_1300#"
+merge "invedge_5/m2_200_1300#" "invedge_5/m2_200_1400#"
+merge "invedge_5/m2_200_1400#" "invedge_5/m2_200_1500#"
+merge "invedge_5/m2_200_1500#" "invdummy_5/vdd"
+merge "invdummy_5/vdd" "ddaa_slice_0/a0/vreg"
+merge "ddaa_slice_0/a0/vreg" "invedge_5/m3_200_1200#"
+merge "invedge_5/m3_200_1200#" "invedge_5/m3_200_1300#"
+merge "invedge_5/m3_200_1300#" "invedge_5/m3_200_1400#"
+merge "invedge_5/m3_200_1400#" "invedge_5/m3_200_1500#"
+merge "invedge_5/m3_200_1500#" "invedge_1/m3_200_4800#"
+merge "invedge_1/m3_200_4800#" "invedge_1/m2_200_4200#"
+merge "invedge_1/m2_200_4200#" "invedge_1/m2_200_4300#"
+merge "invedge_1/m2_200_4300#" "invedge_1/m2_200_4400#"
+merge "invedge_1/m2_200_4400#" "invedge_1/m2_200_4500#"
+merge "invedge_1/m2_200_4500#" "invedge_1/m2_200_4600#"
+merge "invedge_1/m2_200_4600#" "invedge_1/m2_200_4700#"
+merge "invedge_1/m2_200_4700#" "invedge_1/m3_200_4200#"
+merge "invedge_1/m3_200_4200#" "invedge_1/m3_200_4300#"
+merge "invedge_1/m3_200_4300#" "invedge_1/m3_200_4400#"
+merge "invedge_1/m3_200_4400#" "invedge_1/m3_200_4500#"
+merge "invedge_1/m3_200_4500#" "invedge_1/m3_200_4600#"
+merge "invedge_1/m3_200_4600#" "invedge_1/m3_200_4700#"
+merge "invedge_1/m3_200_4700#" "invedge_1/m3_200_1200#"
+merge "invedge_1/m3_200_1200#" "ddaa_slice_4/a1/vreg"
+merge "ddaa_slice_4/a1/vreg" "invedge_1/m3_200_1300#"
+merge "invedge_1/m3_200_1300#" "invedge_1/m3_200_1400#"
+merge "invedge_1/m3_200_1400#" "invedge_1/m3_200_1500#"
+merge "invedge_1/m3_200_1500#" "invedge_1/m3_200_1600#"
+merge "invedge_1/m3_200_1600#" "invedge_1/m3_200_1700#"
+merge "invedge_1/m3_200_1700#" "invedge_1/m3_200_1800#"
+merge "invedge_1/m3_200_1800#" "vdd"
+merge "vdd" "invedge_1/m2_200_1200#"
+merge "invedge_1/m2_200_1200#" "invedge_1/m2_200_1300#"
+merge "invedge_1/m2_200_1300#" "invedge_1/m2_200_1400#"
+merge "invedge_1/m2_200_1400#" "invedge_1/m2_200_1500#"
+merge "invedge_1/m2_200_1500#" "invedge_1/m2_200_1600#"
+merge "invedge_1/m2_200_1600#" "invedge_1/m2_200_1700#"
+merge "invedge_1/m2_200_1700#" "invedge_1/m2_200_1800#"
+merge "invedge_1/m2_200_1800#" "invdummy_1/vdd"
+merge "invdummy_1/vdd" "ddaa_slice_4/a0/vreg"
+merge "invedge_0/m3_200_4400#" "invedge_0/m3_200_4500#" -12626.8 0 0 0 0 0 0 0 0 0 0 -100000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -100000 -4400 -130000 -5600 -70000 -8600 -70000 -11400 0 0 0 0 0 0
+merge "invedge_0/m3_200_4500#" "invedge_0/m3_200_4600#"
+merge "invedge_0/m3_200_4600#" "invedge_0/m3_200_4700#"
+merge "invedge_0/m3_200_4700#" "invedge_0/m3_200_4800#"
+merge "invedge_0/m3_200_4800#" "invedge_0/m2_200_4400#"
+merge "invedge_0/m2_200_4400#" "invedge_0/m2_200_4500#"
+merge "invedge_0/m2_200_4500#" "invedge_0/m2_200_4600#"
+merge "invedge_0/m2_200_4600#" "invedge_0/m2_200_4700#"
+merge "invedge_0/m2_200_4700#" "invedge_0/m2_200_4800#"
+merge "invedge_0/m2_200_4800#" "invedge_0/m3_200_4200#"
+merge "invedge_0/m3_200_4200#" "invedge_0/m3_200_4300#"
+merge "invedge_0/m3_200_4300#" "invedge_0/m2_200_4200#"
+merge "invedge_0/m2_200_4200#" "invedge_0/m2_200_4300#"
+merge "invedge_0/m2_200_4300#" "invedge_0/m3_200_1600#"
+merge "invedge_0/m3_200_1600#" "invedge_0/m3_200_1700#"
+merge "invedge_0/m3_200_1700#" "invedge_0/m3_200_1800#"
+merge "invedge_0/m3_200_1800#" "invedge_0/m2_200_1600#"
+merge "invedge_0/m2_200_1600#" "invedge_0/m2_200_1700#"
+merge "invedge_0/m2_200_1700#" "invedge_0/m2_200_1800#"
+merge "invedge_0/m2_200_1800#" "invedge_0/m3_200_1200#"
+merge "invedge_0/m3_200_1200#" "invedge_0/m3_200_1300#"
+merge "invedge_0/m3_200_1300#" "invedge_0/m3_200_1400#"
+merge "invedge_0/m3_200_1400#" "invedge_0/m3_200_1500#"
+merge "invedge_0/m3_200_1500#" "invedge_0/m2_200_1200#"
+merge "invedge_0/m2_200_1200#" "invedge_0/m2_200_1300#"
+merge "invedge_0/m2_200_1300#" "invedge_0/m2_200_1400#"
+merge "invedge_0/m2_200_1400#" "invedge_0/m2_200_1500#"
+merge "invedge_0/m2_200_1500#" "invdummy_0/vdd"
+merge "invdummy_0/vdd" "ddaa_slice_3/a7/vreg"
+merge "ddaa_slice_3/a7/vreg" "invedge_6/m3_200_4800#"
+merge "invedge_6/m3_200_4800#" "invedge_6/m2_200_4800#"
+merge "invedge_6/m2_200_4800#" "invedge_6/m3_200_4200#"
+merge "invedge_6/m3_200_4200#" "invedge_6/m3_200_4300#"
+merge "invedge_6/m3_200_4300#" "invedge_6/m3_200_4400#"
+merge "invedge_6/m3_200_4400#" "invedge_6/m3_200_4500#"
+merge "invedge_6/m3_200_4500#" "invedge_6/m3_200_4600#"
+merge "invedge_6/m3_200_4600#" "invedge_6/m3_200_4700#"
+merge "invedge_6/m3_200_4700#" "invedge_6/m2_200_4200#"
+merge "invedge_6/m2_200_4200#" "invedge_6/m2_200_4300#"
+merge "invedge_6/m2_200_4300#" "invedge_6/m2_200_4400#"
+merge "invedge_6/m2_200_4400#" "invedge_6/m2_200_4500#"
+merge "invedge_6/m2_200_4500#" "invedge_6/m2_200_4600#"
+merge "invedge_6/m2_200_4600#" "invedge_6/m2_200_4700#"
+merge "invedge_6/m2_200_4700#" "invedge_6/m3_200_1200#"
+merge "invedge_6/m3_200_1200#" "m3_22850_7800#"
+merge "m3_22850_7800#" "invedge_6/m3_200_1300#"
+merge "invedge_6/m3_200_1300#" "invedge_6/m3_200_1400#"
+merge "invedge_6/m3_200_1400#" "invedge_6/m3_200_1500#"
+merge "invedge_6/m3_200_1500#" "invedge_6/m3_200_1600#"
+merge "invedge_6/m3_200_1600#" "invedge_6/m3_200_1700#"
+merge "invedge_6/m3_200_1700#" "invedge_6/m3_200_1800#"
+merge "invedge_6/m3_200_1800#" "invedge_6/m2_200_1200#"
+merge "invedge_6/m2_200_1200#" "invedge_6/m2_200_1300#"
+merge "invedge_6/m2_200_1300#" "invedge_6/m2_200_1400#"
+merge "invedge_6/m2_200_1400#" "invedge_6/m2_200_1500#"
+merge "invedge_6/m2_200_1500#" "invedge_6/m2_200_1600#"
+merge "invedge_6/m2_200_1600#" "invedge_6/m2_200_1700#"
+merge "invedge_6/m2_200_1700#" "invedge_6/m2_200_1800#"
+merge "invedge_6/m2_200_1800#" "invdummy_6/vdd"
+merge "invdummy_6/vdd" "ddaa_slice_5/a7/vreg"
+merge "ddaa_slice_2/a2/bp" "ddaa_slice_2/a1/bp" -4583.16 0 0 -103000 -6280 -270000 -4200 0 0 -10000 -1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -1000 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/a1/bp" "ddaa_slice_2/a0/bp"
+merge "ddaa_slice_2/a0/bp" "ddaa_slice_0/a7/bp"
+merge "invedge_0/a_200_1100#" "invdummy_0/vsub" -28234.7 0 0 0 0 0 0 0 0 0 0 -60000 -14900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -60800 -15060 0 0 0 0 -2215100 -44402 -35000 -1450 0 0 0 0
+merge "invdummy_0/vsub" "ddaa_slice_3/SUB"
+merge "ddaa_slice_3/SUB" "ddaa_slice_3/a7/vsub"
+merge "ddaa_slice_3/a7/vsub" "ddaa_slice_2/SUB"
+merge "ddaa_slice_2/SUB" "invdummy_5/vsub"
+merge "invdummy_5/vsub" "ddaa_slice_0/a2/vsub"
+merge "ddaa_slice_0/a2/vsub" "ddaa_slice_0/a1/vsub"
+merge "ddaa_slice_0/a1/vsub" "ddaa_slice_0/SUB"
+merge "ddaa_slice_0/SUB" "ddaa_slice_0/a0/vsub"
+merge "ddaa_slice_0/a0/vsub" "invedge_5/a_200_1100#"
+merge "invedge_5/a_200_1100#" "invedge_6/a_200_1100#"
+merge "invedge_6/a_200_1100#" "vsub"
+merge "vsub" "invdummy_6/vsub"
+merge "invdummy_6/vsub" "ddaa_slice_5/a7/vsub"
+merge "ddaa_slice_5/a7/vsub" "ddaa_slice_5/SUB"
+merge "ddaa_slice_5/SUB" "ddaa_slice_1/SUB"
+merge "ddaa_slice_1/SUB" "invdummy_1/vsub"
+merge "invdummy_1/vsub" "ddaa_slice_4/a2/vsub"
+merge "ddaa_slice_4/a2/vsub" "ddaa_slice_4/a1/vsub"
+merge "ddaa_slice_4/a1/vsub" "ddaa_slice_4/a0/vsub"
+merge "ddaa_slice_4/a0/vsub" "ddaa_slice_4/SUB"
+merge "ddaa_slice_4/SUB" "invedge_1/a_200_1100#"
+merge "invedge_1/a_200_1100#" "SUB"
+merge "ddaa_slice_3/op" "ddaa_slice_2/a7/out" -6913.72 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -275000 -6200 -1925000 -15900 0 0 0 0
+merge "ddaa_slice_2/a7/out" "ddaa_slice_2/op"
+merge "ddaa_slice_2/op" "ddaa_slice_0/op"
+merge "ddaa_slice_0/op" "ddaa_slice_0/a7/out"
+merge "ddaa_slice_0/a7/out" "ddaa_slice_3/a7/out"
+merge "ddaa_slice_3/a7/out" "ddaa_slice_5/a7/out"
+merge "ddaa_slice_5/a7/out" "ddaa_slice_5/op"
+merge "ddaa_slice_5/op" "ddaa_slice_1/a7/out"
+merge "ddaa_slice_1/a7/out" "ddaa_slice_4/a7/out"
+merge "ddaa_slice_4/a7/out" "op"
+merge "op" "ddaa_slice_1/op"
+merge "ddaa_slice_1/op" "ddaa_slice_4/op"
+merge "invedge_0/m3_200_3900#" "invedge_0/m2_200_3900#" -11631.8 0 0 0 0 0 0 0 0 -140000 -6000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140000 -6000 -185000 -7600 -40000 -5800 -40000 -5800 0 0 0 0 0 0
+merge "invedge_0/m2_200_3900#" "invedge_0/m3_200_3100#"
+merge "invedge_0/m3_200_3100#" "invedge_0/m3_200_3300#"
+merge "invedge_0/m3_200_3300#" "invedge_0/m3_200_3500#"
+merge "invedge_0/m3_200_3500#" "invedge_0/m2_200_3100#"
+merge "invedge_0/m2_200_3100#" "invedge_0/m2_200_3200#"
+merge "invedge_0/m2_200_3200#" "invedge_0/m2_200_3300#"
+merge "invedge_0/m2_200_3300#" "invedge_0/m2_200_3400#"
+merge "invedge_0/m2_200_3400#" "invedge_0/m2_200_3500#"
+merge "invedge_0/m2_200_3500#" "invedge_0/m3_200_2500#"
+merge "invedge_0/m3_200_2500#" "invedge_0/m3_200_2700#"
+merge "invedge_0/m3_200_2700#" "invedge_0/m3_200_2900#"
+merge "invedge_0/m3_200_2900#" "invedge_0/m2_200_2500#"
+merge "invedge_0/m2_200_2500#" "invedge_0/m2_200_2600#"
+merge "invedge_0/m2_200_2600#" "invedge_0/m2_200_2700#"
+merge "invedge_0/m2_200_2700#" "invedge_0/m2_200_2800#"
+merge "invedge_0/m2_200_2800#" "invedge_0/m2_200_2900#"
+merge "invedge_0/m2_200_2900#" "invedge_0/m3_200_2100#"
+merge "invedge_0/m3_200_2100#" "invedge_0/m2_200_2100#"
+merge "invedge_0/m2_200_2100#" "invdummy_0/vss"
+merge "invdummy_0/vss" "ddaa_slice_3/a7/vss"
+merge "ddaa_slice_3/a7/vss" "invedge_6/m3_200_3500#"
+merge "invedge_6/m3_200_3500#" "invedge_6/m3_200_3900#"
+merge "invedge_6/m3_200_3900#" "invedge_6/m2_200_3400#"
+merge "invedge_6/m2_200_3400#" "invedge_6/m2_200_3500#"
+merge "invedge_6/m2_200_3500#" "invedge_6/m2_200_3900#"
+merge "invedge_6/m2_200_3900#" "invedge_6/m3_200_2700#"
+merge "invedge_6/m3_200_2700#" "invedge_6/m3_200_2900#"
+merge "invedge_6/m3_200_2900#" "invedge_6/m3_200_3100#"
+merge "invedge_6/m3_200_3100#" "invedge_6/m3_200_3300#"
+merge "invedge_6/m3_200_3300#" "invedge_6/m2_200_2700#"
+merge "invedge_6/m2_200_2700#" "invedge_6/m2_200_2800#"
+merge "invedge_6/m2_200_2800#" "invedge_6/m2_200_2900#"
+merge "invedge_6/m2_200_2900#" "invedge_6/m2_200_3100#"
+merge "invedge_6/m2_200_3100#" "invedge_6/m2_200_3200#"
+merge "invedge_6/m2_200_3200#" "invedge_6/m2_200_3300#"
+merge "invedge_6/m2_200_3300#" "invedge_6/m3_200_2100#"
+merge "invedge_6/m3_200_2100#" "m3_22850_8700#"
+merge "m3_22850_8700#" "invedge_6/m3_200_2500#"
+merge "invedge_6/m3_200_2500#" "invedge_6/m2_200_2100#"
+merge "invedge_6/m2_200_2100#" "invedge_6/m2_200_2500#"
+merge "invedge_6/m2_200_2500#" "invedge_6/m2_200_2600#"
+merge "invedge_6/m2_200_2600#" "invdummy_6/vss"
+merge "invdummy_6/vss" "ddaa_slice_5/a7/vss"
+merge "ddaa_slice_1/a2/bp" "ddaa_slice_1/a1/bp" -4583.16 0 0 -103000 -6280 -270000 -4200 0 0 -10000 -1000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -1000 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_1/a1/bp" "ddaa_slice_1/a0/bp"
+merge "ddaa_slice_1/a0/bp" "ddaa_slice_4/a7/bp"
+merge "ddaa_slice_1/a2/vss" "ddaa_slice_1/a1/vss" -4886.93 0 0 0 0 0 0 0 0 -70000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -4400 -92500 -5650 -20000 -2100 -20000 -2100 0 0 0 0 0 0
+merge "ddaa_slice_1/a1/vss" "ddaa_slice_1/a0/vss"
+merge "ddaa_slice_1/a0/vss" "ddaa_slice_4/a7/vss"
+merge "ddaa_slice_3/a2/bp" "ddaa_slice_3/a1/bp" -4483.4 0 0 -103000 -4220 -270000 -4200 0 0 -10000 -800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -800 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_3/a1/bp" "ddaa_slice_3/a0/bp"
+merge "ddaa_slice_3/a0/bp" "ddaa_slice_2/a7/bp"
+merge "ddaa_slice_3/a1/vsub" "ddaa_slice_3/a0/vsub" -2578.75 0 0 0 0 0 0 0 0 0 0 -10000 -6400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -6400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_3/a0/vsub" "ddaa_slice_2/a7/vsub"
+merge "ddaa_slice_2/a7/vsub" "ddaa_slice_5/a1/vsub"
+merge "ddaa_slice_5/a1/vsub" "ddaa_slice_5/a0/vsub"
+merge "ddaa_slice_5/a0/vsub" "ddaa_slice_1/a7/vsub"
+merge "ddaa_slice_3/a2/vss" "ddaa_slice_3/a1/vss" -3251.59 0 0 0 0 0 0 0 0 -70000 -3000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -3000 -92500 -3800 -20000 -1700 -20000 -1700 0 0 0 0 0 0
+merge "ddaa_slice_3/a1/vss" "ddaa_slice_3/a0/vss"
+merge "ddaa_slice_3/a0/vss" "ddaa_slice_2/a7/vss"
+merge "ddaa_slice_3/a0/in" "ddaa_slice_2/a0/in" -2032.21 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -15000 -1000 -105000 -4250 0 0 0 0
+merge "ddaa_slice_2/a0/in" "ddaa_slice_2/ip"
+merge "ddaa_slice_2/ip" "ddaa_slice_0/a0/in"
+merge "ddaa_slice_0/a0/in" "ddaa_slice_0/ip"
+merge "ddaa_slice_0/ip" "ipa"
+merge "ddaa_slice_5/a2/bp" "ddaa_slice_5/a1/bp" -4483.4 0 0 -103000 -4220 -270000 -4200 0 0 -10000 -800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -10000 -800 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_5/a1/bp" "ddaa_slice_5/a0/bp"
+merge "ddaa_slice_5/a0/bp" "ddaa_slice_1/a7/bp"
+merge "ddaa_slice_2/a1/vreg" "ddaa_slice_2/a0/vreg" -6151.55 0 0 0 0 0 0 0 0 0 0 -50000 -3200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -3200 -65000 -4100 -35000 -3600 -35000 -3600 0 0 0 0 0 0
+merge "ddaa_slice_2/a0/vreg" "ddaa_slice_0/a7/vreg"
+merge "ddaa_slice_5/a3/vsub" "ddaa_slice_3/a3/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_5/a2/vss" "ddaa_slice_5/a1/vss" -3251.59 0 0 0 0 0 0 0 0 -70000 -3000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -3000 -92500 -3800 -20000 -1700 -20000 -1700 0 0 0 0 0 0
+merge "ddaa_slice_5/a1/vss" "ddaa_slice_5/a0/vss"
+merge "ddaa_slice_5/a0/vss" "ddaa_slice_1/a7/vss"
+merge "ddaa_slice_4/vsub" "ddaa_slice_0/vsub" -2279.2 0 0 0 0 0 0 0 0 0 0 0 -5600 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5600 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_3/a1/in" "ddaa_slice_3/a1/out" -2963.27 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -75000 -4600 -595000 -7950 0 0 0 0
+merge "ddaa_slice_3/a1/out" "ddaa_slice_2/a1/in"
+merge "ddaa_slice_2/a1/in" "ddaa_slice_3/om"
+merge "ddaa_slice_3/om" "ddaa_slice_2/om"
+merge "ddaa_slice_2/om" "ddaa_slice_0/om"
+merge "ddaa_slice_0/om" "ddaa_slice_5/a1/in"
+merge "ddaa_slice_5/a1/in" "om"
+merge "om" "ddaa_slice_5/a1/out"
+merge "ddaa_slice_5/a1/out" "ddaa_slice_5/om"
+merge "ddaa_slice_5/om" "ddaa_slice_1/a1/in"
+merge "ddaa_slice_1/a1/in" "ddaa_slice_1/om"
+merge "ddaa_slice_1/om" "ddaa_slice_4/om"
+merge "ddaa_slice_3/a1/vreg" "ddaa_slice_3/a0/vreg" -4437.75 0 0 0 0 0 0 0 0 0 0 -50000 -2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -2200 -65000 -2800 -35000 -2900 -35000 -2900 0 0 0 0 0 0
+merge "ddaa_slice_3/a0/vreg" "ddaa_slice_2/a7/vreg"
+merge "ddaa_slice_5/a6/vsub" "ddaa_slice_3/a6/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/a2/vss" "ddaa_slice_2/a1/vss" -4886.93 0 0 0 0 0 0 0 0 -70000 -4400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -70000 -4400 -92500 -5650 -20000 -2100 -20000 -2100 0 0 0 0 0 0
+merge "ddaa_slice_2/a1/vss" "ddaa_slice_2/a0/vss"
+merge "ddaa_slice_2/a0/vss" "ddaa_slice_0/a7/vss"
+merge "ddaa_slice_5/vsub" "ddaa_slice_3/vsub" -1709.4 0 0 0 0 0 0 0 0 0 0 0 -4200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_5/a0/in" "ddaa_slice_1/a0/in" -1636.02 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -550 -245000 -9850 0 0 0 0
+merge "ddaa_slice_1/a0/in" "ddaa_slice_1/ip"
+merge "ddaa_slice_1/ip" "ddaa_slice_4/a0/in"
+merge "ddaa_slice_4/a0/in" "ddaa_slice_4/ip"
+merge "ddaa_slice_4/ip" "ipb"
+merge "ddaa_slice_5/im" "ddaa_slice_1/a7/in" -943.733 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -5000 -650 -210000 -8450 0 0 0 0
+merge "ddaa_slice_1/a7/in" "ddaa_slice_1/im"
+merge "ddaa_slice_1/im" "ddaa_slice_4/a7/in"
+merge "ddaa_slice_4/a7/in" "ddaa_slice_4/im"
+merge "ddaa_slice_4/im" "imb"
+merge "ddaa_slice_5/a1/vreg" "ddaa_slice_5/a0/vreg" -4437.75 0 0 0 0 0 0 0 0 0 0 -50000 -2200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -2200 -65000 -2800 -35000 -2900 -35000 -2900 0 0 0 0 0 0
+merge "ddaa_slice_5/a0/vreg" "ddaa_slice_1/a7/vreg"
+merge "ddaa_slice_1/a1/vreg" "ddaa_slice_1/a0/vreg" -6151.55 0 0 0 0 0 0 0 0 0 0 -50000 -3200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -50000 -3200 -65000 -4100 -35000 -3600 -35000 -3600 0 0 0 0 0 0
+merge "ddaa_slice_1/a0/vreg" "ddaa_slice_4/a7/vreg"
+merge "ddaa_slice_2/a3/vsub" "ddaa_slice_1/a3/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_5/a2/vsub" "ddaa_slice_3/a2/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/a6/vsub" "ddaa_slice_1/a6/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/vsub" "ddaa_slice_1/vsub" -1709.4 0 0 0 0 0 0 0 0 0 0 0 -4200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4200 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_2/a2/vsub" "ddaa_slice_1/a2/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0
+merge "ddaa_slice_4/a6/vsub" "ddaa_slice_0/a6/vsub" -569.8 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1400 0 0 0 0 0 0 0 0 0 0 0 0

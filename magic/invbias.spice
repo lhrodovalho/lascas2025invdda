@@ -1,0 +1,37 @@
+* NGSPICE file created from invbias.ext - technology: sky130A
+
+.subckt invbias ref bp bn vdd vss vsub
+X0 bp x x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X1 vdd ref x bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=0.5
+X2 a_1950_1150# ref vss bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=0.5
+X3 x ref a_1950_1150# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X4 x x vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X5 x x a_2350_1150# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X6 a_2350_2000# x bn bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X7 vdd x x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X8 x x vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X9 x ref vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X10 x ref vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=0.5
+X11 a_2350_1150# x bn bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X12 bn x a_2150_2000# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X13 vdd ref x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X14 vss ref a_2550_2000# bn sky130_fd_pr__nfet_01v8_lvt ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=0.5
+X15 vdd ref x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X16 vdd x x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X17 x x bp bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X18 bn x a_2150_1150# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X19 vdd ref x bp sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=0.5
+X20 vss ref a_2550_1150# bn sky130_fd_pr__nfet_01v8_lvt ad=3.5 pd=15 as=1.75 ps=7.5 w=7 l=0.5
+X21 a_2150_2000# x x bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X22 a_2550_2000# ref x bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X23 x x bp bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X24 bp x x bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X25 a_1950_2000# ref vss bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=0.5
+X26 a_2150_1150# x x bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X27 a_2550_1150# ref x bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X28 x ref a_1950_2000# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X29 x ref vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=0.5
+X30 x x a_2350_2000# bn sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+X31 x ref vdd bp sky130_fd_pr__pfet_01v8_lvt ad=1.25 pd=5.5 as=2.5 ps=11 w=5 l=0.5
+.ends
+

@@ -1,0 +1,902 @@
+timestamp 1726841226
+version 8.3
+tech sky130A
+style ngspice()
+scale 1000 1 1e+06
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use inv1p1 a7 -1 0 7300 0 1 0
+use inv1p1 a6 1 0 5450 0 1 0
+use inv1p1 a5 -1 0 5500 0 1 0
+use inv1p1 a4 1 0 3650 0 1 0
+use inv1p1 a3 -1 0 3700 0 1 0
+use inv1p1 a2 1 0 1850 0 1 0
+use inv1p1 a1 -1 0 1900 0 1 0
+use inv1p1 a0 1 0 50 0 1 0
+port "vreg" 9 50 100 7300 150 m3
+port "vss" 10 50 1000 7300 1050 m3
+port "im" 2 50 1700 7300 1750 m3
+port "ip" 1 50 2100 7300 2150 m3
+port "vss" 10 50 2800 7300 2850 m3
+port "vreg" 9 50 3700 7300 3750 m3
+port "om" 6 50 1100 7300 1350 m3
+port "op" 5 50 2500 7300 2750 m3
+port "vsub" 11 50 0 7300 50 li
+port "bp" 7 50 900 7300 950 li
+port "bn" 8 50 1050 7300 1100 li
+port "bn" 8 50 2750 7300 2800 li
+port "bp" 7 50 2900 7300 2950 li
+port "vsub" 11 50 3800 7300 3850 li
+node "vreg" 7 6156.89 50 100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0
+node "vss" 7 2786.78 50 1000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0
+node "im" 7 104.738 50 1700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 5000 400 0 0 0 0
+node "ip" 7 104.738 50 2100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 5000 400 0 0 0 0
+node "vss" 7 2786.78 50 2800 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0
+node "vreg" 7 6156.89 50 3700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0
+node "om" 5 602.953 50 1100 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25000 1200 25000 1200 1812500 15000 25000 1200 0 0 0 0
+node "op" 5 602.953 50 2500 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 25000 1200 25000 1200 1812500 15000 25000 1200 0 0 0 0
+node "vsub" 1856 7283.09 50 0 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "bp" 1856 4997.86 50 900 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "bn" 1856 886.155 50 1050 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "bn" 1856 886.155 50 2750 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "bp" 1856 4997.86 50 2900 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "vsub" 1856 7283.09 50 3800 li 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 362500 14600 0 0 0 0 0 0 0 0 0 0 0 0
+node "w_50_1000#" 17243 0 50 1000 pw 13412500 18200 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+substrate "SUB" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "bp" "bn" 1621.71
+cap "w_50_1000#" "im" 3180.71
+cap "bn" "bp" 1621.71
+cap "vsub" "vreg" 539.201
+cap "ip" "op" 1381.03
+cap "bn" "om" 1070.94
+cap "bn" "vss" 584.567
+cap "vss" "op" 5990.22
+cap "bn" "ip" 19.6275
+cap "bp" "im" 0.690956
+cap "bp" "vreg" 52.1242
+cap "w_50_1000#" "bp" 530.942
+cap "im" "om" 1381.03
+cap "ip" "im" 1377.5
+cap "bn" "vss" 584.567
+cap "im" "vss" 0.291273
+cap "bp" "w_50_1000#" 530.942
+cap "bn" "op" 1070.94
+cap "w_50_1000#" "om" 4358.37
+cap "w_50_1000#" "ip" 3180.71
+cap "w_50_1000#" "vss" 448.412
+cap "bp" "vreg" 52.1242
+cap "im" "op" 0.776529
+cap "vreg" "vsub" 539.201
+cap "bn" "im" 19.6275
+cap "bp" "ip" 0.690956
+cap "w_50_1000#" "vss" 448.412
+cap "bp" "om" 9.2041
+cap "bp" "vss" 539.201
+cap "bp" "vss" 539.201
+cap "w_50_1000#" "op" 4358.37
+cap "w_50_1000#" "bn" 4642.64
+cap "ip" "om" 0.776529
+cap "vss" "om" 5990.22
+cap "bp" "op" 9.2041
+cap "w_50_1000#" "bn" 4642.64
+cap "vss" "ip" 0.291273
+cap "a1/vreg" "a0/out" 36.468
+cap "a1/vsub" "a1/vreg" -48.3422
+cap "a1/vreg" "a1/bp" -8.48418
+cap "a0/out" "a1/bp" -0.476629
+cap "a2/bp" "a2/vsub" -14.8459
+cap "a0/in" "a0/out" 4.8
+cap "a2/bp" "a0/out" -1.66455
+cap "a2/bp" "a0/in" -1.66455
+cap "a2/vsub" "a2/vreg" -68.2603
+cap "a0/out" "a2/vreg" -14.6667
+cap "a2/bp" "a2/vreg" -287.119
+cap "a3/bp" "a2/in" -1.66455
+cap "a2/in" "a0/out" 4.8
+cap "a3/bp" "a3/vreg" -298.587
+cap "a3/vsub" "a3/vreg" -68.2603
+cap "a0/out" "a3/vreg" -1.09424e-12
+cap "a2/in" "a3/vreg" 36.468
+cap "a3/bp" "a3/vsub" -14.8459
+cap "a3/bp" "a0/out" -1.66455
+cap "a3/vsub" "a0/out" 3.33067e-16
+cap "a3/vsub" "a3/bp" -14.8459
+cap "a2/in" "a3/in" 2.4
+cap "a3/bp" "a3/vreg" -197.746
+cap "a3/vreg" "a3/in" 36.468
+cap "a3/bp" "a1/in" -0.476629
+cap "a3/vsub" "a3/vreg" -68.2603
+cap "a1/in" "a3/in" 1.55364
+cap "a3/vreg" "a1/in" 21.8013
+cap "a3/bp" "a2/in" -1.66455
+cap "a4/vreg" "a2/in" 36.468
+cap "a4/vreg" "a4/in" 36.468
+cap "a4/vreg" "a4/vsub" -52.0608
+cap "a4/vreg" "a4/bp" -13.7074
+cap "a2/out" "a4/bp" -0.476629
+cap "a2/in" "a2/out" 1.55364
+cap "a4/in" "a3/in" 4.8
+cap "a4/in" "a5/bp" -1.66455
+cap "a5/in" "a5/vreg" 36.468
+cap "a4/out" "a5/bp" -0.476629
+cap "a5/bp" "a3/in" -1.66455
+cap "a5/vsub" "a5/bp" -14.8459
+cap "a5/vreg" "a5/bp" -303.538
+cap "a5/vreg" "a3/in" 36.468
+cap "a4/out" "a5/in" 1.55364
+cap "a5/vreg" "a5/vsub" -68.2603
+cap "a6/vreg" "a4/out" -14.6667
+cap "a4/out" "a6/bp" -1.11022e-16
+cap "a6/vreg" "a6/bp" -287.119
+cap "a5/in" "a6/bp" -1.66455
+cap "a6/vreg" "a6/vsub" -68.2603
+cap "a6/vsub" "a6/bp" -14.8459
+cap "a5/in" "a4/in" 4.8
+cap "a4/in" "a6/bp" -1.66455
+cap "a7/vreg" "a4/in" 36.468
+cap "a7/bp" "a5/in" -1.66455
+cap "a4/in" "a4/out" 1.55364
+cap "a5/in" "a6/in" 4.8
+cap "a7/vreg" "a7/bp" -303.538
+cap "a7/vreg" "a7/vsub" -68.2603
+cap "a7/bp" "a7/vsub" -14.8459
+cap "a4/out" "a7/bp" -0.476629
+cap "a7/vreg" "a6/in" 36.468
+cap "a7/bp" "a6/in" -1.66455
+cap "a7/vsub" "a7/vreg" -52.0608
+cap "a6/out" "a7/in" 1.55364
+cap "a6/out" "a7/bp" -0.476629
+cap "a7/vreg" "a5/in" 36.468
+cap "a7/vreg" "a7/in" 36.468
+cap "a7/bp" "a7/vreg" -13.7074
+cap "a7/vreg" "a7/vsub" -68.2603
+cap "a6/in" "a7/vreg" 36.468
+cap "a6/out" "a6/in" 1.55364
+cap "a7/bp" "a7/vsub" -14.8459
+cap "a6/in" "a7/bp" -1.66455
+cap "a6/out" "a7/vreg" -14.6667
+cap "a7/in" "a7/bp" -1.66455
+cap "a7/in" "a6/in" 4.8
+cap "a7/vreg" "a7/bp" -292.071
+cap "a6/out" "a7/bp" -0.476629
+cap "a7/vsub" "a7/vreg" -22.3118
+cap "a7/bp" "a7/vreg" -1.63048
+cap "a1/vss" "a1/in" 528.537
+cap "a1/vss" "a0/xb" -6.80041
+cap "a1/in" "a0/in" 682.013
+cap "a1/bp" "a1/vss" -48.3422
+cap "a1/in" "im" -61.6667
+cap "a0/in" "a0/xb" -9.41
+cap "a1/bp" "a0/in" 6.39246
+cap "a1/in" "a0/xb" 16.097
+cap "a1/vss" "a1/bn" -106.254
+cap "a1/bn" "a0/in" -10.2172
+cap "a1/bn" "im" -0.128853
+cap "a1/bn" "a1/in" -302.063
+cap "a1/bp" "a1/vreg" -1.14051
+cap "a1/bp" "a1/bn" -192.996
+cap "a1/vss" "a0/in" -177.87
+cap "a1/in" "a0/xb" 2.54247
+cap "a1/in" "a2/bp" -138.529
+cap "a0/in" "a2/bp" -14.7586
+cap "im" "a2/bn" -0.128853
+cap "a2/bn" "a2/bp" -466.35
+cap "a2/vss" "a2/vreg" -21.6872
+cap "a1/in" "a0/in" 225.095
+cap "a2/vss" "a2/bp" -52.0608
+cap "a1/in" "a2/bn" -798.969
+cap "a2/vreg" "a2/bp" -36.4059
+cap "a1/xb" "a1/in" 2.54247
+cap "a1/in" "a2/vss" 175.076
+cap "a2/vss" "a0/in" -72.1009
+cap "a1/in" "a2/vreg" -124.834
+cap "a2/vss" "a2/bn" -114.017
+cap "a1/in" "im" -67.078
+cap "a3/vreg" "a3/vss" -29.6872
+cap "a3/vss" "a3/bp" -89.4788
+cap "a3/out" "a3/bn" -341.33
+cap "ip" "a3/out" -0.110648
+cap "a1/xb" "a3/out" 6.68696
+cap "a2/in" "a3/out" 148.166
+cap "a3/bp" "a3/bn" -466.35
+cap "im" "a3/bn" -0.128853
+cap "a3/vreg" "a3/out" -2.10498e-13
+cap "a3/bp" "a3/out" -10.1064
+cap "a2/in" "a3/bp" -14.7586
+cap "im" "a3/out" -66.8754
+cap "a3/vss" "a3/bn" -199.24
+cap "a3/vreg" "a3/bp" -71.1861
+cap "a3/vss" "a3/out" 500.061
+cap "a1/xb" "a3/vss" -6.80041
+cap "a2/in" "a3/vss" -59.9343
+cap "a3/vss" "a2/xb" -6.80041
+cap "a3/out" "a2/in" 778.689
+cap "a3/vreg" "a3/out" -124.834
+cap "a3/vss" "a2/in" -188.752
+cap "a3/vss" "a3/vreg" -21.6872
+cap "a3/in" "a2/in" 39.9153
+cap "a3/bn" "a3/bp" -466.35
+cap "a3/bn" "im" -0.128853
+cap "a2/in" "a3/bp" -2.45034
+cap "a3/bn" "a2/in" -6.8149
+cap "a2/xb" "a2/in" -9.41
+cap "a3/vreg" "a3/bp" -28.1281
+cap "a3/vss" "a3/out" 290.438
+cap "a3/in" "a3/out" -0.166968
+cap "a3/bn" "a3/out" -648.72
+cap "a3/out" "im" -67.078
+cap "a3/out" "a3/bp" -104.221
+cap "a2/xb" "a3/out" 18.6394
+cap "a3/vss" "a3/bp" -52.0608
+cap "a3/vss" "a3/bn" -114.477
+cap "a3/out" "a4/in" -66.4103
+cap "a3/xb" "a4/vss" -6.80041
+cap "a3/out" "a3/in" 716.425
+cap "a4/bn" "a4/vss" -115.575
+cap "a3/in" "a4/bp" 12.3083
+cap "a3/out" "a3/xb" 16.097
+cap "a4/vreg" "a4/bp" -1.22824
+cap "a3/out" "a4/vss" 420.118
+cap "a2/in" "a3/in" 11.5543
+cap "a3/out" "a4/bn" -315.596
+cap "a4/bp" "a4/vss" -52.0608
+cap "a3/in" "a4/in" 12.3557
+cap "a4/bn" "a4/bp" -207.842
+cap "a3/xb" "a3/in" -9.41
+cap "a3/in" "a4/vss" -203.172
+cap "a3/in" "a4/bn" -6.8149
+cap "a5/bn" "a4/in" -6.94375
+cap "a3/out" "a5/vss" 642.195
+cap "a3/out" "a4/in" 574.799
+cap "a3/in" "a5/vss" -45.5142
+cap "a4/xb" "a5/vss" -6.80041
+cap "a3/in" "a4/in" 69.0776
+cap "a5/in" "a4/in" 3.38844
+cap "a4/xb" "a4/in" -9.41
+cap "a5/bp" "a5/bn" -466.35
+cap "a5/out" "a4/in" -3.87185
+cap "a5/in" "a4/in" 8.16588
+cap "a5/vreg" "a5/vss" -29.6872
+cap "a5/vss" "a4/in" -147.745
+cap "a5/bp" "a3/in" -14.7586
+cap "a5/bp" "a5/vreg" -71.1861
+cap "a5/bp" "a5/vss" -89.4788
+cap "a5/bp" "a4/in" -2.45034
+cap "a5/bn" "a3/out" -324.671
+cap "a3/in" "a3/out" 59.3162
+cap "a4/xb" "a3/out" 16.097
+cap "a5/out" "a3/out" 1.31997
+cap "a5/bn" "a5/vss" -199.24
+cap "a4/in" "a5/in" 128.716
+cap "a6/vss" "a5/in" 333.597
+cap "a5/out" "a5/in" 236.983
+cap "a4/in" "a6/bn" -0.128853
+cap "a6/bn" "a6/vss" -114.017
+cap "a5/out" "a6/bn" -88.1489
+cap "a6/bn" "a5/in" -325.599
+cap "a6/bp" "a6/vreg" -36.4059
+cap "a6/bp" "a4/in" -14.7586
+cap "a6/bp" "a6/vss" -52.0608
+cap "a6/bp" "a5/out" -120.432
+cap "a6/bp" "a5/in" -14.7586
+cap "a6/vss" "a6/vreg" -21.6872
+cap "a5/out" "a6/vreg" -124.834
+cap "a4/in" "a6/vss" -100.941
+cap "a6/bp" "a6/bn" -466.35
+cap "a4/in" "a5/out" -2.25362
+cap "a5/out" "a6/vss" -148.648
+cap "a7/vss" "a6/in" -31.094
+cap "a7/vreg" "a7/bp" -71.1861
+cap "a5/xb" "a5/in" 6.68696
+cap "a5/in" "a5/out" -1.23191
+cap "a5/in" "a6/in" 108.622
+cap "a7/vss" "a5/in" 472.505
+cap "a7/bn" "a7/bp" -466.35
+cap "a7/vss" "a7/vreg" -29.6872
+cap "a7/vss" "a7/bn" -199.24
+cap "a4/in" "a5/in" -55.3211
+cap "a7/bn" "a5/in" -342.772
+cap "a7/bn" "a4/in" -0.128853
+cap "a7/vss" "a7/bp" -89.4788
+cap "a7/bp" "a6/in" -14.7586
+cap "ip" "a5/in" -0.110648
+cap "a5/in" "a7/bp" -3.71397
+cap "a7/vss" "a5/xb" -6.80041
+cap "a6/in" "a7/in" 11.5543
+cap "a6/in" "a7/vss" -203.172
+cap "a6/in" "a7/bn" -6.8149
+cap "a7/vss" "a7/bp" -52.0608
+cap "a5/in" "a6/xb" 16.097
+cap "a7/bp" "a7/bn" -207.842
+cap "a7/out" "a6/in" -3.87185
+cap "a6/in" "a7/bp" 12.3083
+cap "a7/in" "a5/in" -66.4103
+cap "a7/vss" "a5/in" 420.118
+cap "a7/vss" "a6/xb" -6.80041
+cap "a5/in" "a7/bn" -315.596
+cap "a6/in" "a5/in" 732.653
+cap "a6/in" "a6/xb" -9.41
+cap "a7/out" "a5/in" 9.23981
+cap "a7/vreg" "a7/bp" -1.22824
+cap "a7/vss" "a7/bn" -115.575
+cap "om" "a6/in" 19.7721
+cap "a7/out" "a7/vreg" -124.834
+cap "om" "a7/in" 607.92
+cap "om" "a7/xb" 16.097
+cap "a7/out" "a7/bp" -120.432
+cap "a7/out" "a6/in" -2.25362
+cap "a7/in" "a7/out" -6.12547
+cap "a7/bn" "a7/bp" -466.35
+cap "om" "a7/vss" 420.118
+cap "a7/in" "a7/bn" -10.3461
+cap "a7/vreg" "a7/bp" -36.4059
+cap "a7/vreg" "a6/in" -7.10543e-15
+cap "a7/out" "a7/vss" -148.648
+cap "a7/bp" "a6/in" -14.7586
+cap "a7/in" "a7/bp" -8.36618
+cap "om" "a7/out" 233.957
+cap "a7/in" "a6/in" 68.2762
+cap "a7/xb" "a7/in" -9.41
+cap "a7/bn" "a7/vss" -114.477
+cap "om" "a7/bn" -324.671
+cap "a7/vreg" "a7/vss" -21.6872
+cap "a7/bp" "a7/vss" -52.0608
+cap "a7/vss" "a6/in" -14.4202
+cap "a7/bn" "a7/out" -88.1489
+cap "a7/in" "a7/vss" -175.617
+cap "a7/xb" "a7/vss" -6.80041
+cap "a7/vreg" "a7/bp" -0.526388
+cap "a7/in" "om" 70.3988
+cap "a7/vss" "a7/bp" -22.3118
+cap "a7/bp" "a7/bn" -89.0753
+cap "a7/vss" "om" 318.478
+cap "a7/bn" "om" -144.728
+cap "a7/in" "a7/vss" -74.3545
+cap "a7/in" "a7/bn" -0.128853
+cap "a7/vss" "a7/bn" -48.2365
+cap "im" "a1/bn" -282.291
+cap "a1/vss" "a0/xt" -3.51885
+cap "a1/in" "a0/in" 42.5079
+cap "a1/vss" "a0/in" 72.6114
+cap "a0/xb" "a0/in" -2.3525
+cap "op" "a0/in" 8.00888
+cap "im" "a1/in" -61.6667
+cap "im" "a1/vss" 1229.81
+cap "im" "a0/xb" 7.34392
+cap "a1/vss" "a1/bn" 2.13163e-14
+cap "im" "a0/in" 177.383
+cap "a1/vss" "a0/xb" -7.03771
+cap "im" "a0/in" -6.8812
+cap "im" "a2/bn" -304.006
+cap "a2/bn" "a2/bp" -420
+cap "a1/in" "op" 4.61525
+cap "op" "a0/in" 2.88453
+cap "a1/in" "a2/vss" -626.247
+cap "im" "a1/in" 84.9901
+cap "a1/in" "a0/in" 75.542
+cap "im" "a2/vss" 1283.27
+cap "a2/bn" "a1/in" -41.0304
+cap "a0/in" "a2/vss" 246.695
+cap "a2/bn" "a2/vss" -7.59666e-14
+cap "a3/vss" "a3/bn" -41.0304
+cap "a3/out" "a2/in" 111.781
+cap "ip" "im" -66.4103
+cap "a3/out" "a1/xb" -2.3525
+cap "a3/vss" "a3/out" -191.674
+cap "a3/vss" "a1/xt" -3.51885
+cap "ip" "a2/in" 2.61215
+cap "im" "a2/in" 47.6232
+cap "im" "a1/xb" 7.34392
+cap "ip" "a3/vss" 353.86
+cap "im" "a3/vss" 1339.43
+cap "im" "a3/bn" -304.006
+cap "ip" "a3/out" 7.43218
+cap "im" "a3/out" 104.614
+cap "a3/vss" "a2/in" -86.2205
+cap "a3/bn" "a3/bp" -420
+cap "a3/vss" "a1/xb" -7.03771
+cap "a2/xb" "im" 7.34392
+cap "a2/xb" "a2/in" -2.3525
+cap "a3/out" "a3/vss" -454.784
+cap "a3/vss" "a3/in" 353.86
+cap "a2/xt" "a3/vss" -3.51885
+cap "a3/out" "im" -28.2138
+cap "a2/in" "a3/out" 42.5961
+cap "im" "a3/in" -66.4103
+cap "a3/bn" "a3/out" -41.0304
+cap "a2/in" "a3/in" 79.2787
+cap "im" "a3/vss" 1283.27
+cap "a2/in" "a3/vss" -271.779
+cap "a3/bn" "a3/vss" -3.58659e-14
+cap "a3/bn" "a3/bp" -420
+cap "a2/in" "im" 252.24
+cap "a3/bn" "im" -304.006
+cap "a2/xb" "a3/vss" -7.03771
+cap "a3/out" "a4/in" -66.4103
+cap "a4/vss" "a3/xb" -7.03771
+cap "a4/in" "a3/xb" 7.34392
+cap "a4/vss" "a3/xt" -3.51885
+cap "a4/vss" "a4/in" 1283.27
+cap "a3/in" "a3/out" 8.38832
+cap "a4/bn" "a4/in" -304.006
+cap "a3/in" "a3/xb" -2.3525
+cap "a3/in" "a2/in" 44.4361
+cap "a3/in" "a4/in" 233.009
+cap "a4/vss" "a3/in" 60.6478
+cap "a4/in" "a3/in" 80.1225
+cap "a4/xb" "a4/in" 4.99142
+cap "a4/in" "a5/in" 35.2734
+cap "a3/out" "a3/in" 1.73072
+cap "a5/bn" "a4/in" -320.514
+cap "a3/in" "a5/vss" 289.072
+cap "a3/out" "a4/in" -61.1163
+cap "a4/xb" "a5/vss" -7.03771
+cap "a5/vss" "a4/xt" -3.51885
+cap "a5/out" "a3/in" 1.73072
+cap "a4/in" "a5/vss" 1131.31
+cap "a4/in" "a5/bp" -0.345478
+cap "a5/bn" "a5/vss" -41.0304
+cap "a5/out" "a4/in" 5.97005
+cap "a5/bn" "a5/bp" -420
+cap "a6/vss" "ip" 353.86
+cap "a6/bn" "a5/out" -41.0304
+cap "a5/in" "a5/out" 2.97272
+cap "a6/bn" "a4/in" -304.006
+cap "a4/in" "a5/out" 59.7035
+cap "a6/bn" "a6/bp" -420
+cap "a4/in" "a5/in" 76.9848
+cap "a6/bn" "a6/vss" 1.45617e-13
+cap "ip" "a5/in" 3.91823
+cap "a6/vss" "a5/out" -454.784
+cap "a6/vss" "a5/in" -128.598
+cap "a4/in" "ip" -61.839
+cap "a4/in" "a6/vss" 1133.24
+cap "a4/in" "a7/bn" -304.006
+cap "a7/vss" "a5/xt" -3.51885
+cap "a7/bn" "a7/bp" -420
+cap "a4/in" "a7/out" 23.8116
+cap "ip" "a7/out" 1.30608
+cap "a5/in" "a5/xb" -2.3525
+cap "ip" "a4/in" -66.4103
+cap "a5/in" "a7/vss" -229.402
+cap "a7/vss" "a5/xb" -7.03771
+cap "a7/vss" "a7/bn" -41.0304
+cap "a5/in" "a7/out" 111.007
+cap "a4/in" "a5/in" 197.291
+cap "ip" "a5/in" 8.73826
+cap "a4/in" "a5/xb" 7.34392
+cap "a7/vss" "a7/out" -43.3546
+cap "a4/in" "a7/vss" 1339.43
+cap "ip" "a7/vss" 353.86
+cap "a7/out" "ip" 10.6974
+cap "a5/in" "a7/out" 44.4361
+cap "a7/in" "a7/out" 299.419
+cap "a7/vss" "ip" 353.86
+cap "a7/in" "a6/xb" 7.34392
+cap "a7/vss" "a6/xt" -3.51885
+cap "a7/vss" "a7/in" 1283.27
+cap "a7/out" "a6/xb" -2.3525
+cap "a7/vss" "a7/out" -293.212
+cap "a7/in" "a7/bn" -304.006
+cap "a7/vss" "a6/xb" -7.03771
+cap "a7/in" "ip" -66.4103
+cap "a5/in" "a7/in" -66.4103
+cap "om" "a7/out" 0.576906
+cap "a7/vss" "a7/xt" -3.51885
+cap "a7/out" "ip" 0.653038
+cap "a7/vss" "a7/xb" -7.03771
+cap "a7/bn" "a7/bp" -420
+cap "a7/vss" "a7/bn" 1.72307e-13
+cap "a7/out" "a7/vss" -476.216
+cap "a7/out" "a7/bn" -41.0304
+cap "om" "a7/in" -59.9625
+cap "ip" "a7/in" -57.4841
+cap "a7/bp" "a7/in" -0.345478
+cap "a7/in" "a7/xb" 4.99142
+cap "a7/vss" "a7/in" 1027.65
+cap "a7/bn" "a7/in" -320.514
+cap "a7/vss" "ip" 353.86
+cap "a7/out" "a7/in" 177.89
+cap "a7/in" "om" -25.577
+cap "a7/in" "ip" -25.1964
+cap "a7/out" "a7/in" 2.88453
+cap "a7/vss" "a7/in" 480.518
+cap "a7/in" "a7/bn" -130.288
+cap "a7/vss" "ip" 151.654
+cap "op" "a0/xt" 16.097
+cap "a0/in" "a0/xt" -6.31554
+cap "a0/in" "op" 544.307
+cap "a1/vss" "a0/xt" -9.92488
+cap "a1/vss" "op" 795.759
+cap "a0/in" "a1/bp" -0.345478
+cap "a1/vss" "a0/in" 374.784
+cap "op" "a1/bn" -302.063
+cap "a1/in" "a0/in" 12.296
+cap "a0/in" "a1/bn" -178.283
+cap "a1/vss" "a1/bn" -22.6048
+cap "a2/vss" "a0/in" 538.903
+cap "a2/bn" "a2/bp" -420
+cap "a2/vss" "op" 707.895
+cap "a2/vss" "a2/bn" -24.1154
+cap "op" "a0/in" -34.9055
+cap "a2/vss" "a1/in" -433.075
+cap "a2/bn" "a0/in" -173.779
+cap "a0/in" "a1/in" 111.621
+cap "op" "a2/bn" -325.599
+cap "op" "a1/in" 378.741
+cap "a2/bn" "a1/in" -68.9125
+cap "a1/xt" "a3/out" -11.7625
+cap "a2/in" "a3/out" 470.515
+cap "a3/vss" "a3/bn" -93.3723
+cap "ip" "a3/out" 123.296
+cap "a1/xt" "a3/vss" -9.92488
+cap "a2/in" "a3/vss" 845.043
+cap "a2/in" "a3/bn" -324.671
+cap "a2/in" "a1/xt" 16.097
+cap "ip" "a3/vss" 691.989
+cap "ip" "a3/bn" -173.779
+cap "ip" "a1/xt" 5.44696
+cap "ip" "a2/in" -103.215
+cap "a3/vss" "a3/out" -191.63
+cap "a3/bn" "a3/out" -5.37259
+cap "a3/bn" "a3/bp" -420
+cap "a2/xt" "a3/in" 5.44696
+cap "a2/xt" "a2/in" 4.33446
+cap "a3/vss" "a2/xt" -9.92488
+cap "a3/bn" "a3/in" -173.779
+cap "a3/bn" "a3/bp" -420
+cap "a3/vss" "a3/in" 641.637
+cap "a2/in" "a3/in" 72.5503
+cap "im" "a2/in" -0.110648
+cap "a3/bp" "a2/in" -1.26362
+cap "a3/in" "a3/out" 32.3944
+cap "a3/bn" "a3/vss" -24.4598
+cap "a3/bn" "a2/in" -342.772
+cap "a3/bn" "a3/out" -68.9125
+cap "a3/vss" "a2/in" 431.865
+cap "a3/vss" "a3/out" -268.7
+cap "a2/in" "a3/out" 147.982
+cap "a3/in" "a3/xt" -6.31554
+cap "a3/in" "a2/in" 597.35
+cap "a3/xt" "a2/in" 16.097
+cap "a4/bp" "a3/in" -0.345478
+cap "a4/bn" "a3/in" -187.155
+cap "a4/bn" "a2/in" -315.596
+cap "a3/in" "a3/out" -4.64622
+cap "a4/vss" "a3/in" 352.439
+cap "a4/vss" "a2/in" 707.895
+cap "a4/vss" "a3/xt" -9.92488
+cap "a3/in" "a4/in" 16.9422
+cap "a4/bn" "a4/vss" -26.3148
+cap "a5/vss" "a4/xt" -9.92488
+cap "a4/in" "a5/in" 16.9422
+cap "a5/vss" "a5/out" 929.972
+cap "a4/in" "a3/in" 186.032
+cap "a4/in" "a5/vss" -209.608
+cap "a5/vss" "a3/in" 627.606
+cap "a5/out" "a5/bn" -324.671
+cap "a4/in" "a5/bn" -6.8149
+cap "a3/in" "a5/bn" -173.779
+cap "a5/vss" "a5/bn" -93.3723
+cap "a5/out" "a4/xt" 16.097
+cap "a4/in" "a4/xt" -11.7625
+cap "a4/in" "a5/out" 631.812
+cap "a5/bp" "a5/bn" -420
+cap "a3/in" "a4/xt" 5.44696
+cap "a3/in" "a5/out" -74.0715
+cap "a5/in" "a4/in" 4.8
+cap "ip" "a4/in" 51.8097
+cap "ip" "a5/in" 44.4083
+cap "a4/xt" "a5/out" 2.54247
+cap "a5/out" "a4/in" 206.105
+cap "a5/out" "a5/in" 186.689
+cap "a6/bn" "ip" -173.779
+cap "ip" "a5/out" -83.1364
+cap "a6/bn" "a5/out" -779.733
+cap "a6/vss" "a4/in" -143.828
+cap "a6/vss" "a5/in" -123.281
+cap "a6/vss" "ip" 641.637
+cap "a6/vss" "a6/bn" -24.1154
+cap "a6/vss" "a5/out" 458.163
+cap "a5/out" "a5/xt" 2.54247
+cap "a6/bp" "a6/bn" -420
+cap "a6/bp" "a5/out" -3.33842
+cap "a7/vss" "ip" 691.989
+cap "a5/in" "a5/xt" -11.7625
+cap "a7/out" "ip" -118.018
+cap "a5/in" "a7/bn" -6.8149
+cap "a5/in" "ip" 171.691
+cap "a7/out" "a7/vss" 886.136
+cap "ip" "a5/xt" 5.44696
+cap "a7/bn" "ip" -173.779
+cap "a5/in" "a7/vss" -230.155
+cap "a7/vss" "a5/xt" -9.92488
+cap "a5/in" "a7/out" 673.137
+cap "a7/out" "a5/xt" 16.097
+cap "a7/bn" "a7/vss" -93.3723
+cap "a5/in" "a4/in" 16.9422
+cap "a7/out" "a7/bn" -324.671
+cap "a7/bn" "a7/bp" -420
+cap "a7/vss" "ip" 641.637
+cap "a7/in" "a7/out" 16.8315
+cap "a6/xt" "ip" 5.44696
+cap "a7/out" "ip" 60.6095
+cap "a7/out" "a5/in" 16.9422
+cap "a7/vss" "a6/xt" -9.92488
+cap "a7/out" "a7/bp" -1.26362
+cap "a7/vss" "a7/out" 411.318
+cap "a7/bn" "ip" -173.651
+cap "a6/xt" "a7/out" 4.33446
+cap "a7/vss" "a7/bn" -26.3148
+cap "a7/out" "a7/bn" -333.697
+cap "a7/xt" "a7/vss" -9.92488
+cap "a7/bn" "ip" -173.779
+cap "a7/vss" "a7/out" 437.617
+cap "a6/xt" "a7/out" 2.54247
+cap "ip" "a7/in" 177.808
+cap "a7/xt" "a7/out" 18.6394
+cap "a7/bn" "a7/in" -10.2172
+cap "a7/bp" "a7/out" -3.33842
+cap "ip" "a7/vss" 641.637
+cap "a7/bn" "a7/vss" -24.4598
+cap "a7/xt" "ip" 5.44696
+cap "a7/vss" "a7/in" -250.528
+cap "ip" "a7/out" -75.735
+cap "a7/xt" "a7/in" -11.7625
+cap "a7/bn" "a7/out" -778.805
+cap "a7/bp" "a7/bn" -420
+cap "a7/out" "a7/in" 755.321
+cap "ip" "a7/bn" -74.5505
+cap "ip" "a7/out" -56.9231
+cap "ip" "a7/in" 37.0069
+cap "a7/bn" "a7/vss" -9.27515
+cap "a7/out" "a7/vss" 441.812
+cap "a7/in" "a7/vss" -105.477
+cap "a7/bn" "a7/out" -144.728
+cap "a7/out" "a7/in" 97.915
+cap "ip" "a7/vss" 307.382
+cap "a1/bp" "a0/in" 6.39246
+cap "a0/in" "op" 5.1293
+cap "a1/bp" "a1/bn" -120.299
+cap "a0/in" "a1/in" 8.16588
+cap "a1/bp" "a1/out" -0.476629
+cap "a1/out" "op" 3.95992
+cap "a1/bp" "a1/vreg" -1.14051
+cap "a1/out" "a1/in" 1.55364
+cap "a0/in" "a1/vss" 1.28447
+cap "a1/bn" "a1/vss" -40.2025
+cap "a1/bp" "a1/vss" -48.3422
+cap "a1/out" "a2/bn" -6.445
+cap "a2/bp" "a2/vss" -52.0608
+cap "a1/out" "a2/vreg" -170.295
+cap "op" "a0/in" 0.945292
+cap "a0/in" "a2/bp" -14.7586
+cap "a1/out" "a2/vss" -82.071
+cap "a2/bn" "a2/vss" -43.295
+cap "a1/in" "a0/in" 51.9219
+cap "a2/vreg" "a2/vss" -21.6872
+cap "op" "a1/out" 17.1596
+cap "a1/in" "op" 1.51247
+cap "a1/out" "a2/bp" -120.432
+cap "a1/in" "a2/bp" -14.7586
+cap "a2/bn" "a2/bp" -168.807
+cap "a2/vreg" "a2/bp" -161.889
+cap "a1/in" "a3/bp" -8.8428
+cap "a3/vss" "a3/vreg" -29.6872
+cap "a3/vss" "a3/bp" -89.4788
+cap "a2/in" "a3/bp" -14.7586
+cap "a3/bn" "a3/bp" -168.807
+cap "a3/vreg" "a3/bp" -203.185
+cap "a1/in" "a3/vss" 1.28447
+cap "a1/in" "a2/in" 65.4513
+cap "a3/vss" "a3/bn" -49.74
+cap "a3/bp" "a2/in" -2.45034
+cap "a1/in" "a2/in" 8.9673
+cap "a3/vss" "a3/bn" -43.295
+cap "a3/out" "a3/bn" -6.445
+cap "a3/vreg" "a3/bp" -90.8695
+cap "a2/in" "a3/in" 34.1268
+cap "a3/vss" "a3/bp" -52.0608
+cap "a3/out" "a3/bp" -101.36
+cap "a3/vss" "a2/in" 2.56895
+cap "a3/out" "a2/in" 10.5598
+cap "a3/out" "a3/in" 1.55364
+cap "a3/bp" "a3/bn" -168.807
+cap "a3/vss" "a3/vreg" -21.6872
+cap "a3/vreg" "a3/out" -170.295
+cap "a3/vss" "a3/out" -82.071
+cap "a4/vreg" "a4/bp" -1.22824
+cap "a3/in" "a2/in" 13.6733
+cap "a4/vss" "a4/bp" -52.0608
+cap "a3/in" "a4/bp" 12.3083
+cap "a3/in" "a4/in" 8.9673
+cap "a3/out" "a2/in" 12.1134
+cap "a3/in" "a4/vss" 2.56895
+cap "a4/bp" "a4/bn" -129.553
+cap "a3/out" "a4/bp" -0.476629
+cap "a4/vss" "a4/bn" -43.295
+cap "a5/out" "a4/in" 4.75119
+cap "a5/bp" "a5/bn" -168.807
+cap "a5/bp" "a3/in" -14.7586
+cap "a5/vreg" "a5/bp" -203.185
+cap "a5/vss" "a5/bn" -49.74
+cap "a5/vreg" "a5/vss" -29.6872
+cap "a3/in" "a4/in" 60.8892
+cap "a5/bp" "a5/vss" -89.4788
+cap "a3/in" "a5/out" 0.567175
+cap "a5/bp" "a4/in" -2.45034
+cap "a5/in" "a4/in" 8.16588
+cap "a5/bp" "a5/out" -0.476629
+cap "a5/in" "a5/out" 1.55364
+cap "a5/vss" "a4/in" 2.56895
+cap "a6/bn" "a5/out" -6.445
+cap "a5/out" "a6/vreg" -170.295
+cap "a5/in" "a6/bp" -14.7586
+cap "a6/vss" "a5/out" -82.071
+cap "a5/out" "a6/bp" -120.432
+cap "a4/in" "a6/bp" -14.7586
+cap "a5/in" "a5/out" 1.13435
+cap "a5/in" "a4/in" 51.9219
+cap "a6/vss" "a6/vreg" -21.6872
+cap "a6/bn" "a6/vss" -43.295
+cap "a6/bp" "a6/vreg" -161.889
+cap "a6/bn" "a6/bp" -168.807
+cap "a5/out" "a4/in" 1.32341
+cap "a6/vss" "a6/bp" -52.0608
+cap "a7/bp" "a7/bn" -168.807
+cap "a7/vss" "a7/bn" -49.74
+cap "a7/bp" "a7/vreg" -203.185
+cap "a7/bp" "a7/out" -15.2353
+cap "a7/vreg" "a7/vss" -29.6872
+cap "a7/vss" "a7/out" 1.77636e-15
+cap "a7/bp" "a7/vss" -89.4788
+cap "a5/in" "a4/in" 8.16588
+cap "a5/in" "a7/out" 65.8294
+cap "a7/bp" "a5/in" -2.45034
+cap "a5/in" "a7/vss" 2.56895
+cap "a7/out" "a7/bn" 1.77636e-15
+cap "a4/in" "a7/out" 1.55364
+cap "a7/vreg" "a7/out" -4.29168e-12
+cap "a7/out" "a7/bp" 11.8317
+cap "a7/bn" "a7/bp" -129.553
+cap "a7/bn" "a7/vss" -43.295
+cap "a7/out" "a7/vss" 2.56895
+cap "a7/out" "a5/in" 8.9673
+cap "a7/vreg" "a7/bp" -1.22824
+cap "a7/out" "a7/vsub" 2.77556e-16
+cap "a7/vss" "a7/bp" -52.0608
+cap "a7/out" "a7/bn" -2.13163e-14
+cap "a7/out" "a7/in" 9.71952
+cap "a7/out" "a7/vreg" -1.47793e-12
+cap "a7/out" "a7/bp" -135.667
+cap "a7/vss" "a7/bn" -43.295
+cap "a7/vss" "a7/out" -82.071
+cap "a7/vss" "a7/bp" -52.0608
+cap "a7/in" "a7/out" 65.2171
+cap "a7/in" "a7/bp" -8.36618
+cap "a7/in" "a7/vss" 1.28447
+cap "a7/out" "a7/vreg" -170.295
+cap "a7/bp" "a7/vreg" -161.889
+cap "a7/out" "a7/bn" -6.445
+cap "a7/bp" "a7/bn" -168.807
+cap "a7/vss" "a7/vreg" -21.6872
+cap "a7/bp" "a7/vss" -22.3118
+cap "a7/bp" "a7/vreg" -0.526388
+cap "a7/bp" "a7/bn" -55.5226
+cap "a7/vss" "a7/bn" -18.555
+cap "a7/out" "a7/in" 0.945292
+cap "a1/vreg" "a1/vsub" -48.3422
+cap "a1/vreg" "a1/bp" -3.5327
+cap "a1/out" "a2/vreg" 3.55271e-15
+cap "a2/bp" "a2/vreg" -161.636
+cap "a1/out" "a2/bp" 1.11022e-16
+cap "a2/bp" "a1/in" -1.66455
+cap "a2/vsub" "a2/vreg" -68.2603
+cap "a0/in" "a2/bp" -1.66455
+cap "a0/in" "a1/in" 4.8
+cap "a2/vsub" "a2/bp" -14.8459
+cap "a3/vsub" "a3/bp" -14.8459
+cap "a3/vsub" "a3/vreg" -68.2603
+cap "a3/vreg" "a3/bp" -161.636
+cap "a2/in" "a3/bp" -1.66455
+cap "a1/in" "a3/bp" -1.66455
+cap "a2/in" "a1/in" 4.8
+cap "a3/bp" "a3/vsub" -14.8459
+cap "a2/in" "a3/in" 2.4
+cap "a2/in" "a3/bp" -1.66455
+cap "a3/vreg" "a3/vsub" -68.2603
+cap "a3/vreg" "a3/bp" -125.102
+cap "a4/bp" "a4/vreg" -3.80444
+cap "a4/vsub" "a4/vreg" -52.0608
+cap "a5/vsub" "a5/bp" -14.8459
+cap "a3/in" "a5/bp" -1.66455
+cap "a4/in" "a5/bp" -1.66455
+cap "a3/in" "a4/in" 4.8
+cap "a5/vreg" "a5/bp" -161.636
+cap "a5/vsub" "a5/vreg" -68.2603
+cap "a4/in" "a5/in" 4.8
+cap "a4/in" "a6/bp" -1.66455
+cap "a6/bp" "a5/in" -1.66455
+cap "a6/vreg" "a5/out" 3.55271e-15
+cap "a6/vsub" "a6/bp" -14.8459
+cap "a6/vsub" "a6/vreg" -68.2603
+cap "a6/vreg" "a6/bp" -161.636
+cap "a5/in" "a7/out" 4.8
+cap "a7/vsub" "a7/bp" -14.8459
+cap "a5/in" "a7/bp" -1.66455
+cap "a7/out" "a7/vreg" -1.42109e-13
+cap "a7/vreg" "a7/bp" -161.636
+cap "a7/out" "a7/bp" -1.66455
+cap "a7/vreg" "a7/vsub" -68.2603
+cap "a7/out" "a7/vsub" -1.11022e-16
+cap "a7/out" "a7/vreg" -1.13687e-13
+cap "a7/bp" "a7/vreg" -3.80444
+cap "a7/vsub" "a7/vreg" -52.0608
+cap "a7/bp" "a7/out" 1.42109e-14
+cap "a7/in" "a7/out" 4.8
+cap "a7/vsub" "a7/bp" -14.8459
+cap "a7/vsub" "a7/vreg" -68.2603
+cap "a7/vreg" "a7/bp" -161.636
+cap "a7/vsub" "a7/out" 1.11022e-16
+cap "a7/bp" "a7/out" -1.66455
+cap "a7/bp" "a7/in" -1.66455
+cap "a7/vreg" "a7/out" -3.41061e-13
+cap "a7/bp" "a7/vreg" -1.63048
+cap "a7/vsub" "a7/vreg" -22.3118
+merge "a6/in" "a6/out" -6195.02 0 0 0 0 0 0 0 0 -115000 -4900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -115000 -4900 -200000 -8300 0 0 -337500 -2950 -25000 -1200 0 0 0 0
+merge "a6/out" "a7/out"
+merge "a7/out" "a4/out"
+merge "a4/out" "a5/out"
+merge "a5/out" "a2/in"
+merge "a2/in" "op"
+merge "a7/bp" "a6/bp" -41479.3 0 0 -721000 -31600 -1890000 -31200 0 0 -70000 -5800 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -795000 -35000 0 0 0 0 0 0 0 0 0 0 0 0
+merge "a6/bp" "a5/bp"
+merge "a5/bp" "a3/bp"
+merge "a3/bp" "a4/bp"
+merge "a4/bp" "a2/bp"
+merge "a2/bp" "a0/bp"
+merge "a0/bp" "a1/bp"
+merge "a1/bp" "bp"
+merge "a7/vsub" "a6/vsub" -15655.3 0 0 0 0 0 0 0 0 0 0 -35000 -2900 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760000 -32100 0 0 0 0 0 0 0 0 0 0 0 0
+merge "a6/vsub" "a5/vsub"
+merge "a5/vsub" "a4/vsub"
+merge "a4/vsub" "a3/vsub"
+merge "a3/vsub" "a2/vsub"
+merge "a2/vsub" "a0/vsub"
+merge "a0/vsub" "a1/vsub"
+merge "a1/vsub" "SUB"
+merge "SUB" "vsub"
+merge "a7/vss" "a6/vss" -24354.6 0 0 0 0 0 0 0 0 -210000 -9000 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -210000 -9000 -277500 -11400 -140000 -12300 -865000 -48750 0 0 0 0 0 0
+merge "a6/vss" "a5/vss"
+merge "a5/vss" "a4/vss"
+merge "a4/vss" "a3/vss"
+merge "a3/vss" "a2/vss"
+merge "a2/vss" "a0/vss"
+merge "a0/vss" "a1/vss"
+merge "a1/vss" "vss"
+merge "a7/vreg" "a6/vreg" -32191.9 0 0 0 0 0 0 0 0 0 0 -350000 -16400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -350000 -16400 -415000 -19100 -245000 -21000 -970000 -50200 0 0 0 0 0 0
+merge "a6/vreg" "a5/vreg"
+merge "a5/vreg" "a4/vreg"
+merge "a4/vreg" "a3/vreg"
+merge "a3/vreg" "a2/vreg"
+merge "a2/vreg" "a0/vreg"
+merge "a0/vreg" "a1/vreg"
+merge "a1/vreg" "vreg"
+merge "a7/in" "a4/in" -1076.44 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -137500 -5550 -5000 -400 0 0 0 0
+merge "a4/in" "im"
+merge "a3/in" "a0/in" -4272.95 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -190000 -11450 -5000 -500 0 0 0 0
+merge "a0/in" "ip"
+merge "a5/in" "a2/out" -9606.16 0 0 0 0 0 0 0 0 -140000 -7400 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -140000 -7400 -270000 -13900 0 0 -250000 -2250 -25000 -1450 0 0 0 0
+merge "a2/out" "a3/out"
+merge "a3/out" "a0/out"
+merge "a0/out" "a1/in"
+merge "a1/in" "a1/out"
+merge "a1/out" "om"
+merge "a7/bn" "a6/bn" -8167.73 -14060000 -46650 0 0 0 0 0 0 0 0 -35000 -3250 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -760000 -39700 0 0 0 0 0 0 0 0 0 0 0 0
+merge "a6/bn" "a5/bn"
+merge "a5/bn" "a4/bn"
+merge "a4/bn" "a3/bn"
+merge "a3/bn" "a2/bn"
+merge "a2/bn" "a0/bn"
+merge "a0/bn" "a1/bn"
+merge "a1/bn" "bn"
+merge "bn" "w_50_1000#"

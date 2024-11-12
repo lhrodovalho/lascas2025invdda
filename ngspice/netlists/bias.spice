@@ -1,0 +1,15 @@
+* NGSPICE file created from bias.ext - technology: gf180mcuC
+
+.subckt vref ref vdd vss
+x0a ref ref vdd vdd p1_1
+x0b vss lo  ref ref p1_1
+x1a hi  hi  vdd vdd p1_1
+x1b lo  hi  vss vss n1_1
+.ends
+
+.subckt bias0 ref bp bn vdd vss
+x0a x   ref vdd bp p1_1
+x0b x   ref vss bn n1_1
+x1a x   x   bp  bp p1_1
+x1b x   x   bn  bn n1_1
+.ends

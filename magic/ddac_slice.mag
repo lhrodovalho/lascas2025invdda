@@ -1,0 +1,87 @@
+magic
+tech sky130A
+timestamp 1723498139
+<< locali >>
+rect -3150 3800 6500 3850
+rect -3150 2900 6500 2950
+rect -3150 2750 6500 2800
+rect -3150 1050 6500 1100
+rect -3150 900 6500 950
+rect -3150 0 6500 50
+<< metal3 >>
+rect -3150 3700 6500 3750
+rect -3150 2800 6500 2850
+rect -3150 2700 6500 2750
+rect -3150 2600 6500 2650
+rect -3150 2500 6500 2550
+rect -3150 2300 6500 2350
+rect -3150 2100 6500 2150
+rect -3150 1700 6500 1750
+rect -3150 1500 6500 1550
+rect -3150 1300 6500 1350
+rect -3150 1200 6500 1250
+rect -3150 1100 6500 1150
+rect -3150 1000 6500 1050
+rect -3150 100 6500 150
+use ddab_slice0  00
+timestamp 1723498139
+transform 1 0 850 0 1 300
+box -850 -300 2500 3550
+use ddab_slice1  10
+timestamp 1723498139
+transform 1 0 -6000 0 1 300
+box 2800 -300 4550 3550
+use ddab_slice1  11
+timestamp 1723498139
+transform -1 0 2950 0 1 300
+box 2800 -300 4550 3550
+use ddab_slice1  12
+timestamp 1723498139
+transform 1 0 400 0 1 300
+box 2800 -300 4550 3550
+use ddab_slice1  13
+timestamp 1723498139
+transform -1 0 9350 0 1 300
+box 2800 -300 4550 3550
+<< labels >>
+rlabel metal3 -3150 1700 6500 1750 0 ipa
+port 1 nsew
+rlabel metal3 -3150 2100 6500 2150 0 ima
+port 2 nsew
+rlabel metal3 -3150 1500 6500 1550 0 ipb
+port 3 nsew
+rlabel metal3 -3150 2300 6500 2350 0 imb
+port 4 nsew
+rlabel metal3 -3150 1200 6500 1250 0 xp
+port 5 nsew
+rlabel metal3 -3150 2600 6500 2650 0 xm
+port 6 nsew
+rlabel metal3 -3150 1300 6500 1350 0 om
+port 7 nsew
+rlabel metal3 -3150 1100 6500 1150 0 om
+port 7 nsew
+rlabel metal3 -3150 2700 6500 2750 0 op
+port 8 nsew
+rlabel metal3 -3150 2500 6500 2550 0 op
+port 8 nsew
+rlabel locali -3150 2900 6500 2950 0 bp
+port 9 nsew
+rlabel locali -3150 900 6500 950 0 bp
+port 9 nsew
+rlabel locali -3150 2750 6500 2800 0 bn
+port 10 nsew
+rlabel locali -3150 1050 6500 1100 0 bn
+port 10 nsew
+rlabel metal3 -3150 3700 6500 3750 0 vdd
+port 11 nsew
+rlabel metal3 -3150 100 6500 150 0 vdd
+port 11 nsew
+rlabel metal3 -3150 2800 6500 2850 0 vss
+port 12 nsew
+rlabel metal3 -3150 1000 6500 1050 0 vss
+port 12 nsew
+rlabel locali -3150 3800 6500 3850 0 vsub
+port 13 nsew
+rlabel locali -3150 0 6500 50 0 vsub
+port 13 nsew
+<< end >>

@@ -1,0 +1,56 @@
+* Transistor arrays
+
+.subckt p1_1 d g s b
+xl d g s b sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4.0
+xr d g s b sky130_fd_pr__pfet_01v8_lvt ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4.0
+*xl d g s b sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4.0
+*xr d g s b sky130_fd_pr__pfet_01v8 ad=2.5 pd=11 as=1.25 ps=5.5 w=5 l=4.0
+.ends
+
+.subckt p1_2 d g s b
+xd d g x b p1_1
+xs x g s b p1_1
+.ends
+
+.subckt p1_4 d g s b
+xd d g x b p1_2
+xs x g s b p1_2
+.ends
+
+.subckt p2_1 d g s b
+xl d g s b p1_1
+xr d g s b p1_1
+.ends
+
+.subckt p4_1 d g s b
+xl d g s b p2_1
+xr d g s b p2_1
+.ends
+
+.subckt n1_1 d g s b
+*xd d g x b sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4.0
+*xs x g s b sky130_fd_pr__nfet_01v8_lvt ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4.0
+xd d g x b sky130_fd_pr__nfet_01v8 ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4.0
+xs x g s b sky130_fd_pr__nfet_01v8 ad=1.75 pd=7.5 as=3.5 ps=15 w=7 l=4.0
+.ends
+
+.subckt n2_1 d g s b
+xl d g s b n1_1
+xr d g s b n1_1
+.ends
+
+.subckt n4_1 d g s b
+xl d g s b n2_1
+xr d g s b n2_1
+.ends
+
+.subckt n1_2 d g s b
+xd d g x b n1_1
+xs x g s b n1_1
+.ends
+
+.subckt n1_4 d g s b
+xd d g x b n1_2
+xs x g s b n1_2
+.ends
+

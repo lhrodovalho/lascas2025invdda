@@ -1,0 +1,140 @@
+magic
+tech sky130A
+timestamp 1726832924
+<< locali >>
+rect -7150 6750 14500 6800
+rect -7150 6600 14500 6650
+rect -7150 4900 14500 4950
+rect -7150 4750 14500 4800
+rect -7150 3800 14500 3900
+rect -7150 2900 14500 2950
+rect -7150 2750 14500 2800
+rect -7150 1050 14500 1100
+rect -7150 900 14500 950
+<< metal3 >>
+rect -7150 7550 14500 7600
+rect -7150 6650 14500 6700
+rect -7150 6550 14500 6600
+rect -7150 6450 14500 6500
+rect -7150 6350 14500 6400
+rect -7150 5950 14500 6000
+rect -7150 5550 14500 5600
+rect -7150 5150 14500 5200
+rect -7150 5050 14500 5100
+rect -7150 4950 14500 5000
+rect -7150 4850 14500 4900
+rect -7150 3950 14500 4000
+rect -7150 2700 14500 2750
+rect -7150 2600 14500 2650
+rect -7150 2500 14500 2550
+rect -7150 2100 14500 2150
+rect -7150 1700 14500 1750
+rect -7150 1300 14500 1350
+rect -7150 1200 14500 1250
+rect -7150 1100 14500 1150
+rect -7150 1000 14500 1050
+rect -7150 100 14500 150
+use ddab_slice0  ddab_slice0_0
+timestamp 1726445033
+transform 1 0 0 0 -1 7700
+box 0 0 7350 3850
+use ddab_slice0  ddab_slice0_1
+timestamp 1726445033
+transform 1 0 0 0 1 0
+box 0 0 7350 3850
+use ddab_slice1  ddab_slice1_0
+timestamp 1726445930
+transform 1 0 -3600 0 -1 7700
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_1
+timestamp 1726445930
+transform 1 0 -7200 0 -1 7700
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_2
+timestamp 1726445930
+transform 1 0 10800 0 -1 7700
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_3
+timestamp 1726445930
+transform 1 0 7200 0 -1 7700
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_4
+timestamp 1726445930
+transform 1 0 -3600 0 1 0
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_5
+timestamp 1726445930
+transform 1 0 -7200 0 1 0
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_6
+timestamp 1726445930
+transform 1 0 10800 0 1 0
+box 0 0 3750 3850
+use ddab_slice1  ddab_slice1_7
+timestamp 1726445930
+transform 1 0 7200 0 1 0
+box 0 0 3750 3850
+<< labels >>
+rlabel metal3 -7150 5550 14500 5600 0 ipa
+port 1 nsew
+rlabel metal3 -7150 5950 14500 6000 0 ima
+port 2 nsew
+rlabel metal3 -7150 2100 14500 2150 0 ipb
+port 3 nsew
+rlabel metal3 -7150 1700 14500 1750 0 imb
+port 4 nsew
+rlabel metal3 -7150 6450 14500 6500 0 xp
+port 5 nsew
+rlabel metal3 -7150 1200 14500 1250 0 xp
+port 5 nsew
+rlabel metal3 -7150 5050 14500 5100 0 xm
+port 6 nsew
+rlabel metal3 -7150 2600 14500 2650 0 xm
+port 6 nsew
+rlabel metal3 -7150 2700 14500 2750 0 op
+port 7 nsew
+rlabel metal3 -7150 2500 14500 2550 0 op
+port 7 nsew
+rlabel metal3 -7150 5150 14500 5200 0 op
+port 7 nsew
+rlabel metal3 -7150 4950 14500 5000 0 op
+port 7 nsew
+rlabel metal3 -7150 6550 14500 6600 0 om
+port 8 nsew
+rlabel metal3 -7150 6350 14500 6400 0 om
+port 8 nsew
+rlabel metal3 -7150 1300 14500 1350 0 om
+port 8 nsew
+rlabel metal3 -7150 1100 14500 1150 0 om
+port 8 nsew
+rlabel locali -7150 6750 14500 6800 0 bp
+port 9 nsew
+rlabel locali -7150 4750 14500 4800 0 bp
+port 9 nsew
+rlabel locali -7150 2900 14500 2950 0 bp
+port 9 nsew
+rlabel locali -7150 900 14500 950 0 bp
+port 9 nsew
+rlabel locali -7150 6600 14500 6650 0 bn
+port 10 nsew
+rlabel locali -7150 4900 14500 4950 0 bn
+port 10 nsew
+rlabel locali -7150 2750 14500 2800 0 bn
+port 10 nsew
+rlabel locali -7150 1050 14500 1100 0 bn
+port 10 nsew
+rlabel metal3 -7150 7550 14500 7600 0 vdd
+port 11 nsew
+rlabel metal3 -7150 3950 14500 4000 0 vdd
+port 11 nsew
+rlabel metal3 -7150 100 14500 150 0 vdd
+port 11 nsew
+rlabel metal3 -7150 6650 14500 6700 0 vss
+port 12 nsew
+rlabel metal3 -7150 4850 14500 4900 0 vss
+port 12 nsew
+rlabel locali -7150 3800 14500 3900 0 vsub
+port 13 nsew
+rlabel metal3 -7150 1000 14500 1050 0 vss
+port 12 nsew
+<< end >>

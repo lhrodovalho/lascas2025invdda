@@ -1,0 +1,57 @@
+
+Note: Compatibility modes selected: hs a
+
+
+Circuit: * num: 6 corner: ss vdd: 1.65 temp: -40
+
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+option SCALE: Scale is set to 1e-06 for instance and model parameters
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 1
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 801
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 801
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+
+No. of Data Rows : 801
+av100hz             =  9.195922e+01
+gbw                 =  1.105676e+07
+pm                  =  6.125837e+01
+cmrr100hz           =  9.200258e+01
+psrr100hz           =  9.327253e+01
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+ERROR: (internal)  This operation is not defined for display type PrinterOnly.
+Can't open viewport for graphics.
+idd = -3.69492e-04
+vos = 3.560485e-13
+vocm = 7.693466e-01
+binary raw file "./out/sp6.raw"
+Doing analysis at TEMP = -40.000000 and TNOM = 27.000000
+
+OP information in rawfile.
+
+Total analysis time (seconds) = 2.494
+
+Total elapsed time (seconds) = 5.363 
+
+Total DRAM available = 7841.855 MB.
+DRAM currently available =  159.262 MB.
+Maximum ngspice program size =  266.910 MB.
+Current ngspice program size =  248.922 MB.
+
+Shared ngspice pages =   10.738 MB.
+Text (code) pages =    5.461 MB.
+Stack = 0 bytes.
+Library pages =  246.465 MB.
+

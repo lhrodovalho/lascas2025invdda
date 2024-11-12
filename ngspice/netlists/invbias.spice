@@ -1,0 +1,54 @@
+* CMOS inverters
+
+.subckt inv1p1 in out bp bn vdd vss
+xp out in vdd bp p1_1
+xn out in vss bn n1_1
+.ends
+
+.subckt p3v1_1 d g s b
+xl d g s b sky130_fd_pr__pfet_g5v0d10v5 ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=4.0
+xr d g s b sky130_fd_pr__pfet_g5v0d10v5 ad=1.25 pd=5.5 as=1.25 ps=5.5 w=5 l=4.0
+.ends
+
+.subckt n3v1_1 d g s b
+xd d g x b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=4.0
+xs x g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=4.0
+.ends
+
+.subckt n3v5_1 d g s b
+x0 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+x1 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+x2 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+x3 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+x4 d g s b sky130_fd_pr__nfet_g5v0d10v5 ad=1.75 pd=7.5 as=1.75 ps=7.5 w=7 l=0.5
+.ends
+
+.subckt invbias ref ib bp bn vhi vdd vss
+vib ib  bnb 0
+x0a bnb bnb bna vss n3v1_1
+x0b bna bna vss bn  n1_1
+
+x1a yl  yl  vhi vhi p3v1_1
+x1b yl  bnb xl  vss n3v1_1
+x1c xl  bna vss bn  n1_1
+
+x2a yr  yl  vhi vhi p3v1_1
+x2b yr  bnb xr  vss n3v1_1
+x2c xr  q   vss bn  n1_1
+
+x3a vhi yr  vdd vdd n3v5_1
+x3b q   q   vdd bp  p1_1
+x3c q   q   vss bn  n1_1
+
+x4a vhi yr  vdd vdd n3v5_1
+x4b z   cm  vdd bp  p1_1
+x4c z   cm  vss bn  n1_1
+
+x5a bp  yl  vhi vhi p3v1_1
+x5b vss z   bp  bp  p1_1
+x5c vss z   vss bn  n1_1
+
+ecm cm vss vdd vss 0.5
+
+.ends
+

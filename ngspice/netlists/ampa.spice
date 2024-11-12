@@ -1,0 +1,14 @@
+* Amplifier A
+
+.subckt ampa im ip o bp bn vdd vss
+xa0 im xa bp bn vdd vss inv1p4
+xa1 xa xa bp bn vdd vss inv1p4
+xa2 xa ya bp bn vdd vss inv1p4
+xa3 ip ya bp bn vdd vss inv1p4
+xb0 ya xb bp bn vdd vss inv2p2
+xb1 xb xb bp bn vdd vss inv2p2
+xb2 xb yb bp bn vdd vss inv2p2
+xc0 yb o  bp bn vdd vss inv4p1
+ca ya o 2p
+cb yb o 2p
+.ends

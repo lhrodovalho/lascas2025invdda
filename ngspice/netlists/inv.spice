@@ -1,0 +1,36 @@
+* CMOS inverters
+
+.subckt inv1p1 in out bp bn vdd vss
+xp out in vdd bp p1_1
+xn out in vss bn n1_1
+.ends
+
+.subckt inv2p1 in out bp bn vdd vss
+xl in out bp bn vdd vss inv1p1
+xr in out bp bn vdd vss inv1p1
+.ends
+
+.subckt inv4p1 in out bp bn vdd vss
+xl in out bp bn vdd vss inv2p1
+xr in out bp bn vdd vss inv2p1
+.ends
+
+.subckt inv1p2 in out bp bn vdd vss
+xp out in vdd bp p1_2
+xn out in vss bn n1_2
+.ends
+
+.subckt inv2p2 in out bp bn vdd vss
+xl in out bp bn vdd vss inv1p2
+xr in out bp bn vdd vss inv1p2
+.ends
+
+.subckt inv4p2 in out bp bn vdd vss
+xl in out bp bn vdd vss inv2p2
+xr in out bp bn vdd vss inv2p2
+.ends
+
+.subckt inv1p4 in out bp bn vdd vss
+xp out in vdd bp p1_4
+xn out in vss bn n1_4
+.ends
