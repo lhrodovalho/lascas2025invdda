@@ -1,1 +1,1 @@
-# lascas2025invdda
+# An inverter-based difference differential amplifier with active frequency compensation: layout, netlists, and simulation results
